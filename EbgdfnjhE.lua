@@ -836,7 +836,7 @@ local page3 = Instance.new("Frame")
 page3.BackgroundColor3 = Color3.new(1, 1, 1)
 page3.BackgroundTransparency = 1
 page3.Size = UDim2.new(1, 0, 0.989473701, 0)
-page3.Visible = true
+page3.Visible = false
 page3.Name = "Page3"
 page3.Parent = pages
 
