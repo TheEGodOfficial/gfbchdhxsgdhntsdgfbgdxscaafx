@@ -13,7 +13,7 @@ prison_life_ui.IgnoreGuiInset = false
 prison_life_ui.ResetOnSpawn = false
 prison_life_ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 prison_life_ui.Name = "PrisonLifeUI"
-prison_life_ui.Parent = game:GetService("CoreGui")
+prison_life_ui.Parent = workspace
 
 local main = Instance.new("Frame")
 main.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
@@ -831,14 +831,6 @@ uigradient_30.Parent = reload_time
 local reloadtimescript = Instance.new("Script")
 reloadtimescript.Name = "RELOADTIMESCRIPT"
 reloadtimescript.Parent = reload_time
-
-local re_val = Instance.new("BoolValue")
-re_val.Name = "ReVal"
-re_val.Parent = page2
-
-local auto_remain = Instance.new("LocalScript")
-auto_remain.Name = "AutoREMain"
-auto_remain.Parent = page2
 
 local page3 = Instance.new("Frame")
 page3.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -2388,78 +2380,6 @@ task.spawn(function()
 	
 	
 	script.Parent.MouseButton1Down:Connect(Click)
-end)
-
--- AutoREMain
-task.spawn(function()
-	local script = auto_remain
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local value = script.Parent.ReVal
-	
-	local function GetOrientation()
-		local PosX, PosY, PosZ = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame:ToOrientation()
-		return CFrame.new(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.X, game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.Y, game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.Z) * CFrame.fromOrientation(0, PosY, 0)
-	end
-	
-	local function GetCamPos()
-		return workspace.CurrentCamera.CFrame
-	end
-	
-	while wait() do
-		if value.Value == true then
-			if game.Players.LocalPlayer.Character.Humanoid.Health < 1 then
-				if game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("Home").hud.Topbar.titleBar.Title.Text ~= "Lights out" then
-					if game.Players.LocalPlayer.TeamColor.Name ~= "Medium stone grey" then
-						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-							local savedcf = GetOrientation()
-							local savedcamcf = GetCamPos()
-							workspace.Remote.loadchar:InvokeServer()
-							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
-							workspace.CurrentCamera.CFrame = savedcamcf
-						end
-					else
-						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-							local savedcf = GetOrientation()
-							local savedcamcf = GetCamPos()
-							workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new("Bright orange").Name)
-							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
-							workspace.CurrentCamera.CFrame = savedcamcf
-							workspace.Remote.TeamEvent:FireServer("Medium stone grey")
-						end
-					end
-				else
-					if game.Players.LocalPlayer.TeamColor.Name ~= "Medium stone grey" then
-						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-							local savedcf = GetOrientation()
-							local savedcamcf = GetCamPos()
-							workspace.Remote.loadchar:InvokeServer()
-							wait(.075)
-							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
-							workspace.CurrentCamera.CFrame = savedcamcf
-						end
-					else
-						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-							local savedcf = GetOrientation()
-							local savedcamcf = GetCamPos()
-							workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new("Bright orange").Name)
-							wait(.075)
-							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
-							workspace.CurrentCamera.CFrame = savedcamcf
-							workspace.Remote.TeamEvent:FireServer("Medium stone grey")
-						end
-					end
-				end
-			end
-		end
-	end
 end)
 
 -- FIRERATESCRIPT
