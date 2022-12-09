@@ -66,8 +66,9 @@ local uigradient = Instance.new("UIGradient")
 uigradient.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient.Parent = destroy_gate_b
 
-local script_1 = Instance.new("Script")
-script.Parent = destroy_gate_b
+local destroygatebscript = Instance.new("Script")
+destroygatebscript.Name = "DESTROYGATEBSCRIPT"
+destroygatebscript.Parent = destroy_gate_b
 
 local weird_mirror = Instance.new("TextButton")
 weird_mirror.Font = Enum.Font.FredokaOne
@@ -91,8 +92,9 @@ local uigradient_2 = Instance.new("UIGradient")
 uigradient_2.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_2.Parent = weird_mirror
 
-local script_2 = Instance.new("Script")
-script_2.Parent = weird_mirror
+local mirrorscript = Instance.new("Script")
+mirrorscript.Name = "MIRRORSCRIPT"
+mirrorscript.Parent = weird_mirror
 
 local weapons = Instance.new("TextButton")
 weapons.Font = Enum.Font.FredokaOne
@@ -116,8 +118,9 @@ local uigradient_3 = Instance.new("UIGradient")
 uigradient_3.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_3.Parent = weapons
 
-local script_3 = Instance.new("Script")
-script_3.Parent = weapons
+local weaponsscript = Instance.new("Script")
+weaponsscript.Name = "WEAPONSSCRIPT"
+weaponsscript.Parent = weapons
 
 local remmington = Instance.new("TextButton")
 remmington.Font = Enum.Font.FredokaOne
@@ -141,8 +144,9 @@ local uigradient_4 = Instance.new("UIGradient")
 uigradient_4.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_4.Parent = remmington
 
-local script_4 = Instance.new("Script")
-script_4.Parent = remmington
+local remmingtonscript = Instance.new("Script")
+remmingtonscript.Name = "REMMINGTONSCRIPT"
+remmingtonscript.Parent = remmington
 
 local ak47 = Instance.new("TextButton")
 ak47.Font = Enum.Font.FredokaOne
@@ -166,8 +170,9 @@ local uigradient_5 = Instance.new("UIGradient")
 uigradient_5.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_5.Parent = ak47
 
-local script_5 = Instance.new("Script")
-script_5.Parent = ak47
+local ak47_script = Instance.new("Script")
+ak47_script.Name = "AK47SCRIPT"
+ak47_script.Parent = ak47
 
 local infammo = Instance.new("TextButton")
 infammo.Font = Enum.Font.FredokaOne
@@ -191,8 +196,9 @@ local uigradient_6 = Instance.new("UIGradient")
 uigradient_6.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_6.Parent = infammo
 
-local script_6 = Instance.new("Script")
-script_6.Parent = infammo
+local infammoscript = Instance.new("Script")
+infammoscript.Name = "INFAMMOSCRIPT"
+infammoscript.Parent = infammo
 
 local m9 = Instance.new("TextButton")
 m9.Font = Enum.Font.FredokaOne
@@ -216,8 +222,9 @@ local uigradient_7 = Instance.new("UIGradient")
 uigradient_7.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_7.Parent = m9
 
-local script_7 = Instance.new("Script")
-script_7.Parent = m9
+local m9_script = Instance.new("Script")
+m9_script.Name = "M9SCRIPT"
+m9_script.Parent = m9
 
 local whiteteam = Instance.new("TextButton")
 whiteteam.Font = Enum.Font.FredokaOne
@@ -241,8 +248,9 @@ local uigradient_8 = Instance.new("UIGradient")
 uigradient_8.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_8.Parent = whiteteam
 
-local script_8 = Instance.new("Script")
-script_8.Parent = whiteteam
+local whiteteamscript = Instance.new("Script")
+whiteteamscript.Name = "WHITETEAMSCRIPT"
+whiteteamscript.Parent = whiteteam
 
 local blackteam = Instance.new("TextButton")
 blackteam.Font = Enum.Font.FredokaOne
@@ -266,8 +274,9 @@ local uigradient_9 = Instance.new("UIGradient")
 uigradient_9.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_9.Parent = blackteam
 
-local script_9 = Instance.new("Script")
-script_9.Parent = blackteam
+local blackteamscript = Instance.new("Script")
+blackteamscript.Name = "BLACKTEAMSCRIPT"
+blackteamscript.Parent = blackteam
 
 local blueteam = Instance.new("TextButton")
 blueteam.Font = Enum.Font.FredokaOne
@@ -291,8 +300,9 @@ local uigradient_10 = Instance.new("UIGradient")
 uigradient_10.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_10.Parent = blueteam
 
-local script_10 = Instance.new("Script")
-script_10.Parent = blueteam
+local blueteamscript = Instance.new("Script")
+blueteamscript.Name = "BLUETEAMSCRIPT"
+blueteamscript.Parent = blueteam
 
 local redteam = Instance.new("TextButton")
 redteam.Font = Enum.Font.FredokaOne
@@ -316,8 +326,9 @@ local uigradient_11 = Instance.new("UIGradient")
 uigradient_11.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_11.Parent = redteam
 
-local script_11 = Instance.new("Script")
-script_11.Parent = redteam
+local redteamscript = Instance.new("Script")
+redteamscript.Name = "REDTEAMSCRIPT"
+redteamscript.Parent = redteam
 
 local yellowteam = Instance.new("TextButton")
 yellowteam.Font = Enum.Font.FredokaOne
@@ -341,8 +352,9 @@ local uigradient_12 = Instance.new("UIGradient")
 uigradient_12.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_12.Parent = yellowteam
 
-local script_12 = Instance.new("Script")
-script_12.Parent = yellowteam
+local yellowteamscript = Instance.new("Script")
+yellowteamscript.Name = "YELLOWTEAMSCRIPT"
+yellowteamscript.Parent = yellowteam
 
 local pinkteam = Instance.new("TextButton")
 pinkteam.Font = Enum.Font.FredokaOne
@@ -366,8 +378,9 @@ local uigradient_13 = Instance.new("UIGradient")
 uigradient_13.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_13.Parent = pinkteam
 
-local script_13 = Instance.new("Script")
-script_13.Parent = pinkteam
+local pinkteamscript = Instance.new("Script")
+pinkteamscript.Name = "PINKTEAMSCRIPT"
+pinkteamscript.Parent = pinkteam
 
 local purpleteam = Instance.new("TextButton")
 purpleteam.Font = Enum.Font.FredokaOne
@@ -391,8 +404,9 @@ local uigradient_14 = Instance.new("UIGradient")
 uigradient_14.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_14.Parent = purpleteam
 
-local script_14 = Instance.new("Script")
-script_14.Parent = purpleteam
+local purpleteamscript = Instance.new("Script")
+purpleteamscript.Name = "PURPLETEAMSCRIPT"
+purpleteamscript.Parent = purpleteam
 
 local greenteam = Instance.new("TextButton")
 greenteam.Font = Enum.Font.FredokaOne
@@ -416,8 +430,9 @@ local uigradient_15 = Instance.new("UIGradient")
 uigradient_15.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_15.Parent = greenteam
 
-local script_15 = Instance.new("Script")
-script_15.Parent = greenteam
+local greenteamscript = Instance.new("Script")
+greenteamscript.Name = "GREENTEAMSCRIPT"
+greenteamscript.Parent = greenteam
 
 local page2 = Instance.new("Frame")
 page2.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -449,8 +464,9 @@ local uigradient_16 = Instance.new("UIGradient")
 uigradient_16.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_16.Parent = auto_re
 
-local script_16 = Instance.new("Script")
-script_16.Parent = auto_re
+local autorescript = Instance.new("Script")
+autorescript.Name = "AUTORESCRIPT"
+autorescript.Parent = auto_re
 
 local auto_re_off = Instance.new("TextButton")
 auto_re_off.Font = Enum.Font.FredokaOne
@@ -474,8 +490,9 @@ local uigradient_17 = Instance.new("UIGradient")
 uigradient_17.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_17.Parent = auto_re_off
 
-local script_17 = Instance.new("Script")
-script_17.Parent = auto_re_off
+local autorescriptoff = Instance.new("Script")
+autorescriptoff.Name = "AUTORESCRIPTOFF"
+autorescriptoff.Parent = auto_re_off
 
 local crim = Instance.new("TextButton")
 crim.Font = Enum.Font.FredokaOne
@@ -499,8 +516,9 @@ local uigradient_18 = Instance.new("UIGradient")
 uigradient_18.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_18.Parent = crim
 
-local script_18 = Instance.new("Script")
-script_18.Parent = crim
+local crimteamscript = Instance.new("Script")
+crimteamscript.Name = "CRIMTEAMSCRIPT"
+crimteamscript.Parent = crim
 
 local guard = Instance.new("TextButton")
 guard.Font = Enum.Font.FredokaOne
@@ -524,8 +542,9 @@ local uigradient_19 = Instance.new("UIGradient")
 uigradient_19.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_19.Parent = guard
 
-local script_19 = Instance.new("Script")
-script_19.Parent = guard
+local guardteamscript = Instance.new("Script")
+guardteamscript.Name = "GUARDTEAMSCRIPT"
+guardteamscript.Parent = guard
 
 local inmate = Instance.new("TextButton")
 inmate.Font = Enum.Font.FredokaOne
@@ -549,8 +568,9 @@ local uigradient_20 = Instance.new("UIGradient")
 uigradient_20.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_20.Parent = inmate
 
-local script_20 = Instance.new("Script")
-script_20.Parent = inmate
+local inmateteamscript = Instance.new("Script")
+inmateteamscript.Name = "INMATETEAMSCRIPT"
+inmateteamscript.Parent = inmate
 
 local neutral = Instance.new("TextButton")
 neutral.Font = Enum.Font.FredokaOne
@@ -574,8 +594,9 @@ local uigradient_21 = Instance.new("UIGradient")
 uigradient_21.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_21.Parent = neutral
 
-local script_21 = Instance.new("Script")
-script_21.Parent = neutral
+local neutralteamscript = Instance.new("Script")
+neutralteamscript.Name = "NEUTRALTEAMSCRIPT"
+neutralteamscript.Parent = neutral
 
 local button = Instance.new("TextButton")
 button.Font = Enum.Font.FredokaOne
@@ -1204,9 +1225,9 @@ local modules = {}
 
 --// Scripts
 
--- Script
+-- DESTROYGATEBSCRIPT
 task.spawn(function()
-	local script = script_1
+	local script = destroygatebscript
 
 	local oldreq = require
 	local function require(target)
@@ -1226,9 +1247,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- MIRRORSCRIPT
 task.spawn(function()
-	local script = script_2
+	local script = mirrorscript
 
 	local oldreq = require
 	local function require(target)
@@ -1251,9 +1272,9 @@ task.spawn(function()
 	
 end)
 
--- Script
+-- WEAPONSSCRIPT
 task.spawn(function()
-	local script = script_3
+	local script = weaponsscript
 
 	local oldreq = require
 	local function require(target)
@@ -1281,9 +1302,9 @@ task.spawn(function()
 	
 end)
 
--- Script
+-- REMMINGTONSCRIPT
 task.spawn(function()
-	local script = script_4
+	local script = remmingtonscript
 
 	local oldreq = require
 	local function require(target)
@@ -1306,9 +1327,9 @@ task.spawn(function()
 	
 end)
 
--- Script
+-- AK47SCRIPT
 task.spawn(function()
-	local script = script_5
+	local script = ak47_script
 
 	local oldreq = require
 	local function require(target)
@@ -1331,9 +1352,9 @@ task.spawn(function()
 	
 end)
 
--- Script
+-- INFAMMOSCRIPT
 task.spawn(function()
-	local script = script_6
+	local script = infammoscript
 
 	local oldreq = require
 	local function require(target)
@@ -1354,9 +1375,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- M9SCRIPT
 task.spawn(function()
-	local script = script_7
+	local script = m9_script
 
 	local oldreq = require
 	local function require(target)
@@ -1378,9 +1399,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- WHITETEAMSCRIPT
 task.spawn(function()
-	local script = script_8
+	local script = whiteteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1412,9 +1433,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- BLACKTEAMSCRIPT
 task.spawn(function()
-	local script = script_9
+	local script = blackteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1446,9 +1467,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- BLUETEAMSCRIPT
 task.spawn(function()
-	local script = script_10
+	local script = blueteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1480,9 +1501,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- REDTEAMSCRIPT
 task.spawn(function()
-	local script = script_11
+	local script = redteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1514,9 +1535,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- YELLOWTEAMSCRIPT
 task.spawn(function()
-	local script = script_12
+	local script = yellowteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1548,9 +1569,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- PINKTEAMSCRIPT
 task.spawn(function()
-	local script = script_13
+	local script = pinkteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1582,9 +1603,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- PURPLETEAMSCRIPT
 task.spawn(function()
-	local script = script_14
+	local script = purpleteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1616,9 +1637,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- GREENTEAMSCRIPT
 task.spawn(function()
-	local script = script_15
+	local script = greenteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1650,9 +1671,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- AUTORESCRIPT
 task.spawn(function()
-	local script = script_16
+	local script = autorescript
 
 	local oldreq = require
 	local function require(target)
@@ -1674,9 +1695,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- AUTORESCRIPTOFF
 task.spawn(function()
-	local script = script_17
+	local script = autorescriptoff
 
 	local oldreq = require
 	local function require(target)
@@ -1698,9 +1719,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- CRIMTEAMSCRIPT
 task.spawn(function()
-	local script = script_18
+	local script = crimteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1732,9 +1753,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- GUARDTEAMSCRIPT
 task.spawn(function()
-	local script = script_19
+	local script = guardteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1760,9 +1781,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- INMATETEAMSCRIPT
 task.spawn(function()
-	local script = script_20
+	local script = inmateteamscript
 
 	local oldreq = require
 	local function require(target)
@@ -1782,9 +1803,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- NEUTRALTEAMSCRIPT
 task.spawn(function()
-	local script = script_21
+	local script = neutralteamscript
 
 	local oldreq = require
 	local function require(target)
