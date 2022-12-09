@@ -1879,44 +1879,59 @@ task.spawn(function()
 		return oldreq(target)
 	end
 
-	function Click(mouse)
+	local function GetOrientation()
+		local PosX, PosY, PosZ = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame:ToOrientation()
+		return CFrame.new(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.X, game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.Y, game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.Z) * CFrame.fromOrientation(0, PosY, 0)
+	end
 	
-		e = 0
-		tr = workspace.Remote.TeamEvent
-		ir = workspace.Remote.ItemHandler
-		re = game:GetService("ReplicatedStorage").ReloadEvent
-		me = game.Players.LocalPlayer
-	
-		ir:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
-		tr:FireServer('Medium stone grey')
-		wait(1)
-		gun = me.Backpack["Remington 870"]
-		args = {{},gun}
-		for i,v in next, game.Players:GetPlayers() do
-			if v.Character ~= nil then
-				if v.Character:FindFirstChild('Head') then
-					tab = {
-						["RayObject"] = Ray.new(),
-						["Distance"] = 0,
-						["Cframe"] = CFrame.new(),
-						["Hit"] = v.Character.Head
+	function KillAll()
+		local events = {}
+		local gun = nil
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v ~= game.Players.LocalPlayer then
+				if v.TeamColor.Name == game.Players.LocalPlayer.TeamColor.Name then
+					local savedcf = GetOrientation()
+					local camcf = workspace.CurrentCamera.CFrame
+					workspace.Remote.loadchar:InvokeServer(nil, BrickColor.random().Name)
+					workspace.CurrentCamera.CFrame = camcf
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+				end
+				for i = 1,10 do
+					events[#events + 1] = {
+						Hit = v.Character:FindFirstChild("Head") or v.Character:FindFirstChildOfClass("Part"),
+						Cframe = CFrame.new(),
+						RayObject = Ray.new(Vector3.new(), Vector3.new()),
+						Distance = 0
 					}
-					table.insert(args[1],tab)
-					table.insert(args[1],tab)
-					table.insert(args[1],tab)
-					table.insert(args[1],tab)
-					table.insert(args[1],tab)
 				end
 			end
 		end
-		game:GetService("ReplicatedStorage").ShootEvent:FireServer(unpack(args))
-		e = e + 1
-		wait(.1)
-		if e == 6 then
-			re:FireServer(gun)
-			e = 0
-			wait(4)
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v.Name ~= "Taser" and v:FindFirstChild("GunStates") then
+				gun = v
+			end
 		end
+		if gun == nil then
+			for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+				if v.Name ~= "Taser" and v:FindFirstChild("GunStates") then
+					gun = v
+				end
+			end
+		end
+		coroutine.wrap(function()
+			for i = 1,30 do
+				game.ReplicatedStorage.ReloadEvent:FireServer(gun)
+				wait(.5)
+			end
+		end)()
+		game.ReplicatedStorage.ShootEvent:FireServer(events, gun)
+	end
+	
+	function Click(mouse)
+	
+		wait(.075)
+		KillAll()
 	
 	end
 	
