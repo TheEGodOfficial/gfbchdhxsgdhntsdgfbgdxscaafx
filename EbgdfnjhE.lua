@@ -66,7 +66,7 @@ local uigradient = Instance.new("UIGradient")
 uigradient.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient.Parent = destroy_gate_b
 
-local script = Instance.new("Script")
+local script_1 = Instance.new("Script")
 script.Parent = destroy_gate_b
 
 local weird_mirror = Instance.new("TextButton")
@@ -1206,7 +1206,7 @@ local modules = {}
 
 -- Script
 task.spawn(function()
-	local script = script
+	local script = script_1
 
 	local oldreq = require
 	local function require(target)
@@ -1872,8 +1872,6 @@ task.spawn(function()
 					end
 				end
 			end
-		else
-			return
 		end
 	end
 end)
