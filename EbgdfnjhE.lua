@@ -1848,46 +1848,48 @@ task.spawn(function()
 		return workspace.CurrentCamera.CFrame
 	end
 	
-	while value.Value == true do
-		if game.Players.LocalPlayer.Character.Humanoid.Health < 1 then
-			if game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("Home").hud.Topbar.titleBar.Title.Text ~= "Lights out" then
-				if game.Players.LocalPlayer.TeamColor.Name ~= "Medium stone grey" then
-					if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-						local savedcf = GetOrientation()
-						local savedcamcf = GetCamPos()
-						workspace.Remote.loadchar:InvokeServer()
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
-						workspace.CurrentCamera.CFrame = savedcamcf
+	while wait() do
+		if value.Value == true then
+			if game.Players.LocalPlayer.Character.Humanoid.Health < 1 then
+				if game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("Home").hud.Topbar.titleBar.Title.Text ~= "Lights out" then
+					if game.Players.LocalPlayer.TeamColor.Name ~= "Medium stone grey" then
+						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+							local savedcf = GetOrientation()
+							local savedcamcf = GetCamPos()
+							workspace.Remote.loadchar:InvokeServer()
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+							workspace.CurrentCamera.CFrame = savedcamcf
+						end
+					else
+						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+							local savedcf = GetOrientation()
+							local savedcamcf = GetCamPos()
+							workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new("Bright orange").Name)
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+							workspace.CurrentCamera.CFrame = savedcamcf
+							workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+						end
 					end
 				else
-					if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-						local savedcf = GetOrientation()
-						local savedcamcf = GetCamPos()
-						workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new("Bright orange").Name)
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
-						workspace.CurrentCamera.CFrame = savedcamcf
-						workspace.Remote.TeamEvent:FireServer("Medium stone grey")
-					end
-				end
-			else
-				if game.Players.LocalPlayer.TeamColor.Name ~= "Medium stone grey" then
-					if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-						local savedcf = GetOrientation()
-						local savedcamcf = GetCamPos()
-						workspace.Remote.loadchar:InvokeServer()
-						wait(.075)
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
-						workspace.CurrentCamera.CFrame = savedcamcf
-					end
-				else
-					if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-						local savedcf = GetOrientation()
-						local savedcamcf = GetCamPos()
-						workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new("Bright orange").Name)
-						wait(.075)
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
-						workspace.CurrentCamera.CFrame = savedcamcf
-						workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+					if game.Players.LocalPlayer.TeamColor.Name ~= "Medium stone grey" then
+						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+							local savedcf = GetOrientation()
+							local savedcamcf = GetCamPos()
+							workspace.Remote.loadchar:InvokeServer()
+							wait(.075)
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+							workspace.CurrentCamera.CFrame = savedcamcf
+						end
+					else
+						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+							local savedcf = GetOrientation()
+							local savedcamcf = GetCamPos()
+							workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new("Bright orange").Name)
+							wait(.075)
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+							workspace.CurrentCamera.CFrame = savedcamcf
+							workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+						end
 					end
 				end
 			end
