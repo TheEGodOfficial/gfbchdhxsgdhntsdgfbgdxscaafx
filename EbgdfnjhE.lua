@@ -874,7 +874,7 @@ Name.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function JVWPBL_fake_script() -- DestroyGateB.DESTROYGATEBSCRIPT 
+local function MWHYN_fake_script() -- DestroyGateB.DESTROYGATEBSCRIPT 
 	local script = Instance.new('Script', DestroyGateB)
 
 	function Click(mouse)
@@ -884,10 +884,10 @@ local function JVWPBL_fake_script() -- DestroyGateB.DESTROYGATEBSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	DestroyGateB.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(JVWPBL_fake_script)()
-local function ZDAGVHE_fake_script() -- WeirdMirror.MIRRORSCRIPT 
+coroutine.wrap(MWHYN_fake_script)()
+local function HVLHJO_fake_script() -- WeirdMirror.MIRRORSCRIPT 
 	local script = Instance.new('Script', WeirdMirror)
 
 	function Click(mouse)
@@ -899,11 +899,11 @@ local function ZDAGVHE_fake_script() -- WeirdMirror.MIRRORSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	WeirdMirror.MouseButton1Down:Connect(Click)
 	
 end
-coroutine.wrap(ZDAGVHE_fake_script)()
-local function NEMEVB_fake_script() -- Weapons.WEAPONSSCRIPT 
+coroutine.wrap(HVLHJO_fake_script)()
+local function PYJAWA_fake_script() -- Weapons.WEAPONSSCRIPT 
 	local script = Instance.new('Script', Weapons)
 
 	function Click(mouse)
@@ -920,11 +920,11 @@ local function NEMEVB_fake_script() -- Weapons.WEAPONSSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Weapons.MouseButton1Down:Connect(Click)
 	
 end
-coroutine.wrap(NEMEVB_fake_script)()
-local function UANV_fake_script() -- Remmington.REMMINGTONSCRIPT 
+coroutine.wrap(PYJAWA_fake_script)()
+local function ABTAQGQ_fake_script() -- Remmington.REMMINGTONSCRIPT 
 	local script = Instance.new('Script', Remmington)
 
 	function Click(mouse)
@@ -936,11 +936,11 @@ local function UANV_fake_script() -- Remmington.REMMINGTONSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Remmington.MouseButton1Down:Connect(Click)
 	
 end
-coroutine.wrap(UANV_fake_script)()
-local function EHFFTHO_fake_script() -- Ak47.AK47SCRIPT 
+coroutine.wrap(ABTAQGQ_fake_script)()
+local function JTWI_fake_script() -- Ak47.AK47SCRIPT 
 	local script = Instance.new('Script', Ak47)
 
 	function Click(mouse)
@@ -952,11 +952,11 @@ local function EHFFTHO_fake_script() -- Ak47.AK47SCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Ak47.MouseButton1Down:Connect(Click)
 	
 end
-coroutine.wrap(EHFFTHO_fake_script)()
-local function YHNXI_fake_script() -- INFAmmo.INFAMMOSCRIPT 
+coroutine.wrap(JTWI_fake_script)()
+local function USNW_fake_script() -- INFAmmo.INFAMMOSCRIPT 
 	local script = Instance.new('Script', INFAmmo)
 
 	function Click(mouse)
@@ -967,10 +967,10 @@ local function YHNXI_fake_script() -- INFAmmo.INFAMMOSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	INFAmmo.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(YHNXI_fake_script)()
-local function MACJH_fake_script() -- M9.M9SCRIPT 
+coroutine.wrap(USNW_fake_script)()
+local function HWKTHS_fake_script() -- M9.M9SCRIPT 
 	local script = Instance.new('Script', M9)
 
 	function Click(mouse)
@@ -982,10 +982,10 @@ local function MACJH_fake_script() -- M9.M9SCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	M9.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(MACJH_fake_script)()
-local function SRGUTUM_fake_script() -- Whiteteam.WHITETEAMSCRIPT 
+coroutine.wrap(HWKTHS_fake_script)()
+local function UZTMEWE_fake_script() -- Whiteteam.WHITETEAMSCRIPT 
 	local script = Instance.new('Script', Whiteteam)
 
 	local function GetCamPos()
@@ -1007,10 +1007,10 @@ local function SRGUTUM_fake_script() -- Whiteteam.WHITETEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Whiteteam.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(SRGUTUM_fake_script)()
-local function WGUBT_fake_script() -- Blackteam.BLACKTEAMSCRIPT 
+coroutine.wrap(UZTMEWE_fake_script)()
+local function VJYAA_fake_script() -- Blackteam.BLACKTEAMSCRIPT 
 	local script = Instance.new('Script', Blackteam)
 
 	local function GetCamPos()
@@ -1032,10 +1032,10 @@ local function WGUBT_fake_script() -- Blackteam.BLACKTEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Blackteam.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(WGUBT_fake_script)()
-local function ATOHKU_fake_script() -- Blueteam.BLUETEAMSCRIPT 
+coroutine.wrap(VJYAA_fake_script)()
+local function JKKFQ_fake_script() -- Blueteam.BLUETEAMSCRIPT 
 	local script = Instance.new('Script', Blueteam)
 
 	local function GetCamPos()
@@ -1057,10 +1057,10 @@ local function ATOHKU_fake_script() -- Blueteam.BLUETEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Blueteam.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(ATOHKU_fake_script)()
-local function YCLPGHZ_fake_script() -- Redteam.REDTEAMSCRIPT 
+coroutine.wrap(JKKFQ_fake_script)()
+local function EBIF_fake_script() -- Redteam.REDTEAMSCRIPT 
 	local script = Instance.new('Script', Redteam)
 
 	local function GetCamPos()
@@ -1082,10 +1082,10 @@ local function YCLPGHZ_fake_script() -- Redteam.REDTEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Redteam.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(YCLPGHZ_fake_script)()
-local function OQGV_fake_script() -- Yellowteam.YELLOWTEAMSCRIPT 
+coroutine.wrap(EBIF_fake_script)()
+local function STDHFF_fake_script() -- Yellowteam.YELLOWTEAMSCRIPT 
 	local script = Instance.new('Script', Yellowteam)
 
 	local function GetCamPos()
@@ -1107,10 +1107,10 @@ local function OQGV_fake_script() -- Yellowteam.YELLOWTEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Yellowteam.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(OQGV_fake_script)()
-local function QXXIJ_fake_script() -- Pinkteam.PINKTEAMSCRIPT 
+coroutine.wrap(STDHFF_fake_script)()
+local function FJWYO_fake_script() -- Pinkteam.PINKTEAMSCRIPT 
 	local script = Instance.new('Script', Pinkteam)
 
 	local function GetCamPos()
@@ -1132,10 +1132,10 @@ local function QXXIJ_fake_script() -- Pinkteam.PINKTEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Pinkteam.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(QXXIJ_fake_script)()
-local function EZOXB_fake_script() -- Purpleteam.PURPLETEAMSCRIPT 
+coroutine.wrap(FJWYO_fake_script)()
+local function AMZYAYT_fake_script() -- Purpleteam.PURPLETEAMSCRIPT 
 	local script = Instance.new('Script', Purpleteam)
 
 	local function GetCamPos()
@@ -1157,10 +1157,10 @@ local function EZOXB_fake_script() -- Purpleteam.PURPLETEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Purpleteam.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(EZOXB_fake_script)()
-local function EIIDDJR_fake_script() -- Greenteam.GREENTEAMSCRIPT 
+coroutine.wrap(AMZYAYT_fake_script)()
+local function SVGD_fake_script() -- Greenteam.GREENTEAMSCRIPT 
 	local script = Instance.new('Script', Greenteam)
 
 	local function GetCamPos()
@@ -1182,10 +1182,10 @@ local function EIIDDJR_fake_script() -- Greenteam.GREENTEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Greenteam.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(EIIDDJR_fake_script)()
-local function YPQF_fake_script() -- AutoRe.AUTORESCRIPT 
+coroutine.wrap(SVGD_fake_script)()
+local function VCZHD_fake_script() -- AutoRe.AUTORESCRIPT 
 	local script = Instance.new('Script', AutoRe)
 
 	local value = script.Parent.Parent.ReVal
@@ -1197,10 +1197,10 @@ local function YPQF_fake_script() -- AutoRe.AUTORESCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	AutoRe.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(YPQF_fake_script)()
-local function HOFW_fake_script() -- AutoReOff.AUTORESCRIPTOFF 
+coroutine.wrap(VCZHD_fake_script)()
+local function OZVEG_fake_script() -- AutoReOff.AUTORESCRIPTOFF 
 	local script = Instance.new('Script', AutoReOff)
 
 	local value = script.Parent.Parent.ReVal
@@ -1212,10 +1212,10 @@ local function HOFW_fake_script() -- AutoReOff.AUTORESCRIPTOFF
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	AutoReOff.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(HOFW_fake_script)()
-local function IRWJ_fake_script() -- Crim.CRIMTEAMSCRIPT 
+coroutine.wrap(OZVEG_fake_script)()
+local function ZJKAK_fake_script() -- Crim.CRIMTEAMSCRIPT 
 	local script = Instance.new('Script', Crim)
 
 	local function GetCamPos()
@@ -1237,10 +1237,10 @@ local function IRWJ_fake_script() -- Crim.CRIMTEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Crim.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(IRWJ_fake_script)()
-local function NKTFLPX_fake_script() -- Guard.GUARDTEAMSCRIPT 
+coroutine.wrap(ZJKAK_fake_script)()
+local function QORXVV_fake_script() -- Guard.GUARDTEAMSCRIPT 
 	local script = Instance.new('Script', Guard)
 
 	function Click(mouse)
@@ -1256,10 +1256,10 @@ local function NKTFLPX_fake_script() -- Guard.GUARDTEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Guard.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(NKTFLPX_fake_script)()
-local function RPQL_fake_script() -- Inmate.INMATETEAMSCRIPT 
+coroutine.wrap(QORXVV_fake_script)()
+local function CDNTGWA_fake_script() -- Inmate.INMATETEAMSCRIPT 
 	local script = Instance.new('Script', Inmate)
 
 	function Click(mouse)
@@ -1269,10 +1269,10 @@ local function RPQL_fake_script() -- Inmate.INMATETEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Inmate.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(RPQL_fake_script)()
-local function RZQD_fake_script() -- Neutral.NEUTRALTEAMSCRIPT 
+coroutine.wrap(CDNTGWA_fake_script)()
+local function DSNCZ_fake_script() -- Neutral.NEUTRALTEAMSCRIPT 
 	local script = Instance.new('Script', Neutral)
 
 	function Click(mouse)
@@ -1282,10 +1282,10 @@ local function RZQD_fake_script() -- Neutral.NEUTRALTEAMSCRIPT
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	Neutral.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(RZQD_fake_script)()
-local function JWVX_fake_script() -- Page2.AutoREMain 
+coroutine.wrap(DSNCZ_fake_script)()
+local function WJFAO_fake_script() -- Page2.AutoREMain 
 	local script = Instance.new('LocalScript', Page2)
 
 	local value = script.Parent.ReVal
@@ -1347,18 +1347,18 @@ local function JWVX_fake_script() -- Page2.AutoREMain
 		end
 	end
 end
-coroutine.wrap(JWVX_fake_script)()
-local function USOZ_fake_script() -- Buttons.PageMain 
+coroutine.wrap(WJFAO_fake_script)()
+local function QLYWITI_fake_script() -- Buttons.PageMain 
 	local script = Instance.new('LocalScript', Buttons)
 
-	local buttonframe = script.Parent
-	local nextb = buttonframe.Next
-	local backb = buttonframe.Back
-	local num = buttonframe.PageNum
-	local pages = buttonframe.Parent.Pages
-	local page1 = pages.Page1
-	local page2 = pages.Page2
-	local page3 = pages.Page3
+	local buttonframe = Buttons
+	local nextb = Next
+	local backb = Back
+	local num = PageNum
+	local pages = Pages
+	local page1 = Page1
+	local page2 = Page2
+	local page3 = Page3
 	
 	nextb.MouseButton1Click:Connect(function()
 		if page1.Visible == true then
@@ -1384,11 +1384,51 @@ local function USOZ_fake_script() -- Buttons.PageMain
 		end
 	end)
 end
-coroutine.wrap(USOZ_fake_script)()
-local function WJYYTE_fake_script() -- Main.Dragify 
-	local frame = Main
-	frame.Draggable = true
-	frame.Active = true
-	frame.Selectable = true
+coroutine.wrap(QLYWITI_fake_script)()
+local function DWWG_fake_script() -- Main.Dragify 
+	local script = Instance.new('LocalScript', Main)
+
+	local UIS = game:GetService("UserInputService")
+	local dragSpeed = -math.huge
+	
+	local dragToggle = nil
+	local dragInput = nil
+	local dragStart = nil
+	local dragPos = nil
+	
+	function dragify(Frame)
+		function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        script.Parent.Position = Position
+		end
+		
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+		end)
+		
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+		end)
+		
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(Main)
 end
-coroutine.wrap(WJYYTE_fake_script)()
+coroutine.wrap(DWWG_fake_script)()
