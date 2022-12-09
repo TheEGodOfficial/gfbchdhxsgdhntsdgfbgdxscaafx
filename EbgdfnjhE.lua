@@ -13,7 +13,7 @@ prison_life_ui.IgnoreGuiInset = false
 prison_life_ui.ResetOnSpawn = false
 prison_life_ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 prison_life_ui.Name = "PrisonLifeUI"
-prison_life_ui.Parent = workspace
+prison_life_ui.Parent = game:GetService("CoreGui")
 
 local main = Instance.new("Frame")
 main.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
