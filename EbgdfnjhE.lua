@@ -55,7 +55,7 @@ arrestall.BackgroundColor3 = Color3.new(1, 1, 1)
 arrestall.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
 arrestall.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 arrestall.Visible = true
-arrestall.Name = "Arrest All"
+arrestall.Name = "ArrestAll"
 arrestall.Parent = page1
 
 local uicorner_2 = Instance.new("UICorner")
@@ -66,9 +66,9 @@ local uigradient = Instance.new("UIGradient")
 uigradient.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient.Parent = arrestall
 
-local destroygatebscript = Instance.new("Script")
-destroygatebscript.Name = "DESTROYGATEBSCRIPT"
-destroygatebscript.Parent = arrestall
+local arrestallscript = Instance.new("Script")
+arrestallscript.Name = "ARRESTALLSCRIPT"
+arrestallscript.Parent = arrestall
 
 local weird_mirror = Instance.new("TextButton")
 weird_mirror.Font = Enum.Font.FredokaOne
@@ -609,7 +609,7 @@ cop_kill_aura.BackgroundColor3 = Color3.new(1, 1, 1)
 cop_kill_aura.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
 cop_kill_aura.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 cop_kill_aura.Visible = true
-cop_kill_aura.Name = "CopKillAura"
+cop_kill_aura.Name = "Cop KillAura"
 cop_kill_aura.Parent = page2
 
 local uicorner_23 = Instance.new("UICorner")
@@ -635,7 +635,7 @@ inmate_kill_aura.BackgroundColor3 = Color3.new(1, 1, 1)
 inmate_kill_aura.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
 inmate_kill_aura.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 inmate_kill_aura.Visible = true
-inmate_kill_aura.Name = "InmateKillAura"
+inmate_kill_aura.Name = "InmateKill Aura"
 inmate_kill_aura.Parent = page2
 
 local uicorner_24 = Instance.new("UICorner")
@@ -728,31 +728,411 @@ local fencesscript = Instance.new("Script")
 fencesscript.Name = "FENCESSCRIPT"
 fencesscript.Parent = fences
 
-local find_key_card = Instance.new("TextButton")
-find_key_card.Font = Enum.Font.FredokaOne
-find_key_card.Text = "Find Key Card (Do Not Click Again)"
-find_key_card.TextColor3 = Color3.new(0, 0, 0)
-find_key_card.TextScaled = true
-find_key_card.TextSize = 14
-find_key_card.TextWrapped = true
-find_key_card.BackgroundColor3 = Color3.new(1, 1, 1)
-find_key_card.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
-find_key_card.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-find_key_card.Visible = true
-find_key_card.Name = "FindKeyCard"
-find_key_card.Parent = page2
+local key_card = Instance.new("TextButton")
+key_card.Font = Enum.Font.FredokaOne
+key_card.Text = "Find Key Card"
+key_card.TextColor3 = Color3.new(0, 0, 0)
+key_card.TextScaled = true
+key_card.TextSize = 14
+key_card.TextWrapped = true
+key_card.BackgroundColor3 = Color3.new(1, 1, 1)
+key_card.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
+key_card.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+key_card.Visible = true
+key_card.Name = "Key Card"
+key_card.Parent = page2
 
 local uicorner_28 = Instance.new("UICorner")
 uicorner_28.CornerRadius = UDim.new(0, 5)
-uicorner_28.Parent = find_key_card
+uicorner_28.Parent = key_card
 
 local uigradient_27 = Instance.new("UIGradient")
 uigradient_27.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_27.Parent = find_key_card
+uigradient_27.Parent = key_card
 
 local findkeycardscript = Instance.new("Script")
 findkeycardscript.Name = "FINDKEYCARDSCRIPT"
-findkeycardscript.Parent = find_key_card
+findkeycardscript.Parent = key_card
+
+local tase_all = Instance.new("TextButton")
+tase_all.Font = Enum.Font.FredokaOne
+tase_all.Text = "Tase All"
+tase_all.TextColor3 = Color3.new(0, 0, 0)
+tase_all.TextScaled = true
+tase_all.TextSize = 14
+tase_all.TextWrapped = true
+tase_all.BackgroundColor3 = Color3.new(1, 1, 1)
+tase_all.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
+tase_all.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+tase_all.Visible = true
+tase_all.Name = "Tase All"
+tase_all.Parent = page2
+
+local uicorner_29 = Instance.new("UICorner")
+uicorner_29.CornerRadius = UDim.new(0, 5)
+uicorner_29.Parent = tase_all
+
+local uigradient_28 = Instance.new("UIGradient")
+uigradient_28.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_28.Parent = tase_all
+
+local taseallscript = Instance.new("Script")
+taseallscript.Name = "TASEALLSCRIPT"
+taseallscript.Parent = tase_all
+
+local burst = Instance.new("TextButton")
+burst.Font = Enum.Font.FredokaOne
+burst.Text = "Burst Gun"
+burst.TextColor3 = Color3.new(0, 0, 0)
+burst.TextScaled = true
+burst.TextSize = 14
+burst.TextWrapped = true
+burst.BackgroundColor3 = Color3.new(1, 1, 1)
+burst.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
+burst.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+burst.Visible = true
+burst.Name = "Burst"
+burst.Parent = page2
+
+local uicorner_30 = Instance.new("UICorner")
+uicorner_30.CornerRadius = UDim.new(0, 5)
+uicorner_30.Parent = burst
+
+local uigradient_29 = Instance.new("UIGradient")
+uigradient_29.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_29.Parent = burst
+
+local burstgunscript = Instance.new("Script")
+burstgunscript.Name = "BURSTGUNSCRIPT"
+burstgunscript.Parent = burst
+
+local reload_time = Instance.new("TextButton")
+reload_time.Font = Enum.Font.FredokaOne
+reload_time.Text = "Reload Time"
+reload_time.TextColor3 = Color3.new(0, 0, 0)
+reload_time.TextScaled = true
+reload_time.TextSize = 14
+reload_time.TextWrapped = true
+reload_time.BackgroundColor3 = Color3.new(1, 1, 1)
+reload_time.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
+reload_time.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+reload_time.Visible = true
+reload_time.Name = "Reload Time"
+reload_time.Parent = page2
+
+local uicorner_31 = Instance.new("UICorner")
+uicorner_31.CornerRadius = UDim.new(0, 5)
+uicorner_31.Parent = reload_time
+
+local uigradient_30 = Instance.new("UIGradient")
+uigradient_30.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_30.Parent = reload_time
+
+local reloadtimescript = Instance.new("Script")
+reloadtimescript.Name = "RELOADTIMESCRIPT"
+reloadtimescript.Parent = reload_time
+
+local re_val = Instance.new("BoolValue")
+re_val.Name = "ReVal"
+re_val.Parent = page2
+
+local auto_remain = Instance.new("LocalScript")
+auto_remain.Name = "AutoREMain"
+auto_remain.Parent = page2
+
+local page3 = Instance.new("Frame")
+page3.BackgroundColor3 = Color3.new(1, 1, 1)
+page3.BackgroundTransparency = 1
+page3.Size = UDim2.new(1, 0, 0.989473701, 0)
+page3.Visible = true
+page3.Name = "Page3"
+page3.Parent = pages
+
+local fire_rate = Instance.new("TextButton")
+fire_rate.Font = Enum.Font.FredokaOne
+fire_rate.Text = "Fire Rate"
+fire_rate.TextColor3 = Color3.new(0, 0, 0)
+fire_rate.TextScaled = true
+fire_rate.TextSize = 14
+fire_rate.TextWrapped = true
+fire_rate.BackgroundColor3 = Color3.new(1, 1, 1)
+fire_rate.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
+fire_rate.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+fire_rate.Visible = true
+fire_rate.Name = "Fire Rate"
+fire_rate.Parent = page3
+
+local uicorner_32 = Instance.new("UICorner")
+uicorner_32.CornerRadius = UDim.new(0, 5)
+uicorner_32.Parent = fire_rate
+
+local uigradient_31 = Instance.new("UIGradient")
+uigradient_31.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_31.Parent = fire_rate
+
+local fireratescript = Instance.new("Script")
+fireratescript.Name = "FIRERATESCRIPT"
+fireratescript.Parent = fire_rate
+
+local nexus = Instance.new("TextButton")
+nexus.Font = Enum.Font.FredokaOne
+nexus.Text = "Nexus TP"
+nexus.TextColor3 = Color3.new(0, 0, 0)
+nexus.TextScaled = true
+nexus.TextSize = 14
+nexus.TextWrapped = true
+nexus.BackgroundColor3 = Color3.new(1, 1, 1)
+nexus.Position = UDim2.new(0.353658527, 0, 0.0169093385, 0)
+nexus.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+nexus.Visible = true
+nexus.Name = "Nexus"
+nexus.Parent = page3
+
+local uicorner_33 = Instance.new("UICorner")
+uicorner_33.CornerRadius = UDim.new(0, 5)
+uicorner_33.Parent = nexus
+
+local uigradient_32 = Instance.new("UIGradient")
+uigradient_32.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_32.Parent = nexus
+
+local nexusscript = Instance.new("Script")
+nexusscript.Name = "NEXUSSCRIPT"
+nexusscript.Parent = nexus
+
+local cafe = Instance.new("TextButton")
+cafe.Font = Enum.Font.FredokaOne
+cafe.Text = "Cafe TP"
+cafe.TextColor3 = Color3.new(0, 0, 0)
+cafe.TextScaled = true
+cafe.TextSize = 14
+cafe.TextWrapped = true
+cafe.BackgroundColor3 = Color3.new(1, 1, 1)
+cafe.Position = UDim2.new(0.682926834, 0, 0.0169093385, 0)
+cafe.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+cafe.Visible = true
+cafe.Name = "Cafe"
+cafe.Parent = page3
+
+local uicorner_34 = Instance.new("UICorner")
+uicorner_34.CornerRadius = UDim.new(0, 5)
+uicorner_34.Parent = cafe
+
+local uigradient_33 = Instance.new("UIGradient")
+uigradient_33.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_33.Parent = cafe
+
+local cafescript = Instance.new("Script")
+cafescript.Name = "CAFESCRIPT"
+cafescript.Parent = cafe
+
+local back_nexus = Instance.new("TextButton")
+back_nexus.Font = Enum.Font.FredokaOne
+back_nexus.Text = "Back Nexus TP"
+back_nexus.TextColor3 = Color3.new(0, 0, 0)
+back_nexus.TextScaled = true
+back_nexus.TextSize = 14
+back_nexus.TextWrapped = true
+back_nexus.BackgroundColor3 = Color3.new(1, 1, 1)
+back_nexus.Position = UDim2.new(0.0284552854, 0, 0.155207217, 0)
+back_nexus.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+back_nexus.Visible = true
+back_nexus.Name = "Back Nexus"
+back_nexus.Parent = page3
+
+local uicorner_35 = Instance.new("UICorner")
+uicorner_35.CornerRadius = UDim.new(0, 5)
+uicorner_35.Parent = back_nexus
+
+local uigradient_34 = Instance.new("UIGradient")
+uigradient_34.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_34.Parent = back_nexus
+
+local backnexusscript = Instance.new("Script")
+backnexusscript.Name = "BACKNEXUSSCRIPT"
+backnexusscript.Parent = back_nexus
+
+local yard = Instance.new("TextButton")
+yard.Font = Enum.Font.FredokaOne
+yard.Text = "Yard TP"
+yard.TextColor3 = Color3.new(0, 0, 0)
+yard.TextScaled = true
+yard.TextSize = 14
+yard.TextWrapped = true
+yard.BackgroundColor3 = Color3.new(1, 1, 1)
+yard.Position = UDim2.new(0.353658527, 0, 0.155207217, 0)
+yard.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+yard.Visible = true
+yard.Name = "Yard"
+yard.Parent = page3
+
+local uicorner_36 = Instance.new("UICorner")
+uicorner_36.CornerRadius = UDim.new(0, 5)
+uicorner_36.Parent = yard
+
+local uigradient_35 = Instance.new("UIGradient")
+uigradient_35.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_35.Parent = yard
+
+local yardscript = Instance.new("Script")
+yardscript.Name = "YARDSCRIPT"
+yardscript.Parent = yard
+
+local crim_base = Instance.new("TextButton")
+crim_base.Font = Enum.Font.FredokaOne
+crim_base.Text = "Criminal Base TP"
+crim_base.TextColor3 = Color3.new(0, 0, 0)
+crim_base.TextScaled = true
+crim_base.TextSize = 14
+crim_base.TextWrapped = true
+crim_base.BackgroundColor3 = Color3.new(1, 1, 1)
+crim_base.Position = UDim2.new(0.682926834, 0, 0.155207217, 0)
+crim_base.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+crim_base.Visible = true
+crim_base.Name = "CrimBase"
+crim_base.Parent = page3
+
+local uicorner_37 = Instance.new("UICorner")
+uicorner_37.CornerRadius = UDim.new(0, 5)
+uicorner_37.Parent = crim_base
+
+local uigradient_36 = Instance.new("UIGradient")
+uigradient_36.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_36.Parent = crim_base
+
+local crimbasescript = Instance.new("Script")
+crimbasescript.Name = "CRIMBASESCRIPT"
+crimbasescript.Parent = crim_base
+
+local armory = Instance.new("TextButton")
+armory.Font = Enum.Font.FredokaOne
+armory.Text = "Armory TP"
+armory.TextColor3 = Color3.new(0, 0, 0)
+armory.TextScaled = true
+armory.TextSize = 14
+armory.TextWrapped = true
+armory.BackgroundColor3 = Color3.new(1, 1, 1)
+armory.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
+armory.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+armory.Visible = true
+armory.Name = "Armory"
+armory.Parent = page3
+
+local uicorner_38 = Instance.new("UICorner")
+uicorner_38.CornerRadius = UDim.new(0, 5)
+uicorner_38.Parent = armory
+
+local uigradient_37 = Instance.new("UIGradient")
+uigradient_37.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_37.Parent = armory
+
+local armoryscript = Instance.new("Script")
+armoryscript.Name = "ARMORYSCRIPT"
+armoryscript.Parent = armory
+
+local lunch_room = Instance.new("TextButton")
+lunch_room.Font = Enum.Font.FredokaOne
+lunch_room.Text = "Lunch Room TP"
+lunch_room.TextColor3 = Color3.new(0, 0, 0)
+lunch_room.TextScaled = true
+lunch_room.TextSize = 14
+lunch_room.TextWrapped = true
+lunch_room.BackgroundColor3 = Color3.new(1, 1, 1)
+lunch_room.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
+lunch_room.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+lunch_room.Visible = true
+lunch_room.Name = "Lunch Room"
+lunch_room.Parent = page3
+
+local uicorner_39 = Instance.new("UICorner")
+uicorner_39.CornerRadius = UDim.new(0, 5)
+uicorner_39.Parent = lunch_room
+
+local uigradient_38 = Instance.new("UIGradient")
+uigradient_38.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_38.Parent = lunch_room
+
+local lunchroomscript = Instance.new("Script")
+lunchroomscript.Name = "LUNCHROOMSCRIPT"
+lunchroomscript.Parent = lunch_room
+
+local gate = Instance.new("TextButton")
+gate.Font = Enum.Font.FredokaOne
+gate.Text = "Gate TP"
+gate.TextColor3 = Color3.new(0, 0, 0)
+gate.TextScaled = true
+gate.TextSize = 14
+gate.TextWrapped = true
+gate.BackgroundColor3 = Color3.new(1, 1, 1)
+gate.Position = UDim2.new(0.682926834, 0, 0.293505073, 0)
+gate.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+gate.Visible = true
+gate.Name = "Gate"
+gate.Parent = page3
+
+local uicorner_40 = Instance.new("UICorner")
+uicorner_40.CornerRadius = UDim.new(0, 5)
+uicorner_40.Parent = gate
+
+local uigradient_39 = Instance.new("UIGradient")
+uigradient_39.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_39.Parent = gate
+
+local gatescript = Instance.new("Script")
+gatescript.Name = "GATESCRIPT"
+gatescript.Parent = gate
+
+local tower = Instance.new("TextButton")
+tower.Font = Enum.Font.FredokaOne
+tower.Text = "Tower TP"
+tower.TextColor3 = Color3.new(0, 0, 0)
+tower.TextScaled = true
+tower.TextSize = 14
+tower.TextWrapped = true
+tower.BackgroundColor3 = Color3.new(1, 1, 1)
+tower.Position = UDim2.new(0.0284552854, 0, 0.442441225, 0)
+tower.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+tower.Visible = true
+tower.Name = "Tower"
+tower.Parent = page3
+
+local uicorner_41 = Instance.new("UICorner")
+uicorner_41.CornerRadius = UDim.new(0, 5)
+uicorner_41.Parent = tower
+
+local uigradient_40 = Instance.new("UIGradient")
+uigradient_40.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_40.Parent = tower
+
+local towerscript = Instance.new("Script")
+towerscript.Name = "TOWERSCRIPT"
+towerscript.Parent = tower
+
+local gate_tower = Instance.new("TextButton")
+gate_tower.Font = Enum.Font.FredokaOne
+gate_tower.Text = "Gate Tower TP"
+gate_tower.TextColor3 = Color3.new(0, 0, 0)
+gate_tower.TextScaled = true
+gate_tower.TextSize = 14
+gate_tower.TextWrapped = true
+gate_tower.BackgroundColor3 = Color3.new(1, 1, 1)
+gate_tower.Position = UDim2.new(0.353658527, 0, 0.442441225, 0)
+gate_tower.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+gate_tower.Visible = true
+gate_tower.Name = "GateTower"
+gate_tower.Parent = page3
+
+local uicorner_42 = Instance.new("UICorner")
+uicorner_42.CornerRadius = UDim.new(0, 5)
+uicorner_42.Parent = gate_tower
+
+local uigradient_41 = Instance.new("UIGradient")
+uigradient_41.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_41.Parent = gate_tower
+
+local gatetowerscript = Instance.new("Script")
+gatetowerscript.Name = "GATETOWERSCRIPT"
+gatetowerscript.Parent = gate_tower
 
 local button = Instance.new("TextButton")
 button.Font = Enum.Font.FredokaOne
@@ -765,15 +1145,15 @@ button.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
 button.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button.Visible = true
 button.Name = "Button"
-button.Parent = page2
+button.Parent = page3
 
-local uicorner_29 = Instance.new("UICorner")
-uicorner_29.CornerRadius = UDim.new(0, 5)
-uicorner_29.Parent = button
+local uicorner_43 = Instance.new("UICorner")
+uicorner_43.CornerRadius = UDim.new(0, 5)
+uicorner_43.Parent = button
 
-local uigradient_28 = Instance.new("UIGradient")
-uigradient_28.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_28.Parent = button
+local uigradient_42 = Instance.new("UIGradient")
+uigradient_42.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_42.Parent = button
 
 local button_2 = Instance.new("TextButton")
 button_2.Font = Enum.Font.FredokaOne
@@ -786,15 +1166,15 @@ button_2.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
 button_2.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_2.Visible = true
 button_2.Name = "Button"
-button_2.Parent = page2
+button_2.Parent = page3
 
-local uicorner_30 = Instance.new("UICorner")
-uicorner_30.CornerRadius = UDim.new(0, 5)
-uicorner_30.Parent = button_2
+local uicorner_44 = Instance.new("UICorner")
+uicorner_44.CornerRadius = UDim.new(0, 5)
+uicorner_44.Parent = button_2
 
-local uigradient_29 = Instance.new("UIGradient")
-uigradient_29.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_29.Parent = button_2
+local uigradient_43 = Instance.new("UIGradient")
+uigradient_43.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_43.Parent = button_2
 
 local button_3 = Instance.new("TextButton")
 button_3.Font = Enum.Font.FredokaOne
@@ -807,338 +1187,41 @@ button_3.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
 button_3.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_3.Visible = true
 button_3.Name = "Button"
-button_3.Parent = page2
-
-local uicorner_31 = Instance.new("UICorner")
-uicorner_31.CornerRadius = UDim.new(0, 5)
-uicorner_31.Parent = button_3
-
-local uigradient_30 = Instance.new("UIGradient")
-uigradient_30.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_30.Parent = button_3
-
-local page3 = Instance.new("Frame")
-page3.BackgroundColor3 = Color3.new(1, 1, 1)
-page3.BackgroundTransparency = 1
-page3.Size = UDim2.new(1, 0, 0.989473701, 0)
-page3.Visible = false
-page3.Name = "Page3"
-page3.Parent = pages
-
-local button_4 = Instance.new("TextButton")
-button_4.Font = Enum.Font.FredokaOne
-button_4.TextColor3 = Color3.new(0, 0, 0)
-button_4.TextScaled = true
-button_4.TextSize = 14
-button_4.TextWrapped = true
-button_4.BackgroundColor3 = Color3.new(1, 1, 1)
-button_4.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
-button_4.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_4.Visible = true
-button_4.Name = "Button"
-button_4.Parent = page3
-
-local uicorner_32 = Instance.new("UICorner")
-uicorner_32.CornerRadius = UDim.new(0, 5)
-uicorner_32.Parent = button_4
-
-local uigradient_31 = Instance.new("UIGradient")
-uigradient_31.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_31.Parent = button_4
-
-local button_5 = Instance.new("TextButton")
-button_5.Font = Enum.Font.FredokaOne
-button_5.TextColor3 = Color3.new(0, 0, 0)
-button_5.TextScaled = true
-button_5.TextSize = 14
-button_5.TextWrapped = true
-button_5.BackgroundColor3 = Color3.new(1, 1, 1)
-button_5.Position = UDim2.new(0.353658527, 0, 0.0169093385, 0)
-button_5.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_5.Visible = true
-button_5.Name = "Button"
-button_5.Parent = page3
-
-local uicorner_33 = Instance.new("UICorner")
-uicorner_33.CornerRadius = UDim.new(0, 5)
-uicorner_33.Parent = button_5
-
-local uigradient_32 = Instance.new("UIGradient")
-uigradient_32.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_32.Parent = button_5
-
-local button_6 = Instance.new("TextButton")
-button_6.Font = Enum.Font.FredokaOne
-button_6.TextColor3 = Color3.new(0, 0, 0)
-button_6.TextScaled = true
-button_6.TextSize = 14
-button_6.TextWrapped = true
-button_6.BackgroundColor3 = Color3.new(1, 1, 1)
-button_6.Position = UDim2.new(0.682926834, 0, 0.0169093385, 0)
-button_6.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_6.Visible = true
-button_6.Name = "Button"
-button_6.Parent = page3
-
-local uicorner_34 = Instance.new("UICorner")
-uicorner_34.CornerRadius = UDim.new(0, 5)
-uicorner_34.Parent = button_6
-
-local uigradient_33 = Instance.new("UIGradient")
-uigradient_33.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_33.Parent = button_6
-
-local button_7 = Instance.new("TextButton")
-button_7.Font = Enum.Font.FredokaOne
-button_7.TextColor3 = Color3.new(0, 0, 0)
-button_7.TextScaled = true
-button_7.TextSize = 14
-button_7.TextWrapped = true
-button_7.BackgroundColor3 = Color3.new(1, 1, 1)
-button_7.Position = UDim2.new(0.0284552854, 0, 0.155207217, 0)
-button_7.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_7.Visible = true
-button_7.Name = "Button"
-button_7.Parent = page3
-
-local uicorner_35 = Instance.new("UICorner")
-uicorner_35.CornerRadius = UDim.new(0, 5)
-uicorner_35.Parent = button_7
-
-local uigradient_34 = Instance.new("UIGradient")
-uigradient_34.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_34.Parent = button_7
-
-local button_8 = Instance.new("TextButton")
-button_8.Font = Enum.Font.FredokaOne
-button_8.TextColor3 = Color3.new(0, 0, 0)
-button_8.TextScaled = true
-button_8.TextSize = 14
-button_8.TextWrapped = true
-button_8.BackgroundColor3 = Color3.new(1, 1, 1)
-button_8.Position = UDim2.new(0.353658527, 0, 0.155207217, 0)
-button_8.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_8.Visible = true
-button_8.Name = "Button"
-button_8.Parent = page3
-
-local uicorner_36 = Instance.new("UICorner")
-uicorner_36.CornerRadius = UDim.new(0, 5)
-uicorner_36.Parent = button_8
-
-local uigradient_35 = Instance.new("UIGradient")
-uigradient_35.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_35.Parent = button_8
-
-local button_9 = Instance.new("TextButton")
-button_9.Font = Enum.Font.FredokaOne
-button_9.TextColor3 = Color3.new(0, 0, 0)
-button_9.TextScaled = true
-button_9.TextSize = 14
-button_9.TextWrapped = true
-button_9.BackgroundColor3 = Color3.new(1, 1, 1)
-button_9.Position = UDim2.new(0.682926834, 0, 0.155207217, 0)
-button_9.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_9.Visible = true
-button_9.Name = "Button"
-button_9.Parent = page3
-
-local uicorner_37 = Instance.new("UICorner")
-uicorner_37.CornerRadius = UDim.new(0, 5)
-uicorner_37.Parent = button_9
-
-local uigradient_36 = Instance.new("UIGradient")
-uigradient_36.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_36.Parent = button_9
-
-local button_10 = Instance.new("TextButton")
-button_10.Font = Enum.Font.FredokaOne
-button_10.TextColor3 = Color3.new(0, 0, 0)
-button_10.TextScaled = true
-button_10.TextSize = 14
-button_10.TextWrapped = true
-button_10.BackgroundColor3 = Color3.new(1, 1, 1)
-button_10.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
-button_10.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_10.Visible = true
-button_10.Name = "Button"
-button_10.Parent = page3
-
-local uicorner_38 = Instance.new("UICorner")
-uicorner_38.CornerRadius = UDim.new(0, 5)
-uicorner_38.Parent = button_10
-
-local uigradient_37 = Instance.new("UIGradient")
-uigradient_37.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_37.Parent = button_10
-
-local button_11 = Instance.new("TextButton")
-button_11.Font = Enum.Font.FredokaOne
-button_11.TextColor3 = Color3.new(0, 0, 0)
-button_11.TextScaled = true
-button_11.TextSize = 14
-button_11.TextWrapped = true
-button_11.BackgroundColor3 = Color3.new(1, 1, 1)
-button_11.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
-button_11.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_11.Visible = true
-button_11.Name = "Button"
-button_11.Parent = page3
-
-local uicorner_39 = Instance.new("UICorner")
-uicorner_39.CornerRadius = UDim.new(0, 5)
-uicorner_39.Parent = button_11
-
-local uigradient_38 = Instance.new("UIGradient")
-uigradient_38.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_38.Parent = button_11
-
-local button_12 = Instance.new("TextButton")
-button_12.Font = Enum.Font.FredokaOne
-button_12.TextColor3 = Color3.new(0, 0, 0)
-button_12.TextScaled = true
-button_12.TextSize = 14
-button_12.TextWrapped = true
-button_12.BackgroundColor3 = Color3.new(1, 1, 1)
-button_12.Position = UDim2.new(0.682926834, 0, 0.293505073, 0)
-button_12.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_12.Visible = true
-button_12.Name = "Button"
-button_12.Parent = page3
-
-local uicorner_40 = Instance.new("UICorner")
-uicorner_40.CornerRadius = UDim.new(0, 5)
-uicorner_40.Parent = button_12
-
-local uigradient_39 = Instance.new("UIGradient")
-uigradient_39.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_39.Parent = button_12
-
-local button_13 = Instance.new("TextButton")
-button_13.Font = Enum.Font.FredokaOne
-button_13.TextColor3 = Color3.new(0, 0, 0)
-button_13.TextScaled = true
-button_13.TextSize = 14
-button_13.TextWrapped = true
-button_13.BackgroundColor3 = Color3.new(1, 1, 1)
-button_13.Position = UDim2.new(0.0284552854, 0, 0.442441225, 0)
-button_13.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_13.Visible = true
-button_13.Name = "Button"
-button_13.Parent = page3
-
-local uicorner_41 = Instance.new("UICorner")
-uicorner_41.CornerRadius = UDim.new(0, 5)
-uicorner_41.Parent = button_13
-
-local uigradient_40 = Instance.new("UIGradient")
-uigradient_40.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_40.Parent = button_13
-
-local button_14 = Instance.new("TextButton")
-button_14.Font = Enum.Font.FredokaOne
-button_14.TextColor3 = Color3.new(0, 0, 0)
-button_14.TextScaled = true
-button_14.TextSize = 14
-button_14.TextWrapped = true
-button_14.BackgroundColor3 = Color3.new(1, 1, 1)
-button_14.Position = UDim2.new(0.353658527, 0, 0.442441225, 0)
-button_14.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_14.Visible = true
-button_14.Name = "Button"
-button_14.Parent = page3
-
-local uicorner_42 = Instance.new("UICorner")
-uicorner_42.CornerRadius = UDim.new(0, 5)
-uicorner_42.Parent = button_14
-
-local uigradient_41 = Instance.new("UIGradient")
-uigradient_41.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_41.Parent = button_14
-
-local button_15 = Instance.new("TextButton")
-button_15.Font = Enum.Font.FredokaOne
-button_15.TextColor3 = Color3.new(0, 0, 0)
-button_15.TextScaled = true
-button_15.TextSize = 14
-button_15.TextWrapped = true
-button_15.BackgroundColor3 = Color3.new(1, 1, 1)
-button_15.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
-button_15.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_15.Visible = true
-button_15.Name = "Button"
-button_15.Parent = page3
-
-local uicorner_43 = Instance.new("UICorner")
-uicorner_43.CornerRadius = UDim.new(0, 5)
-uicorner_43.Parent = button_15
-
-local uigradient_42 = Instance.new("UIGradient")
-uigradient_42.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_42.Parent = button_15
-
-local button_16 = Instance.new("TextButton")
-button_16.Font = Enum.Font.FredokaOne
-button_16.TextColor3 = Color3.new(0, 0, 0)
-button_16.TextScaled = true
-button_16.TextSize = 14
-button_16.TextWrapped = true
-button_16.BackgroundColor3 = Color3.new(1, 1, 1)
-button_16.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
-button_16.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_16.Visible = true
-button_16.Name = "Button"
-button_16.Parent = page3
-
-local uicorner_44 = Instance.new("UICorner")
-uicorner_44.CornerRadius = UDim.new(0, 5)
-uicorner_44.Parent = button_16
-
-local uigradient_43 = Instance.new("UIGradient")
-uigradient_43.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_43.Parent = button_16
-
-local button_17 = Instance.new("TextButton")
-button_17.Font = Enum.Font.FredokaOne
-button_17.TextColor3 = Color3.new(0, 0, 0)
-button_17.TextScaled = true
-button_17.TextSize = 14
-button_17.TextWrapped = true
-button_17.BackgroundColor3 = Color3.new(1, 1, 1)
-button_17.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
-button_17.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_17.Visible = true
-button_17.Name = "Button"
-button_17.Parent = page3
+button_3.Parent = page3
 
 local uicorner_45 = Instance.new("UICorner")
 uicorner_45.CornerRadius = UDim.new(0, 5)
-uicorner_45.Parent = button_17
+uicorner_45.Parent = button_3
 
 local uigradient_44 = Instance.new("UIGradient")
 uigradient_44.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_44.Parent = button_17
+uigradient_44.Parent = button_3
 
-local button_18 = Instance.new("TextButton")
-button_18.Font = Enum.Font.FredokaOne
-button_18.TextColor3 = Color3.new(0, 0, 0)
-button_18.TextScaled = true
-button_18.TextSize = 14
-button_18.TextWrapped = true
-button_18.BackgroundColor3 = Color3.new(1, 1, 1)
-button_18.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
-button_18.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_18.Visible = true
-button_18.Name = "Button"
-button_18.Parent = page3
+local sewer = Instance.new("TextButton")
+sewer.Font = Enum.Font.FredokaOne
+sewer.Text = "Sewer TP"
+sewer.TextColor3 = Color3.new(0, 0, 0)
+sewer.TextScaled = true
+sewer.TextSize = 14
+sewer.TextWrapped = true
+sewer.BackgroundColor3 = Color3.new(1, 1, 1)
+sewer.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
+sewer.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+sewer.Visible = true
+sewer.Name = "Sewer"
+sewer.Parent = page3
 
 local uicorner_46 = Instance.new("UICorner")
 uicorner_46.CornerRadius = UDim.new(0, 5)
-uicorner_46.Parent = button_18
+uicorner_46.Parent = sewer
 
 local uigradient_45 = Instance.new("UIGradient")
 uigradient_45.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_45.Parent = button_18
+uigradient_45.Parent = sewer
+
+local gatescript_2 = Instance.new("Script")
+gatescript_2.Name = "GATESCRIPT"
+gatescript_2.Parent = sewer
 
 local buttons = Instance.new("Frame")
 buttons.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1247,9 +1330,9 @@ local modules = {}
 
 --// Scripts
 
--- DESTROYGATEBSCRIPT
+-- ARRESTALLSCRIPT
 task.spawn(function()
-	local script = destroygatebscript
+	local script = arrestallscript
 
 	local oldreq = require
 	local function require(target)
@@ -1720,7 +1803,7 @@ task.spawn(function()
 	local value = false
 	
 	function Click(mouse)
-		
+	
 		if value == false then
 			value = true
 			script.Parent.Text = "Auto RE: True"
@@ -1728,7 +1811,7 @@ task.spawn(function()
 			value = false
 			script.Parent.Text = "Auto RE: False"
 		end
-		
+	
 	end
 	
 	
@@ -1805,22 +1888,22 @@ task.spawn(function()
 	end
 
 	function Click(mouse)
-		
-		local e = 0
-		local tr = workspace.Remote.TeamEvent
-		local ir = workspace.Remote.ItemHandler
-		local re = game:GetService("ReplicatedStorage").ReloadEvent
-		local me = game.Players.LocalPlayer
+	
+		e = 0
+		tr = workspace.Remote.TeamEvent
+		ir = workspace.Remote.ItemHandler
+		re = game:GetService("ReplicatedStorage").ReloadEvent
+		me = game.Players.LocalPlayer
 	
 		ir:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
 		tr:FireServer('Medium stone grey')
 		wait(1)
-		local gun = me.Backpack["Remington 870"]
-		local args = {{},gun}
+		gun = me.Backpack["Remington 870"]
+		args = {{},gun}
 		for i,v in next, game.Players:GetPlayers() do
 			if v.Character ~= nil then
 				if v.Character:FindFirstChild('Head') then
-					local tab = {
+					tab = {
 						["RayObject"] = Ray.new(),
 						["Distance"] = 0,
 						["Cframe"] = CFrame.new(),
@@ -1975,7 +2058,7 @@ task.spawn(function()
 			copska = true
 	
 			_G.GuardKillAura = true
-			
+	
 			script.Parent.Text = "Cop Kill Aura: True"
 	
 			local Players = game:GetService("Players")
@@ -1994,7 +2077,7 @@ task.spawn(function()
 			end
 		else
 			copska = false
-			
+	
 			script.Parent.Text = "Cop Kill Aura: False"
 	
 			_G.GuardKillAura = false
@@ -2024,7 +2107,7 @@ task.spawn(function()
 	
 		if not inmateka then
 			inmateka = true
-			
+	
 			script.Parent.Text = "Inmate Kill Aura: True"
 	
 			_G.InmateKillAura = true
@@ -2045,7 +2128,7 @@ task.spawn(function()
 			end
 		else
 			inmateka = false
-			
+	
 			script.Parent.Text = "Inmate Kill Aura: False"
 	
 			_G.InmateKillAura = false
@@ -2075,7 +2158,7 @@ task.spawn(function()
 	
 		if not crimeka then
 			crimeka = true
-			
+	
 			script.Parent.Text = "Criminal Kill Aura: True"
 	
 			_G.CriminalKillAura = true
@@ -2096,7 +2179,7 @@ task.spawn(function()
 			end
 		else
 			crimeka = false
-			
+	
 			script.Parent.Text = "Criminal Kill Aura: False"
 	
 			_G.CriminalKillAura = false
@@ -2127,13 +2210,13 @@ task.spawn(function()
 		if not doortoggle then doortoggle = true
 	
 			game.workspace.Doors.Parent = game.Lighting
-			
+	
 			script.Parent.Text = "Doors: False"
 	
 		else doortoggle = false 
 	
 			game.lighting.Doors.Parent = game.Workspace
-			
+	
 			script.Parent.Text = "Doors: True"
 	
 		end
@@ -2161,15 +2244,15 @@ task.spawn(function()
 	function Click(mouse)
 	
 		if not fencestoggle then fencestoggle = true
-			
+	
 			game.workspace.Prison_Fences.Parent = game.lighting
-			
+	
 			script.Parent.Text = "Fences: False"
 	
 		else fencestoggle = false 
 	
 			game.lighting.Prison_Fences.Parent = game.workspace
-			
+	
 			script.Parent.Text = "Fences: True"
 	
 		end
@@ -2196,6 +2279,447 @@ task.spawn(function()
 	
 		local Key = game.Workspace.Prison_ITEMS.single:WaitForChild("Key card") -- WaitForChild is basically just waiting until a keycard comes and then grabbing it so do not click again
 		game.Workspace.Remote.ItemHandler:InvokeServer(Key.ITEMPICKUP)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- TASEALLSCRIPT
+task.spawn(function()
+	local script = taseallscript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	local function GetOrientation()
+		local PosX, PosY, PosZ = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame:ToOrientation()
+		return CFrame.new(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.X, game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.Y, game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.Z) * CFrame.fromOrientation(0, PosY, 0)
+	end
+	
+	function TaserAll()
+		local events = {}
+		local gun = nil
+		local savedteam = game.Players.LocalPlayer.TeamColor.Name
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v ~= game.Players.LocalPlayer then
+				events[#events + 1] = {
+					Hit = v.Character:FindFirstChildOfClass("Part"),
+					Cframe = CFrame.new(),
+					RayObject = Ray.new(Vector3.new(), Vector3.new()),
+					Distance = 0
+				}
+			end
+		end
+		if not game.Players.LocalPlayer.Character:FindFirstChild("Taser") and not game.Players.LocalPlayer:FindFirstChild("Backpack"):FindFirstChild("Taser") then
+			savedteam = game.Players.LocalPlayer.TeamColor.Name
+			local savedcf = GetOrientation()
+			local camcf = workspace.CurrentCamera.CFrame
+			workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new("Bright blue").Name)
+			workspace.CurrentCamera.CFrame = camcf
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+		end
+		gun = game.Players.LocalPlayer.Character:FindFirstChild("Taser") or game.Players.LocalPlayer.Backpack:FindFirstChild("Taser")
+		game.ReplicatedStorage.ShootEvent:FireServer(events, gun)
+		local savedcf = GetOrientation()
+		local camcf = workspace.CurrentCamera.CFrame
+		workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new(savedteam).Name)
+		workspace.CurrentCamera.CFrame = camcf
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+	end
+	
+	function Click(mouse)
+	
+		TaserAll()
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- BURSTGUNSCRIPT
+task.spawn(function()
+	local script = burstgunscript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		local Gun = require(game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").GunStates)
+		Gun["Bullets"] = 30
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- RELOADTIMESCRIPT
+task.spawn(function()
+	local script = reloadtimescript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		local Gun = require(game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").GunStates)
+		Gun["ReloadTime"] = 0.1
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- AutoREMain
+task.spawn(function()
+	local script = auto_remain
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	local value = script.Parent.ReVal
+	
+	local function GetOrientation()
+		local PosX, PosY, PosZ = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame:ToOrientation()
+		return CFrame.new(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.X, game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.Y, game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame.Z) * CFrame.fromOrientation(0, PosY, 0)
+	end
+	
+	local function GetCamPos()
+		return workspace.CurrentCamera.CFrame
+	end
+	
+	while wait() do
+		if value.Value == true then
+			if game.Players.LocalPlayer.Character.Humanoid.Health < 1 then
+				if game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("Home").hud.Topbar.titleBar.Title.Text ~= "Lights out" then
+					if game.Players.LocalPlayer.TeamColor.Name ~= "Medium stone grey" then
+						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+							local savedcf = GetOrientation()
+							local savedcamcf = GetCamPos()
+							workspace.Remote.loadchar:InvokeServer()
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+							workspace.CurrentCamera.CFrame = savedcamcf
+						end
+					else
+						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+							local savedcf = GetOrientation()
+							local savedcamcf = GetCamPos()
+							workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new("Bright orange").Name)
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+							workspace.CurrentCamera.CFrame = savedcamcf
+							workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+						end
+					end
+				else
+					if game.Players.LocalPlayer.TeamColor.Name ~= "Medium stone grey" then
+						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+							local savedcf = GetOrientation()
+							local savedcamcf = GetCamPos()
+							workspace.Remote.loadchar:InvokeServer()
+							wait(.075)
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+							workspace.CurrentCamera.CFrame = savedcamcf
+						end
+					else
+						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+							local savedcf = GetOrientation()
+							local savedcamcf = GetCamPos()
+							workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new("Bright orange").Name)
+							wait(.075)
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+							workspace.CurrentCamera.CFrame = savedcamcf
+							workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+						end
+					end
+				end
+			end
+		end
+	end
+end)
+
+-- FIRERATESCRIPT
+task.spawn(function()
+	local script = fireratescript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		local Req = require(game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Tool").GunStates)
+		Req["FireRate"] = 0.0025
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- NEXUSSCRIPT
+task.spawn(function()
+	local script = nexusscript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(888, 100, 2388)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- CAFESCRIPT
+task.spawn(function()
+	local script = cafescript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(877, 100, 2256)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- BACKNEXUSSCRIPT
+task.spawn(function()
+	local script = backnexusscript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(982, 100, 2334)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- YARDSCRIPT
+task.spawn(function()
+	local script = yardscript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(791, 98, 2498)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- CRIMBASESCRIPT
+task.spawn(function()
+	local script = crimbasescript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-943, 95, 2055)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- ARMORYSCRIPT
+task.spawn(function()
+	local script = armoryscript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(789, 100, 2260)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- LUNCHROOMSCRIPT
+task.spawn(function()
+	local script = lunchroomscript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(905, 100, 2226)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- GATESCRIPT
+task.spawn(function()
+	local script = gatescript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(505, 103, 2250)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- TOWERSCRIPT
+task.spawn(function()
+	local script = towerscript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(822, 131, 2588)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- GATETOWERSCRIPT
+task.spawn(function()
+	local script = gatetowerscript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(502, 126, 2306)
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- GATESCRIPT
+task.spawn(function()
+	local script = gatescript_2
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(916, 79, 2311)
 	
 	end
 	
