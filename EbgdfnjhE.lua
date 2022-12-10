@@ -3198,26 +3198,13 @@ local dragify = Instance.new("LocalScript")
 dragify.Name = "Dragify"
 dragify.Parent = main
 
---//Modules
-
-local modules = {}
-
 --// Scripts
 
 -- ARRESTALLSCRIPT
+
 task.spawn(function()
-	local script = arrestallscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
 	function Click(mouse)
-	
+
 		local Player = game.Players.LocalPlayer
 		local cpos = Player.Character.HumanoidRootPart.CFrame
 		for i, v in pairs(game.Teams.Criminals:GetPlayers()) do
@@ -3231,176 +3218,114 @@ task.spawn(function()
 				until i == 0
 			end
 		end
-	
+
 	end
-	
-	
-	script.Parent.MouseButton1Down:Connect(Click)
+
+
+	arrestall.MouseButton1Down:Connect(Click)
 end)
+
 
 -- MIRRORSCRIPT
 task.spawn(function()
-	local script = mirrorscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
 	function Click(mouse)
-	
-	local copy = game.ReplicatedStorage.Tools["Extendo mirror"]:Clone()
-	
-	copy.Parent = game.Players.LocalPlayer.Backpack
-	
+
+		local copy = game.ReplicatedStorage.Tools["Extendo mirror"]:Clone()
+
+		copy.Parent = game.Players.LocalPlayer.Backpack
+
 	end
-	
-	
-	script.Parent.MouseButton1Down:Connect(Click)
-	
+
+
+	weird_mirror.MouseButton1Down:Connect(Click)
 end)
+	
 
 -- WEAPONSSCRIPT
+
 task.spawn(function()
-	local script = weaponsscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
 	function Click(mouse)
-	
-	local weapons = {"Crude Knife", "Hammer"}
-	for i, v in pairs(game.Workspace["Prison_ITEMS"].single:GetChildren()) do
-	for j, k in pairs(weapons) do
-	if v.Name == k then
-	v:MoveTo(game.Players.LocalPlayer.Character.Torso.Position)
+
+		local weapons = {"Crude Knife", "Hammer"}
+		for i, v in pairs(game.Workspace["Prison_ITEMS"].single:GetChildren()) do
+			for j, k in pairs(weapons) do
+				if v.Name == k then
+					v:MoveTo(game.Players.LocalPlayer.Character.Torso.Position)
+				end
+			end
+		end
+
 	end
-	end
-	end
-	
-	end
-	
-	
-	script.Parent.MouseButton1Down:Connect(Click)
-	
+
+
+	weapons.MouseButton1Down:Connect(Click)
 end)
+	
 
 -- REMMINGTONSCRIPT
+
 task.spawn(function()
-	local script = remmingtonscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
 	function Click(mouse)
-	
-	local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["Remington 870"].ITEMPICKUP
-	local Event = game:GetService("Workspace").Remote.ItemHandler
-	Event:InvokeServer(A_1)
-	
+
+		local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["Remington 870"].ITEMPICKUP
+		local Event = game:GetService("Workspace").Remote.ItemHandler
+		Event:InvokeServer(A_1)
+
 	end
-	
-	
-	script.Parent.MouseButton1Down:Connect(Click)
-	
+
+
+	remmington.MouseButton1Down:Connect(Click)
 end)
+	
 
 -- AK47SCRIPT
+
 task.spawn(function()
-	local script = ak47_script
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
 	function Click(mouse)
-	
-	local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
-	local Event = game:GetService("Workspace").Remote.ItemHandler
-	Event:InvokeServer(A_1)
-	
+
+		local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
+		local Event = game:GetService("Workspace").Remote.ItemHandler
+		Event:InvokeServer(A_1)
+
 	end
-	
-	
-	script.Parent.MouseButton1Down:Connect(Click)
-	
+
+
+	ak47.MouseButton1Down:Connect(Click)
 end)
+	
 
 -- INFAMMOSCRIPT
+
 task.spawn(function()
-	local script = infammoscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
 	function Click(mouse)
-	
-	local gun = require(game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").GunStates)
-	gun.MaxAmmo = 124124124124123132
-	
+
+		local gun = require(game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").GunStates)
+		gun["MaxAmmo"] = 124124124124123132
+
 	end
-	
-	
-	script.Parent.MouseButton1Down:Connect(Click)
+
+
+	infammo.MouseButton1Down:Connect(Click)
 end)
 
 -- M9SCRIPT
+
 task.spawn(function()
-	local script = m9_script
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
 	function Click(mouse)
-	
-	local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["M9"].ITEMPICKUP
-	local Event = game:GetService("Workspace").Remote.ItemHandler
-	Event:InvokeServer(A_1)
-	
+
+		local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["M9"].ITEMPICKUP
+		local Event = game:GetService("Workspace").Remote.ItemHandler
+		Event:InvokeServer(A_1)
+
 	end
-	
-	
-	script.Parent.MouseButton1Down:Connect(Click)
+
+
+	m9.MouseButton1Down:Connect(Click)
 end)
 
 -- WHITETEAMSCRIPT
-task.spawn(function()
-	local script = whiteteamscript
 
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
+task.spawn(function()
 
 	local function GetCamPos()
 		return workspace.CurrentCamera.CFrame
@@ -3421,20 +3346,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	whiteteam.MouseButton1Down:Connect(Click)
 end)
 
 -- BLACKTEAMSCRIPT
 task.spawn(function()
-	local script = blackteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetCamPos()
 		return workspace.CurrentCamera.CFrame
@@ -3455,20 +3371,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	blackteam.MouseButton1Down:Connect(Click)
 end)
 
 -- BLUETEAMSCRIPT
 task.spawn(function()
-	local script = blueteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetCamPos()
 		return workspace.CurrentCamera.CFrame
@@ -3489,20 +3396,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	blueteam.MouseButton1Down:Connect(Click)
 end)
 
 -- REDTEAMSCRIPT
 task.spawn(function()
-	local script = redteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetCamPos()
 		return workspace.CurrentCamera.CFrame
@@ -3523,20 +3421,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	redteam.MouseButton1Down:Connect(Click)
 end)
 
 -- YELLOWTEAMSCRIPT
 task.spawn(function()
-	local script = yellowteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetCamPos()
 		return workspace.CurrentCamera.CFrame
@@ -3557,20 +3446,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	yellowteam.MouseButton1Down:Connect(Click)
 end)
 
 -- PINKTEAMSCRIPT
 task.spawn(function()
-	local script = pinkteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetCamPos()
 		return workspace.CurrentCamera.CFrame
@@ -3591,20 +3471,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	pinkteam.MouseButton1Down:Connect(Click)
 end)
 
 -- PURPLETEAMSCRIPT
 task.spawn(function()
-	local script = purpleteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetCamPos()
 		return workspace.CurrentCamera.CFrame
@@ -3625,20 +3496,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	purpleteam.MouseButton1Down:Connect(Click)
 end)
 
 -- GREENTEAMSCRIPT
 task.spawn(function()
-	local script = greenteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetCamPos()
 		return workspace.CurrentCamera.CFrame
@@ -3659,20 +3521,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	greenteam.MouseButton1Down:Connect(Click)
 end)
 
 -- AUTORESCRIPT
 task.spawn(function()
-	local script = autorescript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local value = false
 	
@@ -3689,7 +3542,7 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	auto_re.MouseButton1Down:Connect(Click)
 	
 	local function GetOrientation()
 		local PosX, PosY, PosZ = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame:ToOrientation()
@@ -3751,15 +3604,6 @@ end)
 
 -- KILLALLSCRIPT
 task.spawn(function()
-	local script = killallscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetOrientation()
 		local PosX, PosY, PosZ = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame:ToOrientation()
@@ -3813,20 +3657,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	kill_all.MouseButton1Down:Connect(Click)
 end)
 
 -- CRIMTEAMSCRIPT
 task.spawn(function()
-	local script = crimteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetCamPos()
 		return workspace.CurrentCamera.CFrame
@@ -3847,20 +3682,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	crim.MouseButton1Down:Connect(Click)
 end)
 
 -- GUARDTEAMSCRIPT
 task.spawn(function()
-	local script = guardteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -3875,20 +3701,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	guard.MouseButton1Down:Connect(Click)
 end)
 
 -- INMATETEAMSCRIPT
 task.spawn(function()
-	local script = inmateteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -3897,20 +3714,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	inmate.MouseButton1Down:Connect(Click)
 end)
 
 -- NEUTRALTEAMSCRIPT
 task.spawn(function()
-	local script = neutralteamscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -3919,20 +3727,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	neutral.MouseButton1Down:Connect(Click)
 end)
 
 -- COPKILLAURASCRIPT
 task.spawn(function()
-	local script = copkillaurascript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local copska = false
 	
@@ -3970,20 +3769,12 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	cop_kill_aura.MouseButton1Down:Connect(Click)
 end)
 
 -- INMATEKILLAURASCRIPT
 task.spawn(function()
-	local script = inmatekillaurascript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
+	
 
 	local inmateka = false
 	
@@ -4021,20 +3812,12 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	inmate_kill_aura.MouseButton1Down:Connect(Click)
 end)
 
 -- CRIMINALKILLAURASCRIPT
 task.spawn(function()
-	local script = criminalkillaurascript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
+	
 
 	local crimeka = false
 	
@@ -4072,20 +3855,12 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	criminal_kill_aura.MouseButton1Down:Connect(Click)
 end)
 
 -- DOORSSCRIPT
 task.spawn(function()
-	local script = doorsscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
+	
 
 	local doortoggle = false
 	
@@ -4108,20 +3883,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	doors.MouseButton1Down:Connect(Click)
 end)
 
 -- FENCESSCRIPT
 task.spawn(function()
-	local script = fencesscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local fencestoggle = false
 	
@@ -4144,20 +3910,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	fences.MouseButton1Down:Connect(Click)
 end)
 
 -- FINDKEYCARDSCRIPT
 task.spawn(function()
-	local script = findkeycardscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4167,20 +3924,12 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	key_card.MouseButton1Down:Connect(Click)
 end)
 
 -- TASEALLSCRIPT
 task.spawn(function()
-	local script = taseallscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
+	
 
 	local function GetOrientation()
 		local PosX, PosY, PosZ = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame:ToOrientation()
@@ -4225,20 +3974,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	tase_all.MouseButton1Down:Connect(Click)
 end)
 
 -- BURSTGUNSCRIPT
 task.spawn(function()
-	local script = burstgunscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4248,20 +3988,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	burst.MouseButton1Down:Connect(Click)
 end)
 
 -- RELOADTIMESCRIPT
 task.spawn(function()
-	local script = reloadtimescript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4271,20 +4002,12 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	reload_time.MouseButton1Down:Connect(Click)
 end)
 
 -- FIRERATESCRIPT
 task.spawn(function()
-	local script = fireratescript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
+	
 
 	function Click(mouse)
 	
@@ -4294,20 +4017,12 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	fire_rate.MouseButton1Down:Connect(Click)
 end)
 
 -- NEXUSSCRIPT
 task.spawn(function()
-	local script = nexusscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
+	
 
 	function Click(mouse)
 	
@@ -4316,20 +4031,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	nexus.MouseButton1Down:Connect(Click)
 end)
 
 -- CAFESCRIPT
 task.spawn(function()
-	local script = cafescript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4338,20 +4044,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	cafe.MouseButton1Down:Connect(Click)
 end)
 
 -- BACKNEXUSSCRIPT
 task.spawn(function()
-	local script = backnexusscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4360,20 +4057,12 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	back_nexus.MouseButton1Down:Connect(Click)
 end)
 
 -- YARDSCRIPT
 task.spawn(function()
-	local script = yardscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
+	
 
 	function Click(mouse)
 	
@@ -4382,20 +4071,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	yard.MouseButton1Down:Connect(Click)
 end)
 
 -- CRIMBASESCRIPT
 task.spawn(function()
-	local script = crimbasescript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4404,20 +4084,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	crim_base.MouseButton1Down:Connect(Click)
 end)
 
 -- ARMORYSCRIPT
 task.spawn(function()
-	local script = armoryscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4426,20 +4097,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	armory.MouseButton1Down:Connect(Click)
 end)
 
 -- LUNCHROOMSCRIPT
 task.spawn(function()
-	local script = lunchroomscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4448,20 +4110,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	lunch_room.MouseButton1Down:Connect(Click)
 end)
 
 -- GATESCRIPT
 task.spawn(function()
-	local script = gatescript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4470,20 +4123,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	gate.MouseButton1Down:Connect(Click)
 end)
 
 -- TOWERSCRIPT
 task.spawn(function()
-	local script = towerscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4492,20 +4136,12 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	tower.MouseButton1Down:Connect(Click)
 end)
 
 -- GATETOWERSCRIPT
 task.spawn(function()
-	local script = gatetowerscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
+	
 
 	function Click(mouse)
 	
@@ -4514,20 +4150,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	gate_tower.MouseButton1Down:Connect(Click)
 end)
 
 -- CRATESSCRIPT
 task.spawn(function()
-	local script = cratesscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4536,20 +4163,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	crates.MouseButton1Down:Connect(Click)
 end)
 
 -- ANTIVOIDSCRIPT
 task.spawn(function()
-	local script = antivoidscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local enabled = false
 	
@@ -4564,7 +4182,7 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	anti_void.MouseButton1Down:Connect(Click)
 	
 	function AntiVoid()
 		if game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y < 1 then
@@ -4581,15 +4199,6 @@ end)
 
 -- RANDOMDOORSCRIPT
 task.spawn(function()
-	local script = randomdoorscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4598,20 +4207,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	random_door.MouseButton1Down:Connect(Click)
 end)
 
--- GATESCRIPT
+-- SEWERSCRIPT
 task.spawn(function()
-	local script = gatescript_2
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	function Click(mouse)
 	
@@ -4620,22 +4220,13 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	sewer.MouseButton1Down:Connect(Click)
 end)
 
 -- SPEEDSCRIPT
 task.spawn(function()
-	local script = speedscript
 
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local box = script.Parent.Parent.SpeedBox
+	local box = speed_box
 	
 	function Click(mouse)
 	
@@ -4648,22 +4239,13 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	speed_button.MouseButton1Down:Connect(Click)
 end)
 
 -- JUMPSCRIPT
 task.spawn(function()
-	local script = jumpscript
 
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local box = script.Parent.Parent.JumpBox
+	local box = jump_box
 	
 	function Click(mouse)
 	
@@ -4676,22 +4258,13 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	jump_button.MouseButton1Down:Connect(Click)
 end)
 
 -- KILLSCRIPT
 task.spawn(function()
-	local script = killscript
 
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local box = script.Parent.Parent.KillBox
+	local box = kill_box
 	
 	function Kill(Player)
 		local events = {}
@@ -4737,20 +4310,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	kill_button.MouseButton1Down:Connect(Click)
 end)
 
 -- KILLINMATESSCRIPT
 task.spawn(function()
-	local script = killinmatesscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetOrientation()
 		local PosX, PosY, PosZ = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame:ToOrientation()
@@ -4804,20 +4368,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	kill_inmates.MouseButton1Down:Connect(Click)
 end)
 
 -- KILLGUARDSSCRIPT
 task.spawn(function()
-	local script = killguardsscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetOrientation()
 		local PosX, PosY, PosZ = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame:ToOrientation()
@@ -4871,20 +4426,11 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	kill_guards.MouseButton1Down:Connect(Click)
 end)
 
 -- KILLCRIMSSCRIPT
 task.spawn(function()
-	local script = killcrimsscript
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local function GetOrientation()
 		local PosX, PosY, PosZ = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame:ToOrientation()
@@ -4938,36 +4484,16 @@ task.spawn(function()
 	end
 	
 	
-	script.Parent.MouseButton1Down:Connect(Click)
+	kill_crims.MouseButton1Down:Connect(Click)
 end)
 
 -- PageMain
 task.spawn(function()
-	local script = page_main
 
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local buttonframe = script.Parent
-	local nextb = buttonframe.Next
-	local backb = buttonframe.Back
-	local num = buttonframe.PageNum
-	local pages = buttonframe.Parent.Pages
-	local page1 = pages.Page1
-	local page2 = pages.Page2
-	local page3 = pages.Page3
-	local page4 = pages.Page4
-	local page5 = pages.Page5
-	local page6 = pages.Page6
-	local page7 = pages.Page7
-	local page8 = pages.Page8
-	local page9 = pages.Page9
-	local page10 = pages.Page10
+	local buttonframe = buttons
+	local nextb = next
+	local backb = back
+	local num = page_num
 	
 	nextb.MouseButton1Click:Connect(function()
 		if page1.Visible == true then
@@ -5052,15 +4578,6 @@ end)
 
 -- Dragify
 task.spawn(function()
-	local script = dragify
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
 
 	local UIS = game:GetService("UserInputService")
 	local dragSpeed = -math.huge
@@ -5103,5 +4620,5 @@ task.spawn(function()
 	    end)
 	end
 	
-	dragify(script.Parent)
+	dragify(main)
 end)
