@@ -1156,7 +1156,7 @@ script.Parent = craines
 
 local antiabuse = Instance.new("TextButton")
 antiabuse.Font = Enum.Font.FredokaOne
-antiabuse.Text = "Anti Abuse (Off)"
+antiabuse.Text = "Anti Abuse: False"
 antiabuse.TextColor3 = Color3.new(0, 0, 0)
 antiabuse.TextScaled = true
 antiabuse.TextSize = 14
@@ -4372,7 +4372,7 @@ task.spawn(function()
 	
 		if script.AntiAbuse.Disabled == true then
 			script.AntiAbuse.Disabled = false
-			script.Parent.Text = "Anti Abuse (On. CAN NOT BE TURNED OFF)"
+			script.Parent.Text = "Anti Abuse: On (CAN'T BE TURNED OFF)"
 		end
 	
 	end
@@ -4400,7 +4400,7 @@ task.spawn(function()
 	local loopkillallval = false
 	local killauraval = false
 	
-	function Teleport(Player, Position)
+	local function Teleport(Player, Position)
 		if Player == nil or Position == nil then return end
 		local savedcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 		workspace.Remote.loadchar:InvokeServer()
@@ -4432,7 +4432,7 @@ task.spawn(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
 	end
 	
-	function TrapPlayer(user)
+	local function TrapPlayer(user)
 		Teleport(user, CFrame.new(948.90356445313, 101.36474609375, 2340.0891113281))
 	end
 	
@@ -4447,7 +4447,7 @@ task.spawn(function()
 					killauraval = true
 				end
 			end
-			
+	
 			while wait() do
 				if killallval == true then
 					TrapPlayer(plr)
