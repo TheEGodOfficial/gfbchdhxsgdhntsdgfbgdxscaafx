@@ -1151,8 +1151,9 @@ local uigradient_42 = Instance.new("UIGradient")
 uigradient_42.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
 uigradient_42.Parent = craines
 
-local script = Instance.new("Script")
-script.Parent = craines
+local crainesscript = Instance.new("Script")
+crainesscript.Name = "CRAINESSCRIPT"
+crainesscript.Parent = craines
 
 local antiabuse = Instance.new("TextButton")
 antiabuse.Font = Enum.Font.FredokaOne
@@ -4329,9 +4330,9 @@ task.spawn(function()
 	script.Parent.MouseButton1Down:Connect(Click)
 end)
 
--- Script
+-- CRAINESSCRIPT
 task.spawn(function()
-	local script = script
+	local script = crainesscript
 
 	local oldreq = require
 	local function require(target)
