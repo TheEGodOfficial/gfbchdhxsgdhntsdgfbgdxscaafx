@@ -4626,8 +4626,10 @@ local function GDOPHS_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	
 		if enabled == false then
 			enabled = true
+			script.Parent.Text = "Anti Void: True"
 		else
 			enabled = false
+			script.Parent.Text = "Anti Void: False"
 		end
 	
 	end
