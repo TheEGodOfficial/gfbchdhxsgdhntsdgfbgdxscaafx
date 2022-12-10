@@ -1154,6 +1154,37 @@ uigradient_42.Parent = craines
 local script = Instance.new("Script")
 script.Parent = craines
 
+local antiabuse = Instance.new("TextButton")
+antiabuse.Font = Enum.Font.FredokaOne
+antiabuse.Text = "Anti Abuse (Off)"
+antiabuse.TextColor3 = Color3.new(0, 0, 0)
+antiabuse.TextScaled = true
+antiabuse.TextSize = 14
+antiabuse.TextWrapped = true
+antiabuse.BackgroundColor3 = Color3.new(1, 1, 1)
+antiabuse.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
+antiabuse.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+antiabuse.Visible = true
+antiabuse.Name = "AntiAbuse"
+antiabuse.Parent = page3
+
+local uicorner_44 = Instance.new("UICorner")
+uicorner_44.CornerRadius = UDim.new(0, 5)
+uicorner_44.Parent = antiabuse
+
+local uigradient_43 = Instance.new("UIGradient")
+uigradient_43.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_43.Parent = antiabuse
+
+local antiabusescript = Instance.new("Script")
+antiabusescript.Name = "ANTIABUSESCRIPT"
+antiabusescript.Parent = antiabuse
+
+local antiabuse_2 = Instance.new("LocalScript")
+antiabuse_2.Disabled = true
+antiabuse_2.Name = "AntiAbuse"
+antiabuse_2.Parent = antiabusescript
+
 local button = Instance.new("TextButton")
 button.Font = Enum.Font.FredokaOne
 button.TextColor3 = Color3.new(0, 0, 0)
@@ -1161,40 +1192,19 @@ button.TextScaled = true
 button.TextSize = 14
 button.TextWrapped = true
 button.BackgroundColor3 = Color3.new(1, 1, 1)
-button.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
+button.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
 button.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button.Visible = true
 button.Name = "Button"
 button.Parent = page3
 
-local uicorner_44 = Instance.new("UICorner")
-uicorner_44.CornerRadius = UDim.new(0, 5)
-uicorner_44.Parent = button
-
-local uigradient_43 = Instance.new("UIGradient")
-uigradient_43.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_43.Parent = button
-
-local button_2 = Instance.new("TextButton")
-button_2.Font = Enum.Font.FredokaOne
-button_2.TextColor3 = Color3.new(0, 0, 0)
-button_2.TextScaled = true
-button_2.TextSize = 14
-button_2.TextWrapped = true
-button_2.BackgroundColor3 = Color3.new(1, 1, 1)
-button_2.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
-button_2.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_2.Visible = true
-button_2.Name = "Button"
-button_2.Parent = page3
-
 local uicorner_45 = Instance.new("UICorner")
 uicorner_45.CornerRadius = UDim.new(0, 5)
-uicorner_45.Parent = button_2
+uicorner_45.Parent = button
 
 local uigradient_44 = Instance.new("UIGradient")
 uigradient_44.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_44.Parent = button_2
+uigradient_44.Parent = button
 
 local sewer = Instance.new("TextButton")
 sewer.Font = Enum.Font.FredokaOne
@@ -1231,29 +1241,28 @@ page4.Visible = false
 page4.Name = "Page4"
 page4.Parent = pages
 
-local button_3 = Instance.new("TextButton")
-button_3.Font = Enum.Font.FredokaOne
-button_3.TextColor3 = Color3.new(0, 0, 0)
-button_3.TextScaled = true
-button_3.TextSize = 14
-button_3.TextWrapped = true
-button_3.BackgroundColor3 = Color3.new(1, 1, 1)
-button_3.Position = UDim2.new(0.353658527, 0, 0.187122107, 0)
-button_3.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_3.Visible = true
-button_3.Name = "Button"
-button_3.Parent = page4
+local button_2 = Instance.new("TextButton")
+button_2.Font = Enum.Font.FredokaOne
+button_2.TextColor3 = Color3.new(0, 0, 0)
+button_2.TextScaled = true
+button_2.TextSize = 14
+button_2.TextWrapped = true
+button_2.BackgroundColor3 = Color3.new(1, 1, 1)
+button_2.Position = UDim2.new(0.353658527, 0, 0.187122107, 0)
+button_2.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+button_2.Visible = true
+button_2.Name = "Button"
+button_2.Parent = page4
 
 local uicorner_47 = Instance.new("UICorner")
 uicorner_47.CornerRadius = UDim.new(0, 5)
-uicorner_47.Parent = button_3
+uicorner_47.Parent = button_2
 
 local uigradient_46 = Instance.new("UIGradient")
 uigradient_46.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_46.Parent = button_3
+uigradient_46.Parent = button_2
 
 local text_box = Instance.new("TextBox")
-text_box.CursorPosition = -1
 text_box.Font = Enum.Font.FredokaOne
 text_box.PlaceholderColor3 = Color3.new(0.666667, 0, 1)
 text_box.PlaceholderText = "Value"
@@ -1274,7 +1283,6 @@ uicorner_48.CornerRadius = UDim.new(0, 5)
 uicorner_48.Parent = text_box
 
 local text_box_2 = Instance.new("TextBox")
-text_box_2.CursorPosition = -1
 text_box_2.Font = Enum.Font.FredokaOne
 text_box_2.PlaceholderColor3 = Color3.new(0.666667, 0, 1)
 text_box_2.PlaceholderText = "Value"
@@ -1294,6 +1302,27 @@ local uicorner_49 = Instance.new("UICorner")
 uicorner_49.CornerRadius = UDim.new(0, 5)
 uicorner_49.Parent = text_box_2
 
+local button_3 = Instance.new("TextButton")
+button_3.Font = Enum.Font.FredokaOne
+button_3.TextColor3 = Color3.new(0, 0, 0)
+button_3.TextScaled = true
+button_3.TextSize = 14
+button_3.TextWrapped = true
+button_3.BackgroundColor3 = Color3.new(1, 1, 1)
+button_3.Position = UDim2.new(0.353658527, 0, 0.532866776, 0)
+button_3.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+button_3.Visible = true
+button_3.Name = "Button"
+button_3.Parent = page4
+
+local uicorner_50 = Instance.new("UICorner")
+uicorner_50.CornerRadius = UDim.new(0, 5)
+uicorner_50.Parent = button_3
+
+local uigradient_47 = Instance.new("UIGradient")
+uigradient_47.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_47.Parent = button_3
+
 local button_4 = Instance.new("TextButton")
 button_4.Font = Enum.Font.FredokaOne
 button_4.TextColor3 = Color3.new(0, 0, 0)
@@ -1301,43 +1330,21 @@ button_4.TextScaled = true
 button_4.TextSize = 14
 button_4.TextWrapped = true
 button_4.BackgroundColor3 = Color3.new(1, 1, 1)
-button_4.Position = UDim2.new(0.353658527, 0, 0.532866776, 0)
+button_4.Position = UDim2.new(0.353658527, 0, 0.878611505, 0)
 button_4.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_4.Visible = true
 button_4.Name = "Button"
 button_4.Parent = page4
 
-local uicorner_50 = Instance.new("UICorner")
-uicorner_50.CornerRadius = UDim.new(0, 5)
-uicorner_50.Parent = button_4
-
-local uigradient_47 = Instance.new("UIGradient")
-uigradient_47.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_47.Parent = button_4
-
-local button_5 = Instance.new("TextButton")
-button_5.Font = Enum.Font.FredokaOne
-button_5.TextColor3 = Color3.new(0, 0, 0)
-button_5.TextScaled = true
-button_5.TextSize = 14
-button_5.TextWrapped = true
-button_5.BackgroundColor3 = Color3.new(1, 1, 1)
-button_5.Position = UDim2.new(0.353658527, 0, 0.878611505, 0)
-button_5.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_5.Visible = true
-button_5.Name = "Button"
-button_5.Parent = page4
-
 local uicorner_51 = Instance.new("UICorner")
 uicorner_51.CornerRadius = UDim.new(0, 5)
-uicorner_51.Parent = button_5
+uicorner_51.Parent = button_4
 
 local uigradient_48 = Instance.new("UIGradient")
 uigradient_48.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_48.Parent = button_5
+uigradient_48.Parent = button_4
 
 local text_box_3 = Instance.new("TextBox")
-text_box_3.CursorPosition = -1
 text_box_3.Font = Enum.Font.FredokaOne
 text_box_3.PlaceholderColor3 = Color3.new(0.666667, 0, 1)
 text_box_3.PlaceholderText = "Value"
@@ -1366,6 +1373,27 @@ page5.Visible = false
 page5.Name = "Page5"
 page5.Parent = pages
 
+local button_5 = Instance.new("TextButton")
+button_5.Font = Enum.Font.FredokaOne
+button_5.TextColor3 = Color3.new(0, 0, 0)
+button_5.TextScaled = true
+button_5.TextSize = 14
+button_5.TextWrapped = true
+button_5.BackgroundColor3 = Color3.new(1, 1, 1)
+button_5.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
+button_5.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+button_5.Visible = true
+button_5.Name = "Button"
+button_5.Parent = page5
+
+local uicorner_53 = Instance.new("UICorner")
+uicorner_53.CornerRadius = UDim.new(0, 5)
+uicorner_53.Parent = button_5
+
+local uigradient_49 = Instance.new("UIGradient")
+uigradient_49.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_49.Parent = button_5
+
 local button_6 = Instance.new("TextButton")
 button_6.Font = Enum.Font.FredokaOne
 button_6.TextColor3 = Color3.new(0, 0, 0)
@@ -1373,19 +1401,19 @@ button_6.TextScaled = true
 button_6.TextSize = 14
 button_6.TextWrapped = true
 button_6.BackgroundColor3 = Color3.new(1, 1, 1)
-button_6.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
+button_6.Position = UDim2.new(0.353658527, 0, 0.0169093385, 0)
 button_6.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_6.Visible = true
 button_6.Name = "Button"
 button_6.Parent = page5
 
-local uicorner_53 = Instance.new("UICorner")
-uicorner_53.CornerRadius = UDim.new(0, 5)
-uicorner_53.Parent = button_6
+local uicorner_54 = Instance.new("UICorner")
+uicorner_54.CornerRadius = UDim.new(0, 5)
+uicorner_54.Parent = button_6
 
-local uigradient_49 = Instance.new("UIGradient")
-uigradient_49.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_49.Parent = button_6
+local uigradient_50 = Instance.new("UIGradient")
+uigradient_50.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_50.Parent = button_6
 
 local button_7 = Instance.new("TextButton")
 button_7.Font = Enum.Font.FredokaOne
@@ -1394,19 +1422,19 @@ button_7.TextScaled = true
 button_7.TextSize = 14
 button_7.TextWrapped = true
 button_7.BackgroundColor3 = Color3.new(1, 1, 1)
-button_7.Position = UDim2.new(0.353658527, 0, 0.0169093385, 0)
+button_7.Position = UDim2.new(0.682926834, 0, 0.0169093385, 0)
 button_7.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_7.Visible = true
 button_7.Name = "Button"
 button_7.Parent = page5
 
-local uicorner_54 = Instance.new("UICorner")
-uicorner_54.CornerRadius = UDim.new(0, 5)
-uicorner_54.Parent = button_7
+local uicorner_55 = Instance.new("UICorner")
+uicorner_55.CornerRadius = UDim.new(0, 5)
+uicorner_55.Parent = button_7
 
-local uigradient_50 = Instance.new("UIGradient")
-uigradient_50.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_50.Parent = button_7
+local uigradient_51 = Instance.new("UIGradient")
+uigradient_51.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_51.Parent = button_7
 
 local button_8 = Instance.new("TextButton")
 button_8.Font = Enum.Font.FredokaOne
@@ -1415,19 +1443,19 @@ button_8.TextScaled = true
 button_8.TextSize = 14
 button_8.TextWrapped = true
 button_8.BackgroundColor3 = Color3.new(1, 1, 1)
-button_8.Position = UDim2.new(0.682926834, 0, 0.0169093385, 0)
+button_8.Position = UDim2.new(0.0284552854, 0, 0.155207217, 0)
 button_8.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_8.Visible = true
 button_8.Name = "Button"
 button_8.Parent = page5
 
-local uicorner_55 = Instance.new("UICorner")
-uicorner_55.CornerRadius = UDim.new(0, 5)
-uicorner_55.Parent = button_8
+local uicorner_56 = Instance.new("UICorner")
+uicorner_56.CornerRadius = UDim.new(0, 5)
+uicorner_56.Parent = button_8
 
-local uigradient_51 = Instance.new("UIGradient")
-uigradient_51.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_51.Parent = button_8
+local uigradient_52 = Instance.new("UIGradient")
+uigradient_52.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_52.Parent = button_8
 
 local button_9 = Instance.new("TextButton")
 button_9.Font = Enum.Font.FredokaOne
@@ -1436,19 +1464,19 @@ button_9.TextScaled = true
 button_9.TextSize = 14
 button_9.TextWrapped = true
 button_9.BackgroundColor3 = Color3.new(1, 1, 1)
-button_9.Position = UDim2.new(0.0284552854, 0, 0.155207217, 0)
+button_9.Position = UDim2.new(0.353658527, 0, 0.155207217, 0)
 button_9.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_9.Visible = true
 button_9.Name = "Button"
 button_9.Parent = page5
 
-local uicorner_56 = Instance.new("UICorner")
-uicorner_56.CornerRadius = UDim.new(0, 5)
-uicorner_56.Parent = button_9
+local uicorner_57 = Instance.new("UICorner")
+uicorner_57.CornerRadius = UDim.new(0, 5)
+uicorner_57.Parent = button_9
 
-local uigradient_52 = Instance.new("UIGradient")
-uigradient_52.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_52.Parent = button_9
+local uigradient_53 = Instance.new("UIGradient")
+uigradient_53.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_53.Parent = button_9
 
 local button_10 = Instance.new("TextButton")
 button_10.Font = Enum.Font.FredokaOne
@@ -1457,19 +1485,19 @@ button_10.TextScaled = true
 button_10.TextSize = 14
 button_10.TextWrapped = true
 button_10.BackgroundColor3 = Color3.new(1, 1, 1)
-button_10.Position = UDim2.new(0.353658527, 0, 0.155207217, 0)
+button_10.Position = UDim2.new(0.682926834, 0, 0.155207217, 0)
 button_10.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_10.Visible = true
 button_10.Name = "Button"
 button_10.Parent = page5
 
-local uicorner_57 = Instance.new("UICorner")
-uicorner_57.CornerRadius = UDim.new(0, 5)
-uicorner_57.Parent = button_10
+local uicorner_58 = Instance.new("UICorner")
+uicorner_58.CornerRadius = UDim.new(0, 5)
+uicorner_58.Parent = button_10
 
-local uigradient_53 = Instance.new("UIGradient")
-uigradient_53.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_53.Parent = button_10
+local uigradient_54 = Instance.new("UIGradient")
+uigradient_54.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_54.Parent = button_10
 
 local button_11 = Instance.new("TextButton")
 button_11.Font = Enum.Font.FredokaOne
@@ -1478,19 +1506,19 @@ button_11.TextScaled = true
 button_11.TextSize = 14
 button_11.TextWrapped = true
 button_11.BackgroundColor3 = Color3.new(1, 1, 1)
-button_11.Position = UDim2.new(0.682926834, 0, 0.155207217, 0)
+button_11.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
 button_11.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_11.Visible = true
 button_11.Name = "Button"
 button_11.Parent = page5
 
-local uicorner_58 = Instance.new("UICorner")
-uicorner_58.CornerRadius = UDim.new(0, 5)
-uicorner_58.Parent = button_11
+local uicorner_59 = Instance.new("UICorner")
+uicorner_59.CornerRadius = UDim.new(0, 5)
+uicorner_59.Parent = button_11
 
-local uigradient_54 = Instance.new("UIGradient")
-uigradient_54.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_54.Parent = button_11
+local uigradient_55 = Instance.new("UIGradient")
+uigradient_55.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_55.Parent = button_11
 
 local button_12 = Instance.new("TextButton")
 button_12.Font = Enum.Font.FredokaOne
@@ -1499,19 +1527,19 @@ button_12.TextScaled = true
 button_12.TextSize = 14
 button_12.TextWrapped = true
 button_12.BackgroundColor3 = Color3.new(1, 1, 1)
-button_12.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
+button_12.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
 button_12.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_12.Visible = true
 button_12.Name = "Button"
 button_12.Parent = page5
 
-local uicorner_59 = Instance.new("UICorner")
-uicorner_59.CornerRadius = UDim.new(0, 5)
-uicorner_59.Parent = button_12
+local uicorner_60 = Instance.new("UICorner")
+uicorner_60.CornerRadius = UDim.new(0, 5)
+uicorner_60.Parent = button_12
 
-local uigradient_55 = Instance.new("UIGradient")
-uigradient_55.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_55.Parent = button_12
+local uigradient_56 = Instance.new("UIGradient")
+uigradient_56.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_56.Parent = button_12
 
 local button_13 = Instance.new("TextButton")
 button_13.Font = Enum.Font.FredokaOne
@@ -1520,19 +1548,19 @@ button_13.TextScaled = true
 button_13.TextSize = 14
 button_13.TextWrapped = true
 button_13.BackgroundColor3 = Color3.new(1, 1, 1)
-button_13.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
+button_13.Position = UDim2.new(0.682926834, 0, 0.293505073, 0)
 button_13.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_13.Visible = true
 button_13.Name = "Button"
 button_13.Parent = page5
 
-local uicorner_60 = Instance.new("UICorner")
-uicorner_60.CornerRadius = UDim.new(0, 5)
-uicorner_60.Parent = button_13
+local uicorner_61 = Instance.new("UICorner")
+uicorner_61.CornerRadius = UDim.new(0, 5)
+uicorner_61.Parent = button_13
 
-local uigradient_56 = Instance.new("UIGradient")
-uigradient_56.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_56.Parent = button_13
+local uigradient_57 = Instance.new("UIGradient")
+uigradient_57.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_57.Parent = button_13
 
 local button_14 = Instance.new("TextButton")
 button_14.Font = Enum.Font.FredokaOne
@@ -1541,19 +1569,19 @@ button_14.TextScaled = true
 button_14.TextSize = 14
 button_14.TextWrapped = true
 button_14.BackgroundColor3 = Color3.new(1, 1, 1)
-button_14.Position = UDim2.new(0.682926834, 0, 0.293505073, 0)
+button_14.Position = UDim2.new(0.0284552854, 0, 0.442441225, 0)
 button_14.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_14.Visible = true
 button_14.Name = "Button"
 button_14.Parent = page5
 
-local uicorner_61 = Instance.new("UICorner")
-uicorner_61.CornerRadius = UDim.new(0, 5)
-uicorner_61.Parent = button_14
+local uicorner_62 = Instance.new("UICorner")
+uicorner_62.CornerRadius = UDim.new(0, 5)
+uicorner_62.Parent = button_14
 
-local uigradient_57 = Instance.new("UIGradient")
-uigradient_57.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_57.Parent = button_14
+local uigradient_58 = Instance.new("UIGradient")
+uigradient_58.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_58.Parent = button_14
 
 local button_15 = Instance.new("TextButton")
 button_15.Font = Enum.Font.FredokaOne
@@ -1562,19 +1590,19 @@ button_15.TextScaled = true
 button_15.TextSize = 14
 button_15.TextWrapped = true
 button_15.BackgroundColor3 = Color3.new(1, 1, 1)
-button_15.Position = UDim2.new(0.0284552854, 0, 0.442441225, 0)
+button_15.Position = UDim2.new(0.353658527, 0, 0.442441225, 0)
 button_15.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_15.Visible = true
 button_15.Name = "Button"
 button_15.Parent = page5
 
-local uicorner_62 = Instance.new("UICorner")
-uicorner_62.CornerRadius = UDim.new(0, 5)
-uicorner_62.Parent = button_15
+local uicorner_63 = Instance.new("UICorner")
+uicorner_63.CornerRadius = UDim.new(0, 5)
+uicorner_63.Parent = button_15
 
-local uigradient_58 = Instance.new("UIGradient")
-uigradient_58.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_58.Parent = button_15
+local uigradient_59 = Instance.new("UIGradient")
+uigradient_59.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_59.Parent = button_15
 
 local button_16 = Instance.new("TextButton")
 button_16.Font = Enum.Font.FredokaOne
@@ -1583,19 +1611,19 @@ button_16.TextScaled = true
 button_16.TextSize = 14
 button_16.TextWrapped = true
 button_16.BackgroundColor3 = Color3.new(1, 1, 1)
-button_16.Position = UDim2.new(0.353658527, 0, 0.442441225, 0)
+button_16.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
 button_16.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_16.Visible = true
 button_16.Name = "Button"
 button_16.Parent = page5
 
-local uicorner_63 = Instance.new("UICorner")
-uicorner_63.CornerRadius = UDim.new(0, 5)
-uicorner_63.Parent = button_16
+local uicorner_64 = Instance.new("UICorner")
+uicorner_64.CornerRadius = UDim.new(0, 5)
+uicorner_64.Parent = button_16
 
-local uigradient_59 = Instance.new("UIGradient")
-uigradient_59.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_59.Parent = button_16
+local uigradient_60 = Instance.new("UIGradient")
+uigradient_60.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_60.Parent = button_16
 
 local button_17 = Instance.new("TextButton")
 button_17.Font = Enum.Font.FredokaOne
@@ -1604,19 +1632,19 @@ button_17.TextScaled = true
 button_17.TextSize = 14
 button_17.TextWrapped = true
 button_17.BackgroundColor3 = Color3.new(1, 1, 1)
-button_17.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
+button_17.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
 button_17.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_17.Visible = true
 button_17.Name = "Button"
 button_17.Parent = page5
 
-local uicorner_64 = Instance.new("UICorner")
-uicorner_64.CornerRadius = UDim.new(0, 5)
-uicorner_64.Parent = button_17
+local uicorner_65 = Instance.new("UICorner")
+uicorner_65.CornerRadius = UDim.new(0, 5)
+uicorner_65.Parent = button_17
 
-local uigradient_60 = Instance.new("UIGradient")
-uigradient_60.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_60.Parent = button_17
+local uigradient_61 = Instance.new("UIGradient")
+uigradient_61.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_61.Parent = button_17
 
 local button_18 = Instance.new("TextButton")
 button_18.Font = Enum.Font.FredokaOne
@@ -1625,19 +1653,19 @@ button_18.TextScaled = true
 button_18.TextSize = 14
 button_18.TextWrapped = true
 button_18.BackgroundColor3 = Color3.new(1, 1, 1)
-button_18.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
+button_18.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
 button_18.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_18.Visible = true
 button_18.Name = "Button"
 button_18.Parent = page5
 
-local uicorner_65 = Instance.new("UICorner")
-uicorner_65.CornerRadius = UDim.new(0, 5)
-uicorner_65.Parent = button_18
+local uicorner_66 = Instance.new("UICorner")
+uicorner_66.CornerRadius = UDim.new(0, 5)
+uicorner_66.Parent = button_18
 
-local uigradient_61 = Instance.new("UIGradient")
-uigradient_61.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_61.Parent = button_18
+local uigradient_62 = Instance.new("UIGradient")
+uigradient_62.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_62.Parent = button_18
 
 local button_19 = Instance.new("TextButton")
 button_19.Font = Enum.Font.FredokaOne
@@ -1646,40 +1674,19 @@ button_19.TextScaled = true
 button_19.TextSize = 14
 button_19.TextWrapped = true
 button_19.BackgroundColor3 = Color3.new(1, 1, 1)
-button_19.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
+button_19.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
 button_19.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_19.Visible = true
 button_19.Name = "Button"
 button_19.Parent = page5
 
-local uicorner_66 = Instance.new("UICorner")
-uicorner_66.CornerRadius = UDim.new(0, 5)
-uicorner_66.Parent = button_19
-
-local uigradient_62 = Instance.new("UIGradient")
-uigradient_62.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_62.Parent = button_19
-
-local button_20 = Instance.new("TextButton")
-button_20.Font = Enum.Font.FredokaOne
-button_20.TextColor3 = Color3.new(0, 0, 0)
-button_20.TextScaled = true
-button_20.TextSize = 14
-button_20.TextWrapped = true
-button_20.BackgroundColor3 = Color3.new(1, 1, 1)
-button_20.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
-button_20.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_20.Visible = true
-button_20.Name = "Button"
-button_20.Parent = page5
-
 local uicorner_67 = Instance.new("UICorner")
 uicorner_67.CornerRadius = UDim.new(0, 5)
-uicorner_67.Parent = button_20
+uicorner_67.Parent = button_19
 
 local uigradient_63 = Instance.new("UIGradient")
 uigradient_63.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_63.Parent = button_20
+uigradient_63.Parent = button_19
 
 local page6 = Instance.new("Frame")
 page6.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
@@ -1690,26 +1697,26 @@ page6.Visible = false
 page6.Name = "Page6"
 page6.Parent = pages
 
-local button_21 = Instance.new("TextButton")
-button_21.Font = Enum.Font.FredokaOne
-button_21.TextColor3 = Color3.new(0, 0, 0)
-button_21.TextScaled = true
-button_21.TextSize = 14
-button_21.TextWrapped = true
-button_21.BackgroundColor3 = Color3.new(1, 1, 1)
-button_21.Position = UDim2.new(0.353658527, 0, 0.187122107, 0)
-button_21.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_21.Visible = true
-button_21.Name = "Button"
-button_21.Parent = page6
+local button_20 = Instance.new("TextButton")
+button_20.Font = Enum.Font.FredokaOne
+button_20.TextColor3 = Color3.new(0, 0, 0)
+button_20.TextScaled = true
+button_20.TextSize = 14
+button_20.TextWrapped = true
+button_20.BackgroundColor3 = Color3.new(1, 1, 1)
+button_20.Position = UDim2.new(0.353658527, 0, 0.187122107, 0)
+button_20.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+button_20.Visible = true
+button_20.Name = "Button"
+button_20.Parent = page6
 
 local uicorner_68 = Instance.new("UICorner")
 uicorner_68.CornerRadius = UDim.new(0, 5)
-uicorner_68.Parent = button_21
+uicorner_68.Parent = button_20
 
 local uigradient_64 = Instance.new("UIGradient")
 uigradient_64.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_64.Parent = button_21
+uigradient_64.Parent = button_20
 
 local text_box_4 = Instance.new("TextBox")
 text_box_4.Font = Enum.Font.FredokaOne
@@ -1751,6 +1758,27 @@ local uicorner_70 = Instance.new("UICorner")
 uicorner_70.CornerRadius = UDim.new(0, 5)
 uicorner_70.Parent = text_box_5
 
+local button_21 = Instance.new("TextButton")
+button_21.Font = Enum.Font.FredokaOne
+button_21.TextColor3 = Color3.new(0, 0, 0)
+button_21.TextScaled = true
+button_21.TextSize = 14
+button_21.TextWrapped = true
+button_21.BackgroundColor3 = Color3.new(1, 1, 1)
+button_21.Position = UDim2.new(0.353658527, 0, 0.532866776, 0)
+button_21.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+button_21.Visible = true
+button_21.Name = "Button"
+button_21.Parent = page6
+
+local uicorner_71 = Instance.new("UICorner")
+uicorner_71.CornerRadius = UDim.new(0, 5)
+uicorner_71.Parent = button_21
+
+local uigradient_65 = Instance.new("UIGradient")
+uigradient_65.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_65.Parent = button_21
+
 local button_22 = Instance.new("TextButton")
 button_22.Font = Enum.Font.FredokaOne
 button_22.TextColor3 = Color3.new(0, 0, 0)
@@ -1758,40 +1786,19 @@ button_22.TextScaled = true
 button_22.TextSize = 14
 button_22.TextWrapped = true
 button_22.BackgroundColor3 = Color3.new(1, 1, 1)
-button_22.Position = UDim2.new(0.353658527, 0, 0.532866776, 0)
+button_22.Position = UDim2.new(0.353658527, 0, 0.878611505, 0)
 button_22.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_22.Visible = true
 button_22.Name = "Button"
 button_22.Parent = page6
 
-local uicorner_71 = Instance.new("UICorner")
-uicorner_71.CornerRadius = UDim.new(0, 5)
-uicorner_71.Parent = button_22
-
-local uigradient_65 = Instance.new("UIGradient")
-uigradient_65.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_65.Parent = button_22
-
-local button_23 = Instance.new("TextButton")
-button_23.Font = Enum.Font.FredokaOne
-button_23.TextColor3 = Color3.new(0, 0, 0)
-button_23.TextScaled = true
-button_23.TextSize = 14
-button_23.TextWrapped = true
-button_23.BackgroundColor3 = Color3.new(1, 1, 1)
-button_23.Position = UDim2.new(0.353658527, 0, 0.878611505, 0)
-button_23.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_23.Visible = true
-button_23.Name = "Button"
-button_23.Parent = page6
-
 local uicorner_72 = Instance.new("UICorner")
 uicorner_72.CornerRadius = UDim.new(0, 5)
-uicorner_72.Parent = button_23
+uicorner_72.Parent = button_22
 
 local uigradient_66 = Instance.new("UIGradient")
 uigradient_66.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_66.Parent = button_23
+uigradient_66.Parent = button_22
 
 local text_box_6 = Instance.new("TextBox")
 text_box_6.Font = Enum.Font.FredokaOne
@@ -1822,26 +1829,26 @@ page7.Visible = false
 page7.Name = "Page7"
 page7.Parent = pages
 
-local button_24 = Instance.new("TextButton")
-button_24.Font = Enum.Font.FredokaOne
-button_24.TextColor3 = Color3.new(0, 0, 0)
-button_24.TextScaled = true
-button_24.TextSize = 14
-button_24.TextWrapped = true
-button_24.BackgroundColor3 = Color3.new(1, 1, 1)
-button_24.Position = UDim2.new(0.353658527, 0, 0.187122107, 0)
-button_24.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_24.Visible = true
-button_24.Name = "Button"
-button_24.Parent = page7
+local button_23 = Instance.new("TextButton")
+button_23.Font = Enum.Font.FredokaOne
+button_23.TextColor3 = Color3.new(0, 0, 0)
+button_23.TextScaled = true
+button_23.TextSize = 14
+button_23.TextWrapped = true
+button_23.BackgroundColor3 = Color3.new(1, 1, 1)
+button_23.Position = UDim2.new(0.353658527, 0, 0.187122107, 0)
+button_23.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+button_23.Visible = true
+button_23.Name = "Button"
+button_23.Parent = page7
 
 local uicorner_74 = Instance.new("UICorner")
 uicorner_74.CornerRadius = UDim.new(0, 5)
-uicorner_74.Parent = button_24
+uicorner_74.Parent = button_23
 
 local uigradient_67 = Instance.new("UIGradient")
 uigradient_67.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_67.Parent = button_24
+uigradient_67.Parent = button_23
 
 local text_box_7 = Instance.new("TextBox")
 text_box_7.Font = Enum.Font.FredokaOne
@@ -1883,6 +1890,27 @@ local uicorner_76 = Instance.new("UICorner")
 uicorner_76.CornerRadius = UDim.new(0, 5)
 uicorner_76.Parent = text_box_8
 
+local button_24 = Instance.new("TextButton")
+button_24.Font = Enum.Font.FredokaOne
+button_24.TextColor3 = Color3.new(0, 0, 0)
+button_24.TextScaled = true
+button_24.TextSize = 14
+button_24.TextWrapped = true
+button_24.BackgroundColor3 = Color3.new(1, 1, 1)
+button_24.Position = UDim2.new(0.353658527, 0, 0.532866776, 0)
+button_24.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+button_24.Visible = true
+button_24.Name = "Button"
+button_24.Parent = page7
+
+local uicorner_77 = Instance.new("UICorner")
+uicorner_77.CornerRadius = UDim.new(0, 5)
+uicorner_77.Parent = button_24
+
+local uigradient_68 = Instance.new("UIGradient")
+uigradient_68.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_68.Parent = button_24
+
 local button_25 = Instance.new("TextButton")
 button_25.Font = Enum.Font.FredokaOne
 button_25.TextColor3 = Color3.new(0, 0, 0)
@@ -1890,40 +1918,19 @@ button_25.TextScaled = true
 button_25.TextSize = 14
 button_25.TextWrapped = true
 button_25.BackgroundColor3 = Color3.new(1, 1, 1)
-button_25.Position = UDim2.new(0.353658527, 0, 0.532866776, 0)
+button_25.Position = UDim2.new(0.353658527, 0, 0.878611505, 0)
 button_25.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_25.Visible = true
 button_25.Name = "Button"
 button_25.Parent = page7
 
-local uicorner_77 = Instance.new("UICorner")
-uicorner_77.CornerRadius = UDim.new(0, 5)
-uicorner_77.Parent = button_25
-
-local uigradient_68 = Instance.new("UIGradient")
-uigradient_68.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_68.Parent = button_25
-
-local button_26 = Instance.new("TextButton")
-button_26.Font = Enum.Font.FredokaOne
-button_26.TextColor3 = Color3.new(0, 0, 0)
-button_26.TextScaled = true
-button_26.TextSize = 14
-button_26.TextWrapped = true
-button_26.BackgroundColor3 = Color3.new(1, 1, 1)
-button_26.Position = UDim2.new(0.353658527, 0, 0.878611505, 0)
-button_26.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_26.Visible = true
-button_26.Name = "Button"
-button_26.Parent = page7
-
 local uicorner_78 = Instance.new("UICorner")
 uicorner_78.CornerRadius = UDim.new(0, 5)
-uicorner_78.Parent = button_26
+uicorner_78.Parent = button_25
 
 local uigradient_69 = Instance.new("UIGradient")
 uigradient_69.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_69.Parent = button_26
+uigradient_69.Parent = button_25
 
 local text_box_9 = Instance.new("TextBox")
 text_box_9.Font = Enum.Font.FredokaOne
@@ -1954,6 +1961,27 @@ page8.Visible = false
 page8.Name = "Page8"
 page8.Parent = pages
 
+local button_26 = Instance.new("TextButton")
+button_26.Font = Enum.Font.FredokaOne
+button_26.TextColor3 = Color3.new(0, 0, 0)
+button_26.TextScaled = true
+button_26.TextSize = 14
+button_26.TextWrapped = true
+button_26.BackgroundColor3 = Color3.new(1, 1, 1)
+button_26.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
+button_26.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+button_26.Visible = true
+button_26.Name = "Button"
+button_26.Parent = page8
+
+local uicorner_80 = Instance.new("UICorner")
+uicorner_80.CornerRadius = UDim.new(0, 5)
+uicorner_80.Parent = button_26
+
+local uigradient_70 = Instance.new("UIGradient")
+uigradient_70.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_70.Parent = button_26
+
 local button_27 = Instance.new("TextButton")
 button_27.Font = Enum.Font.FredokaOne
 button_27.TextColor3 = Color3.new(0, 0, 0)
@@ -1961,19 +1989,19 @@ button_27.TextScaled = true
 button_27.TextSize = 14
 button_27.TextWrapped = true
 button_27.BackgroundColor3 = Color3.new(1, 1, 1)
-button_27.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
+button_27.Position = UDim2.new(0.353658527, 0, 0.0169093385, 0)
 button_27.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_27.Visible = true
 button_27.Name = "Button"
 button_27.Parent = page8
 
-local uicorner_80 = Instance.new("UICorner")
-uicorner_80.CornerRadius = UDim.new(0, 5)
-uicorner_80.Parent = button_27
+local uicorner_81 = Instance.new("UICorner")
+uicorner_81.CornerRadius = UDim.new(0, 5)
+uicorner_81.Parent = button_27
 
-local uigradient_70 = Instance.new("UIGradient")
-uigradient_70.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_70.Parent = button_27
+local uigradient_71 = Instance.new("UIGradient")
+uigradient_71.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_71.Parent = button_27
 
 local button_28 = Instance.new("TextButton")
 button_28.Font = Enum.Font.FredokaOne
@@ -1982,19 +2010,19 @@ button_28.TextScaled = true
 button_28.TextSize = 14
 button_28.TextWrapped = true
 button_28.BackgroundColor3 = Color3.new(1, 1, 1)
-button_28.Position = UDim2.new(0.353658527, 0, 0.0169093385, 0)
+button_28.Position = UDim2.new(0.682926834, 0, 0.0169093385, 0)
 button_28.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_28.Visible = true
 button_28.Name = "Button"
 button_28.Parent = page8
 
-local uicorner_81 = Instance.new("UICorner")
-uicorner_81.CornerRadius = UDim.new(0, 5)
-uicorner_81.Parent = button_28
+local uicorner_82 = Instance.new("UICorner")
+uicorner_82.CornerRadius = UDim.new(0, 5)
+uicorner_82.Parent = button_28
 
-local uigradient_71 = Instance.new("UIGradient")
-uigradient_71.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_71.Parent = button_28
+local uigradient_72 = Instance.new("UIGradient")
+uigradient_72.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_72.Parent = button_28
 
 local button_29 = Instance.new("TextButton")
 button_29.Font = Enum.Font.FredokaOne
@@ -2003,19 +2031,19 @@ button_29.TextScaled = true
 button_29.TextSize = 14
 button_29.TextWrapped = true
 button_29.BackgroundColor3 = Color3.new(1, 1, 1)
-button_29.Position = UDim2.new(0.682926834, 0, 0.0169093385, 0)
+button_29.Position = UDim2.new(0.0284552854, 0, 0.155207217, 0)
 button_29.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_29.Visible = true
 button_29.Name = "Button"
 button_29.Parent = page8
 
-local uicorner_82 = Instance.new("UICorner")
-uicorner_82.CornerRadius = UDim.new(0, 5)
-uicorner_82.Parent = button_29
+local uicorner_83 = Instance.new("UICorner")
+uicorner_83.CornerRadius = UDim.new(0, 5)
+uicorner_83.Parent = button_29
 
-local uigradient_72 = Instance.new("UIGradient")
-uigradient_72.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_72.Parent = button_29
+local uigradient_73 = Instance.new("UIGradient")
+uigradient_73.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_73.Parent = button_29
 
 local button_30 = Instance.new("TextButton")
 button_30.Font = Enum.Font.FredokaOne
@@ -2024,19 +2052,19 @@ button_30.TextScaled = true
 button_30.TextSize = 14
 button_30.TextWrapped = true
 button_30.BackgroundColor3 = Color3.new(1, 1, 1)
-button_30.Position = UDim2.new(0.0284552854, 0, 0.155207217, 0)
+button_30.Position = UDim2.new(0.353658527, 0, 0.155207217, 0)
 button_30.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_30.Visible = true
 button_30.Name = "Button"
 button_30.Parent = page8
 
-local uicorner_83 = Instance.new("UICorner")
-uicorner_83.CornerRadius = UDim.new(0, 5)
-uicorner_83.Parent = button_30
+local uicorner_84 = Instance.new("UICorner")
+uicorner_84.CornerRadius = UDim.new(0, 5)
+uicorner_84.Parent = button_30
 
-local uigradient_73 = Instance.new("UIGradient")
-uigradient_73.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_73.Parent = button_30
+local uigradient_74 = Instance.new("UIGradient")
+uigradient_74.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_74.Parent = button_30
 
 local button_31 = Instance.new("TextButton")
 button_31.Font = Enum.Font.FredokaOne
@@ -2045,19 +2073,19 @@ button_31.TextScaled = true
 button_31.TextSize = 14
 button_31.TextWrapped = true
 button_31.BackgroundColor3 = Color3.new(1, 1, 1)
-button_31.Position = UDim2.new(0.353658527, 0, 0.155207217, 0)
+button_31.Position = UDim2.new(0.682926834, 0, 0.155207217, 0)
 button_31.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_31.Visible = true
 button_31.Name = "Button"
 button_31.Parent = page8
 
-local uicorner_84 = Instance.new("UICorner")
-uicorner_84.CornerRadius = UDim.new(0, 5)
-uicorner_84.Parent = button_31
+local uicorner_85 = Instance.new("UICorner")
+uicorner_85.CornerRadius = UDim.new(0, 5)
+uicorner_85.Parent = button_31
 
-local uigradient_74 = Instance.new("UIGradient")
-uigradient_74.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_74.Parent = button_31
+local uigradient_75 = Instance.new("UIGradient")
+uigradient_75.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_75.Parent = button_31
 
 local button_32 = Instance.new("TextButton")
 button_32.Font = Enum.Font.FredokaOne
@@ -2066,19 +2094,19 @@ button_32.TextScaled = true
 button_32.TextSize = 14
 button_32.TextWrapped = true
 button_32.BackgroundColor3 = Color3.new(1, 1, 1)
-button_32.Position = UDim2.new(0.682926834, 0, 0.155207217, 0)
+button_32.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
 button_32.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_32.Visible = true
 button_32.Name = "Button"
 button_32.Parent = page8
 
-local uicorner_85 = Instance.new("UICorner")
-uicorner_85.CornerRadius = UDim.new(0, 5)
-uicorner_85.Parent = button_32
+local uicorner_86 = Instance.new("UICorner")
+uicorner_86.CornerRadius = UDim.new(0, 5)
+uicorner_86.Parent = button_32
 
-local uigradient_75 = Instance.new("UIGradient")
-uigradient_75.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_75.Parent = button_32
+local uigradient_76 = Instance.new("UIGradient")
+uigradient_76.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_76.Parent = button_32
 
 local button_33 = Instance.new("TextButton")
 button_33.Font = Enum.Font.FredokaOne
@@ -2087,19 +2115,19 @@ button_33.TextScaled = true
 button_33.TextSize = 14
 button_33.TextWrapped = true
 button_33.BackgroundColor3 = Color3.new(1, 1, 1)
-button_33.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
+button_33.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
 button_33.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_33.Visible = true
 button_33.Name = "Button"
 button_33.Parent = page8
 
-local uicorner_86 = Instance.new("UICorner")
-uicorner_86.CornerRadius = UDim.new(0, 5)
-uicorner_86.Parent = button_33
+local uicorner_87 = Instance.new("UICorner")
+uicorner_87.CornerRadius = UDim.new(0, 5)
+uicorner_87.Parent = button_33
 
-local uigradient_76 = Instance.new("UIGradient")
-uigradient_76.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_76.Parent = button_33
+local uigradient_77 = Instance.new("UIGradient")
+uigradient_77.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_77.Parent = button_33
 
 local button_34 = Instance.new("TextButton")
 button_34.Font = Enum.Font.FredokaOne
@@ -2108,19 +2136,19 @@ button_34.TextScaled = true
 button_34.TextSize = 14
 button_34.TextWrapped = true
 button_34.BackgroundColor3 = Color3.new(1, 1, 1)
-button_34.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
+button_34.Position = UDim2.new(0.682926834, 0, 0.293505073, 0)
 button_34.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_34.Visible = true
 button_34.Name = "Button"
 button_34.Parent = page8
 
-local uicorner_87 = Instance.new("UICorner")
-uicorner_87.CornerRadius = UDim.new(0, 5)
-uicorner_87.Parent = button_34
+local uicorner_88 = Instance.new("UICorner")
+uicorner_88.CornerRadius = UDim.new(0, 5)
+uicorner_88.Parent = button_34
 
-local uigradient_77 = Instance.new("UIGradient")
-uigradient_77.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_77.Parent = button_34
+local uigradient_78 = Instance.new("UIGradient")
+uigradient_78.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_78.Parent = button_34
 
 local button_35 = Instance.new("TextButton")
 button_35.Font = Enum.Font.FredokaOne
@@ -2129,19 +2157,19 @@ button_35.TextScaled = true
 button_35.TextSize = 14
 button_35.TextWrapped = true
 button_35.BackgroundColor3 = Color3.new(1, 1, 1)
-button_35.Position = UDim2.new(0.682926834, 0, 0.293505073, 0)
+button_35.Position = UDim2.new(0.0284552854, 0, 0.442441225, 0)
 button_35.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_35.Visible = true
 button_35.Name = "Button"
 button_35.Parent = page8
 
-local uicorner_88 = Instance.new("UICorner")
-uicorner_88.CornerRadius = UDim.new(0, 5)
-uicorner_88.Parent = button_35
+local uicorner_89 = Instance.new("UICorner")
+uicorner_89.CornerRadius = UDim.new(0, 5)
+uicorner_89.Parent = button_35
 
-local uigradient_78 = Instance.new("UIGradient")
-uigradient_78.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_78.Parent = button_35
+local uigradient_79 = Instance.new("UIGradient")
+uigradient_79.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_79.Parent = button_35
 
 local button_36 = Instance.new("TextButton")
 button_36.Font = Enum.Font.FredokaOne
@@ -2150,19 +2178,19 @@ button_36.TextScaled = true
 button_36.TextSize = 14
 button_36.TextWrapped = true
 button_36.BackgroundColor3 = Color3.new(1, 1, 1)
-button_36.Position = UDim2.new(0.0284552854, 0, 0.442441225, 0)
+button_36.Position = UDim2.new(0.353658527, 0, 0.442441225, 0)
 button_36.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_36.Visible = true
 button_36.Name = "Button"
 button_36.Parent = page8
 
-local uicorner_89 = Instance.new("UICorner")
-uicorner_89.CornerRadius = UDim.new(0, 5)
-uicorner_89.Parent = button_36
+local uicorner_90 = Instance.new("UICorner")
+uicorner_90.CornerRadius = UDim.new(0, 5)
+uicorner_90.Parent = button_36
 
-local uigradient_79 = Instance.new("UIGradient")
-uigradient_79.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_79.Parent = button_36
+local uigradient_80 = Instance.new("UIGradient")
+uigradient_80.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_80.Parent = button_36
 
 local button_37 = Instance.new("TextButton")
 button_37.Font = Enum.Font.FredokaOne
@@ -2171,19 +2199,19 @@ button_37.TextScaled = true
 button_37.TextSize = 14
 button_37.TextWrapped = true
 button_37.BackgroundColor3 = Color3.new(1, 1, 1)
-button_37.Position = UDim2.new(0.353658527, 0, 0.442441225, 0)
+button_37.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
 button_37.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_37.Visible = true
 button_37.Name = "Button"
 button_37.Parent = page8
 
-local uicorner_90 = Instance.new("UICorner")
-uicorner_90.CornerRadius = UDim.new(0, 5)
-uicorner_90.Parent = button_37
+local uicorner_91 = Instance.new("UICorner")
+uicorner_91.CornerRadius = UDim.new(0, 5)
+uicorner_91.Parent = button_37
 
-local uigradient_80 = Instance.new("UIGradient")
-uigradient_80.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_80.Parent = button_37
+local uigradient_81 = Instance.new("UIGradient")
+uigradient_81.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_81.Parent = button_37
 
 local button_38 = Instance.new("TextButton")
 button_38.Font = Enum.Font.FredokaOne
@@ -2192,19 +2220,19 @@ button_38.TextScaled = true
 button_38.TextSize = 14
 button_38.TextWrapped = true
 button_38.BackgroundColor3 = Color3.new(1, 1, 1)
-button_38.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
+button_38.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
 button_38.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_38.Visible = true
 button_38.Name = "Button"
 button_38.Parent = page8
 
-local uicorner_91 = Instance.new("UICorner")
-uicorner_91.CornerRadius = UDim.new(0, 5)
-uicorner_91.Parent = button_38
+local uicorner_92 = Instance.new("UICorner")
+uicorner_92.CornerRadius = UDim.new(0, 5)
+uicorner_92.Parent = button_38
 
-local uigradient_81 = Instance.new("UIGradient")
-uigradient_81.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_81.Parent = button_38
+local uigradient_82 = Instance.new("UIGradient")
+uigradient_82.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_82.Parent = button_38
 
 local button_39 = Instance.new("TextButton")
 button_39.Font = Enum.Font.FredokaOne
@@ -2213,19 +2241,19 @@ button_39.TextScaled = true
 button_39.TextSize = 14
 button_39.TextWrapped = true
 button_39.BackgroundColor3 = Color3.new(1, 1, 1)
-button_39.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
+button_39.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
 button_39.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_39.Visible = true
 button_39.Name = "Button"
 button_39.Parent = page8
 
-local uicorner_92 = Instance.new("UICorner")
-uicorner_92.CornerRadius = UDim.new(0, 5)
-uicorner_92.Parent = button_39
+local uicorner_93 = Instance.new("UICorner")
+uicorner_93.CornerRadius = UDim.new(0, 5)
+uicorner_93.Parent = button_39
 
-local uigradient_82 = Instance.new("UIGradient")
-uigradient_82.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_82.Parent = button_39
+local uigradient_83 = Instance.new("UIGradient")
+uigradient_83.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_83.Parent = button_39
 
 local button_40 = Instance.new("TextButton")
 button_40.Font = Enum.Font.FredokaOne
@@ -2234,40 +2262,19 @@ button_40.TextScaled = true
 button_40.TextSize = 14
 button_40.TextWrapped = true
 button_40.BackgroundColor3 = Color3.new(1, 1, 1)
-button_40.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
+button_40.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
 button_40.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_40.Visible = true
 button_40.Name = "Button"
 button_40.Parent = page8
 
-local uicorner_93 = Instance.new("UICorner")
-uicorner_93.CornerRadius = UDim.new(0, 5)
-uicorner_93.Parent = button_40
-
-local uigradient_83 = Instance.new("UIGradient")
-uigradient_83.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_83.Parent = button_40
-
-local button_41 = Instance.new("TextButton")
-button_41.Font = Enum.Font.FredokaOne
-button_41.TextColor3 = Color3.new(0, 0, 0)
-button_41.TextScaled = true
-button_41.TextSize = 14
-button_41.TextWrapped = true
-button_41.BackgroundColor3 = Color3.new(1, 1, 1)
-button_41.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
-button_41.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_41.Visible = true
-button_41.Name = "Button"
-button_41.Parent = page8
-
 local uicorner_94 = Instance.new("UICorner")
 uicorner_94.CornerRadius = UDim.new(0, 5)
-uicorner_94.Parent = button_41
+uicorner_94.Parent = button_40
 
 local uigradient_84 = Instance.new("UIGradient")
 uigradient_84.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_84.Parent = button_41
+uigradient_84.Parent = button_40
 
 local page9 = Instance.new("Frame")
 page9.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
@@ -2278,6 +2285,27 @@ page9.Visible = false
 page9.Name = "Page9"
 page9.Parent = pages
 
+local button_41 = Instance.new("TextButton")
+button_41.Font = Enum.Font.FredokaOne
+button_41.TextColor3 = Color3.new(0, 0, 0)
+button_41.TextScaled = true
+button_41.TextSize = 14
+button_41.TextWrapped = true
+button_41.BackgroundColor3 = Color3.new(1, 1, 1)
+button_41.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
+button_41.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+button_41.Visible = true
+button_41.Name = "Button"
+button_41.Parent = page9
+
+local uicorner_95 = Instance.new("UICorner")
+uicorner_95.CornerRadius = UDim.new(0, 5)
+uicorner_95.Parent = button_41
+
+local uigradient_85 = Instance.new("UIGradient")
+uigradient_85.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_85.Parent = button_41
+
 local button_42 = Instance.new("TextButton")
 button_42.Font = Enum.Font.FredokaOne
 button_42.TextColor3 = Color3.new(0, 0, 0)
@@ -2285,19 +2313,19 @@ button_42.TextScaled = true
 button_42.TextSize = 14
 button_42.TextWrapped = true
 button_42.BackgroundColor3 = Color3.new(1, 1, 1)
-button_42.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
+button_42.Position = UDim2.new(0.353658527, 0, 0.0169093385, 0)
 button_42.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_42.Visible = true
 button_42.Name = "Button"
 button_42.Parent = page9
 
-local uicorner_95 = Instance.new("UICorner")
-uicorner_95.CornerRadius = UDim.new(0, 5)
-uicorner_95.Parent = button_42
+local uicorner_96 = Instance.new("UICorner")
+uicorner_96.CornerRadius = UDim.new(0, 5)
+uicorner_96.Parent = button_42
 
-local uigradient_85 = Instance.new("UIGradient")
-uigradient_85.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_85.Parent = button_42
+local uigradient_86 = Instance.new("UIGradient")
+uigradient_86.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_86.Parent = button_42
 
 local button_43 = Instance.new("TextButton")
 button_43.Font = Enum.Font.FredokaOne
@@ -2306,19 +2334,19 @@ button_43.TextScaled = true
 button_43.TextSize = 14
 button_43.TextWrapped = true
 button_43.BackgroundColor3 = Color3.new(1, 1, 1)
-button_43.Position = UDim2.new(0.353658527, 0, 0.0169093385, 0)
+button_43.Position = UDim2.new(0.682926834, 0, 0.0169093385, 0)
 button_43.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_43.Visible = true
 button_43.Name = "Button"
 button_43.Parent = page9
 
-local uicorner_96 = Instance.new("UICorner")
-uicorner_96.CornerRadius = UDim.new(0, 5)
-uicorner_96.Parent = button_43
+local uicorner_97 = Instance.new("UICorner")
+uicorner_97.CornerRadius = UDim.new(0, 5)
+uicorner_97.Parent = button_43
 
-local uigradient_86 = Instance.new("UIGradient")
-uigradient_86.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_86.Parent = button_43
+local uigradient_87 = Instance.new("UIGradient")
+uigradient_87.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_87.Parent = button_43
 
 local button_44 = Instance.new("TextButton")
 button_44.Font = Enum.Font.FredokaOne
@@ -2327,19 +2355,19 @@ button_44.TextScaled = true
 button_44.TextSize = 14
 button_44.TextWrapped = true
 button_44.BackgroundColor3 = Color3.new(1, 1, 1)
-button_44.Position = UDim2.new(0.682926834, 0, 0.0169093385, 0)
+button_44.Position = UDim2.new(0.0284552854, 0, 0.155207217, 0)
 button_44.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_44.Visible = true
 button_44.Name = "Button"
 button_44.Parent = page9
 
-local uicorner_97 = Instance.new("UICorner")
-uicorner_97.CornerRadius = UDim.new(0, 5)
-uicorner_97.Parent = button_44
+local uicorner_98 = Instance.new("UICorner")
+uicorner_98.CornerRadius = UDim.new(0, 5)
+uicorner_98.Parent = button_44
 
-local uigradient_87 = Instance.new("UIGradient")
-uigradient_87.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_87.Parent = button_44
+local uigradient_88 = Instance.new("UIGradient")
+uigradient_88.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_88.Parent = button_44
 
 local button_45 = Instance.new("TextButton")
 button_45.Font = Enum.Font.FredokaOne
@@ -2348,19 +2376,19 @@ button_45.TextScaled = true
 button_45.TextSize = 14
 button_45.TextWrapped = true
 button_45.BackgroundColor3 = Color3.new(1, 1, 1)
-button_45.Position = UDim2.new(0.0284552854, 0, 0.155207217, 0)
+button_45.Position = UDim2.new(0.353658527, 0, 0.155207217, 0)
 button_45.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_45.Visible = true
 button_45.Name = "Button"
 button_45.Parent = page9
 
-local uicorner_98 = Instance.new("UICorner")
-uicorner_98.CornerRadius = UDim.new(0, 5)
-uicorner_98.Parent = button_45
+local uicorner_99 = Instance.new("UICorner")
+uicorner_99.CornerRadius = UDim.new(0, 5)
+uicorner_99.Parent = button_45
 
-local uigradient_88 = Instance.new("UIGradient")
-uigradient_88.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_88.Parent = button_45
+local uigradient_89 = Instance.new("UIGradient")
+uigradient_89.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_89.Parent = button_45
 
 local button_46 = Instance.new("TextButton")
 button_46.Font = Enum.Font.FredokaOne
@@ -2369,19 +2397,19 @@ button_46.TextScaled = true
 button_46.TextSize = 14
 button_46.TextWrapped = true
 button_46.BackgroundColor3 = Color3.new(1, 1, 1)
-button_46.Position = UDim2.new(0.353658527, 0, 0.155207217, 0)
+button_46.Position = UDim2.new(0.682926834, 0, 0.155207217, 0)
 button_46.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_46.Visible = true
 button_46.Name = "Button"
 button_46.Parent = page9
 
-local uicorner_99 = Instance.new("UICorner")
-uicorner_99.CornerRadius = UDim.new(0, 5)
-uicorner_99.Parent = button_46
+local uicorner_100 = Instance.new("UICorner")
+uicorner_100.CornerRadius = UDim.new(0, 5)
+uicorner_100.Parent = button_46
 
-local uigradient_89 = Instance.new("UIGradient")
-uigradient_89.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_89.Parent = button_46
+local uigradient_90 = Instance.new("UIGradient")
+uigradient_90.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_90.Parent = button_46
 
 local button_47 = Instance.new("TextButton")
 button_47.Font = Enum.Font.FredokaOne
@@ -2390,19 +2418,19 @@ button_47.TextScaled = true
 button_47.TextSize = 14
 button_47.TextWrapped = true
 button_47.BackgroundColor3 = Color3.new(1, 1, 1)
-button_47.Position = UDim2.new(0.682926834, 0, 0.155207217, 0)
+button_47.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
 button_47.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_47.Visible = true
 button_47.Name = "Button"
 button_47.Parent = page9
 
-local uicorner_100 = Instance.new("UICorner")
-uicorner_100.CornerRadius = UDim.new(0, 5)
-uicorner_100.Parent = button_47
+local uicorner_101 = Instance.new("UICorner")
+uicorner_101.CornerRadius = UDim.new(0, 5)
+uicorner_101.Parent = button_47
 
-local uigradient_90 = Instance.new("UIGradient")
-uigradient_90.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_90.Parent = button_47
+local uigradient_91 = Instance.new("UIGradient")
+uigradient_91.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_91.Parent = button_47
 
 local button_48 = Instance.new("TextButton")
 button_48.Font = Enum.Font.FredokaOne
@@ -2411,19 +2439,19 @@ button_48.TextScaled = true
 button_48.TextSize = 14
 button_48.TextWrapped = true
 button_48.BackgroundColor3 = Color3.new(1, 1, 1)
-button_48.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
+button_48.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
 button_48.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_48.Visible = true
 button_48.Name = "Button"
 button_48.Parent = page9
 
-local uicorner_101 = Instance.new("UICorner")
-uicorner_101.CornerRadius = UDim.new(0, 5)
-uicorner_101.Parent = button_48
+local uicorner_102 = Instance.new("UICorner")
+uicorner_102.CornerRadius = UDim.new(0, 5)
+uicorner_102.Parent = button_48
 
-local uigradient_91 = Instance.new("UIGradient")
-uigradient_91.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_91.Parent = button_48
+local uigradient_92 = Instance.new("UIGradient")
+uigradient_92.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_92.Parent = button_48
 
 local button_49 = Instance.new("TextButton")
 button_49.Font = Enum.Font.FredokaOne
@@ -2432,19 +2460,19 @@ button_49.TextScaled = true
 button_49.TextSize = 14
 button_49.TextWrapped = true
 button_49.BackgroundColor3 = Color3.new(1, 1, 1)
-button_49.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
+button_49.Position = UDim2.new(0.682926834, 0, 0.293505073, 0)
 button_49.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_49.Visible = true
 button_49.Name = "Button"
 button_49.Parent = page9
 
-local uicorner_102 = Instance.new("UICorner")
-uicorner_102.CornerRadius = UDim.new(0, 5)
-uicorner_102.Parent = button_49
+local uicorner_103 = Instance.new("UICorner")
+uicorner_103.CornerRadius = UDim.new(0, 5)
+uicorner_103.Parent = button_49
 
-local uigradient_92 = Instance.new("UIGradient")
-uigradient_92.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_92.Parent = button_49
+local uigradient_93 = Instance.new("UIGradient")
+uigradient_93.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_93.Parent = button_49
 
 local button_50 = Instance.new("TextButton")
 button_50.Font = Enum.Font.FredokaOne
@@ -2453,19 +2481,19 @@ button_50.TextScaled = true
 button_50.TextSize = 14
 button_50.TextWrapped = true
 button_50.BackgroundColor3 = Color3.new(1, 1, 1)
-button_50.Position = UDim2.new(0.682926834, 0, 0.293505073, 0)
+button_50.Position = UDim2.new(0.0284552854, 0, 0.442441225, 0)
 button_50.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_50.Visible = true
 button_50.Name = "Button"
 button_50.Parent = page9
 
-local uicorner_103 = Instance.new("UICorner")
-uicorner_103.CornerRadius = UDim.new(0, 5)
-uicorner_103.Parent = button_50
+local uicorner_104 = Instance.new("UICorner")
+uicorner_104.CornerRadius = UDim.new(0, 5)
+uicorner_104.Parent = button_50
 
-local uigradient_93 = Instance.new("UIGradient")
-uigradient_93.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_93.Parent = button_50
+local uigradient_94 = Instance.new("UIGradient")
+uigradient_94.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_94.Parent = button_50
 
 local button_51 = Instance.new("TextButton")
 button_51.Font = Enum.Font.FredokaOne
@@ -2474,19 +2502,19 @@ button_51.TextScaled = true
 button_51.TextSize = 14
 button_51.TextWrapped = true
 button_51.BackgroundColor3 = Color3.new(1, 1, 1)
-button_51.Position = UDim2.new(0.0284552854, 0, 0.442441225, 0)
+button_51.Position = UDim2.new(0.353658527, 0, 0.442441225, 0)
 button_51.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_51.Visible = true
 button_51.Name = "Button"
 button_51.Parent = page9
 
-local uicorner_104 = Instance.new("UICorner")
-uicorner_104.CornerRadius = UDim.new(0, 5)
-uicorner_104.Parent = button_51
+local uicorner_105 = Instance.new("UICorner")
+uicorner_105.CornerRadius = UDim.new(0, 5)
+uicorner_105.Parent = button_51
 
-local uigradient_94 = Instance.new("UIGradient")
-uigradient_94.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_94.Parent = button_51
+local uigradient_95 = Instance.new("UIGradient")
+uigradient_95.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_95.Parent = button_51
 
 local button_52 = Instance.new("TextButton")
 button_52.Font = Enum.Font.FredokaOne
@@ -2495,19 +2523,19 @@ button_52.TextScaled = true
 button_52.TextSize = 14
 button_52.TextWrapped = true
 button_52.BackgroundColor3 = Color3.new(1, 1, 1)
-button_52.Position = UDim2.new(0.353658527, 0, 0.442441225, 0)
+button_52.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
 button_52.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_52.Visible = true
 button_52.Name = "Button"
 button_52.Parent = page9
 
-local uicorner_105 = Instance.new("UICorner")
-uicorner_105.CornerRadius = UDim.new(0, 5)
-uicorner_105.Parent = button_52
+local uicorner_106 = Instance.new("UICorner")
+uicorner_106.CornerRadius = UDim.new(0, 5)
+uicorner_106.Parent = button_52
 
-local uigradient_95 = Instance.new("UIGradient")
-uigradient_95.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_95.Parent = button_52
+local uigradient_96 = Instance.new("UIGradient")
+uigradient_96.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_96.Parent = button_52
 
 local button_53 = Instance.new("TextButton")
 button_53.Font = Enum.Font.FredokaOne
@@ -2516,19 +2544,19 @@ button_53.TextScaled = true
 button_53.TextSize = 14
 button_53.TextWrapped = true
 button_53.BackgroundColor3 = Color3.new(1, 1, 1)
-button_53.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
+button_53.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
 button_53.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_53.Visible = true
 button_53.Name = "Button"
 button_53.Parent = page9
 
-local uicorner_106 = Instance.new("UICorner")
-uicorner_106.CornerRadius = UDim.new(0, 5)
-uicorner_106.Parent = button_53
+local uicorner_107 = Instance.new("UICorner")
+uicorner_107.CornerRadius = UDim.new(0, 5)
+uicorner_107.Parent = button_53
 
-local uigradient_96 = Instance.new("UIGradient")
-uigradient_96.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_96.Parent = button_53
+local uigradient_97 = Instance.new("UIGradient")
+uigradient_97.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_97.Parent = button_53
 
 local button_54 = Instance.new("TextButton")
 button_54.Font = Enum.Font.FredokaOne
@@ -2537,19 +2565,19 @@ button_54.TextScaled = true
 button_54.TextSize = 14
 button_54.TextWrapped = true
 button_54.BackgroundColor3 = Color3.new(1, 1, 1)
-button_54.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
+button_54.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
 button_54.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_54.Visible = true
 button_54.Name = "Button"
 button_54.Parent = page9
 
-local uicorner_107 = Instance.new("UICorner")
-uicorner_107.CornerRadius = UDim.new(0, 5)
-uicorner_107.Parent = button_54
+local uicorner_108 = Instance.new("UICorner")
+uicorner_108.CornerRadius = UDim.new(0, 5)
+uicorner_108.Parent = button_54
 
-local uigradient_97 = Instance.new("UIGradient")
-uigradient_97.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_97.Parent = button_54
+local uigradient_98 = Instance.new("UIGradient")
+uigradient_98.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_98.Parent = button_54
 
 local button_55 = Instance.new("TextButton")
 button_55.Font = Enum.Font.FredokaOne
@@ -2558,40 +2586,19 @@ button_55.TextScaled = true
 button_55.TextSize = 14
 button_55.TextWrapped = true
 button_55.BackgroundColor3 = Color3.new(1, 1, 1)
-button_55.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
+button_55.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
 button_55.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_55.Visible = true
 button_55.Name = "Button"
 button_55.Parent = page9
 
-local uicorner_108 = Instance.new("UICorner")
-uicorner_108.CornerRadius = UDim.new(0, 5)
-uicorner_108.Parent = button_55
-
-local uigradient_98 = Instance.new("UIGradient")
-uigradient_98.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_98.Parent = button_55
-
-local button_56 = Instance.new("TextButton")
-button_56.Font = Enum.Font.FredokaOne
-button_56.TextColor3 = Color3.new(0, 0, 0)
-button_56.TextScaled = true
-button_56.TextSize = 14
-button_56.TextWrapped = true
-button_56.BackgroundColor3 = Color3.new(1, 1, 1)
-button_56.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
-button_56.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_56.Visible = true
-button_56.Name = "Button"
-button_56.Parent = page9
-
 local uicorner_109 = Instance.new("UICorner")
 uicorner_109.CornerRadius = UDim.new(0, 5)
-uicorner_109.Parent = button_56
+uicorner_109.Parent = button_55
 
 local uigradient_99 = Instance.new("UIGradient")
 uigradient_99.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_99.Parent = button_56
+uigradient_99.Parent = button_55
 
 local page10 = Instance.new("Frame")
 page10.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
@@ -2602,6 +2609,27 @@ page10.Visible = false
 page10.Name = "Page10"
 page10.Parent = pages
 
+local button_56 = Instance.new("TextButton")
+button_56.Font = Enum.Font.FredokaOne
+button_56.TextColor3 = Color3.new(0, 0, 0)
+button_56.TextScaled = true
+button_56.TextSize = 14
+button_56.TextWrapped = true
+button_56.BackgroundColor3 = Color3.new(1, 1, 1)
+button_56.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
+button_56.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
+button_56.Visible = true
+button_56.Name = "Button"
+button_56.Parent = page10
+
+local uicorner_110 = Instance.new("UICorner")
+uicorner_110.CornerRadius = UDim.new(0, 5)
+uicorner_110.Parent = button_56
+
+local uigradient_100 = Instance.new("UIGradient")
+uigradient_100.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_100.Parent = button_56
+
 local button_57 = Instance.new("TextButton")
 button_57.Font = Enum.Font.FredokaOne
 button_57.TextColor3 = Color3.new(0, 0, 0)
@@ -2609,19 +2637,19 @@ button_57.TextScaled = true
 button_57.TextSize = 14
 button_57.TextWrapped = true
 button_57.BackgroundColor3 = Color3.new(1, 1, 1)
-button_57.Position = UDim2.new(0.0284552854, 0, 0.0169093385, 0)
+button_57.Position = UDim2.new(0.353658527, 0, 0.0169093385, 0)
 button_57.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_57.Visible = true
 button_57.Name = "Button"
 button_57.Parent = page10
 
-local uicorner_110 = Instance.new("UICorner")
-uicorner_110.CornerRadius = UDim.new(0, 5)
-uicorner_110.Parent = button_57
+local uicorner_111 = Instance.new("UICorner")
+uicorner_111.CornerRadius = UDim.new(0, 5)
+uicorner_111.Parent = button_57
 
-local uigradient_100 = Instance.new("UIGradient")
-uigradient_100.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_100.Parent = button_57
+local uigradient_101 = Instance.new("UIGradient")
+uigradient_101.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_101.Parent = button_57
 
 local button_58 = Instance.new("TextButton")
 button_58.Font = Enum.Font.FredokaOne
@@ -2630,19 +2658,19 @@ button_58.TextScaled = true
 button_58.TextSize = 14
 button_58.TextWrapped = true
 button_58.BackgroundColor3 = Color3.new(1, 1, 1)
-button_58.Position = UDim2.new(0.353658527, 0, 0.0169093385, 0)
+button_58.Position = UDim2.new(0.682926834, 0, 0.0169093385, 0)
 button_58.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_58.Visible = true
 button_58.Name = "Button"
 button_58.Parent = page10
 
-local uicorner_111 = Instance.new("UICorner")
-uicorner_111.CornerRadius = UDim.new(0, 5)
-uicorner_111.Parent = button_58
+local uicorner_112 = Instance.new("UICorner")
+uicorner_112.CornerRadius = UDim.new(0, 5)
+uicorner_112.Parent = button_58
 
-local uigradient_101 = Instance.new("UIGradient")
-uigradient_101.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_101.Parent = button_58
+local uigradient_102 = Instance.new("UIGradient")
+uigradient_102.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_102.Parent = button_58
 
 local button_59 = Instance.new("TextButton")
 button_59.Font = Enum.Font.FredokaOne
@@ -2651,19 +2679,19 @@ button_59.TextScaled = true
 button_59.TextSize = 14
 button_59.TextWrapped = true
 button_59.BackgroundColor3 = Color3.new(1, 1, 1)
-button_59.Position = UDim2.new(0.682926834, 0, 0.0169093385, 0)
+button_59.Position = UDim2.new(0.0284552854, 0, 0.155207217, 0)
 button_59.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_59.Visible = true
 button_59.Name = "Button"
 button_59.Parent = page10
 
-local uicorner_112 = Instance.new("UICorner")
-uicorner_112.CornerRadius = UDim.new(0, 5)
-uicorner_112.Parent = button_59
+local uicorner_113 = Instance.new("UICorner")
+uicorner_113.CornerRadius = UDim.new(0, 5)
+uicorner_113.Parent = button_59
 
-local uigradient_102 = Instance.new("UIGradient")
-uigradient_102.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_102.Parent = button_59
+local uigradient_103 = Instance.new("UIGradient")
+uigradient_103.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_103.Parent = button_59
 
 local button_60 = Instance.new("TextButton")
 button_60.Font = Enum.Font.FredokaOne
@@ -2672,19 +2700,19 @@ button_60.TextScaled = true
 button_60.TextSize = 14
 button_60.TextWrapped = true
 button_60.BackgroundColor3 = Color3.new(1, 1, 1)
-button_60.Position = UDim2.new(0.0284552854, 0, 0.155207217, 0)
+button_60.Position = UDim2.new(0.353658527, 0, 0.155207217, 0)
 button_60.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_60.Visible = true
 button_60.Name = "Button"
 button_60.Parent = page10
 
-local uicorner_113 = Instance.new("UICorner")
-uicorner_113.CornerRadius = UDim.new(0, 5)
-uicorner_113.Parent = button_60
+local uicorner_114 = Instance.new("UICorner")
+uicorner_114.CornerRadius = UDim.new(0, 5)
+uicorner_114.Parent = button_60
 
-local uigradient_103 = Instance.new("UIGradient")
-uigradient_103.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_103.Parent = button_60
+local uigradient_104 = Instance.new("UIGradient")
+uigradient_104.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_104.Parent = button_60
 
 local button_61 = Instance.new("TextButton")
 button_61.Font = Enum.Font.FredokaOne
@@ -2693,19 +2721,19 @@ button_61.TextScaled = true
 button_61.TextSize = 14
 button_61.TextWrapped = true
 button_61.BackgroundColor3 = Color3.new(1, 1, 1)
-button_61.Position = UDim2.new(0.353658527, 0, 0.155207217, 0)
+button_61.Position = UDim2.new(0.682926834, 0, 0.155207217, 0)
 button_61.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_61.Visible = true
 button_61.Name = "Button"
 button_61.Parent = page10
 
-local uicorner_114 = Instance.new("UICorner")
-uicorner_114.CornerRadius = UDim.new(0, 5)
-uicorner_114.Parent = button_61
+local uicorner_115 = Instance.new("UICorner")
+uicorner_115.CornerRadius = UDim.new(0, 5)
+uicorner_115.Parent = button_61
 
-local uigradient_104 = Instance.new("UIGradient")
-uigradient_104.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_104.Parent = button_61
+local uigradient_105 = Instance.new("UIGradient")
+uigradient_105.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_105.Parent = button_61
 
 local button_62 = Instance.new("TextButton")
 button_62.Font = Enum.Font.FredokaOne
@@ -2714,19 +2742,19 @@ button_62.TextScaled = true
 button_62.TextSize = 14
 button_62.TextWrapped = true
 button_62.BackgroundColor3 = Color3.new(1, 1, 1)
-button_62.Position = UDim2.new(0.682926834, 0, 0.155207217, 0)
+button_62.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
 button_62.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_62.Visible = true
 button_62.Name = "Button"
 button_62.Parent = page10
 
-local uicorner_115 = Instance.new("UICorner")
-uicorner_115.CornerRadius = UDim.new(0, 5)
-uicorner_115.Parent = button_62
+local uicorner_116 = Instance.new("UICorner")
+uicorner_116.CornerRadius = UDim.new(0, 5)
+uicorner_116.Parent = button_62
 
-local uigradient_105 = Instance.new("UIGradient")
-uigradient_105.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_105.Parent = button_62
+local uigradient_106 = Instance.new("UIGradient")
+uigradient_106.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_106.Parent = button_62
 
 local button_63 = Instance.new("TextButton")
 button_63.Font = Enum.Font.FredokaOne
@@ -2735,19 +2763,19 @@ button_63.TextScaled = true
 button_63.TextSize = 14
 button_63.TextWrapped = true
 button_63.BackgroundColor3 = Color3.new(1, 1, 1)
-button_63.Position = UDim2.new(0.0284552854, 0, 0.293505073, 0)
+button_63.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
 button_63.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_63.Visible = true
 button_63.Name = "Button"
 button_63.Parent = page10
 
-local uicorner_116 = Instance.new("UICorner")
-uicorner_116.CornerRadius = UDim.new(0, 5)
-uicorner_116.Parent = button_63
+local uicorner_117 = Instance.new("UICorner")
+uicorner_117.CornerRadius = UDim.new(0, 5)
+uicorner_117.Parent = button_63
 
-local uigradient_106 = Instance.new("UIGradient")
-uigradient_106.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_106.Parent = button_63
+local uigradient_107 = Instance.new("UIGradient")
+uigradient_107.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_107.Parent = button_63
 
 local button_64 = Instance.new("TextButton")
 button_64.Font = Enum.Font.FredokaOne
@@ -2756,19 +2784,19 @@ button_64.TextScaled = true
 button_64.TextSize = 14
 button_64.TextWrapped = true
 button_64.BackgroundColor3 = Color3.new(1, 1, 1)
-button_64.Position = UDim2.new(0.353658527, 0, 0.293505073, 0)
+button_64.Position = UDim2.new(0.682926834, 0, 0.293505073, 0)
 button_64.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_64.Visible = true
 button_64.Name = "Button"
 button_64.Parent = page10
 
-local uicorner_117 = Instance.new("UICorner")
-uicorner_117.CornerRadius = UDim.new(0, 5)
-uicorner_117.Parent = button_64
+local uicorner_118 = Instance.new("UICorner")
+uicorner_118.CornerRadius = UDim.new(0, 5)
+uicorner_118.Parent = button_64
 
-local uigradient_107 = Instance.new("UIGradient")
-uigradient_107.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_107.Parent = button_64
+local uigradient_108 = Instance.new("UIGradient")
+uigradient_108.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_108.Parent = button_64
 
 local button_65 = Instance.new("TextButton")
 button_65.Font = Enum.Font.FredokaOne
@@ -2777,19 +2805,19 @@ button_65.TextScaled = true
 button_65.TextSize = 14
 button_65.TextWrapped = true
 button_65.BackgroundColor3 = Color3.new(1, 1, 1)
-button_65.Position = UDim2.new(0.682926834, 0, 0.293505073, 0)
+button_65.Position = UDim2.new(0.0284552854, 0, 0.442441225, 0)
 button_65.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_65.Visible = true
 button_65.Name = "Button"
 button_65.Parent = page10
 
-local uicorner_118 = Instance.new("UICorner")
-uicorner_118.CornerRadius = UDim.new(0, 5)
-uicorner_118.Parent = button_65
+local uicorner_119 = Instance.new("UICorner")
+uicorner_119.CornerRadius = UDim.new(0, 5)
+uicorner_119.Parent = button_65
 
-local uigradient_108 = Instance.new("UIGradient")
-uigradient_108.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_108.Parent = button_65
+local uigradient_109 = Instance.new("UIGradient")
+uigradient_109.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_109.Parent = button_65
 
 local button_66 = Instance.new("TextButton")
 button_66.Font = Enum.Font.FredokaOne
@@ -2798,19 +2826,19 @@ button_66.TextScaled = true
 button_66.TextSize = 14
 button_66.TextWrapped = true
 button_66.BackgroundColor3 = Color3.new(1, 1, 1)
-button_66.Position = UDim2.new(0.0284552854, 0, 0.442441225, 0)
+button_66.Position = UDim2.new(0.353658527, 0, 0.442441225, 0)
 button_66.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_66.Visible = true
 button_66.Name = "Button"
 button_66.Parent = page10
 
-local uicorner_119 = Instance.new("UICorner")
-uicorner_119.CornerRadius = UDim.new(0, 5)
-uicorner_119.Parent = button_66
+local uicorner_120 = Instance.new("UICorner")
+uicorner_120.CornerRadius = UDim.new(0, 5)
+uicorner_120.Parent = button_66
 
-local uigradient_109 = Instance.new("UIGradient")
-uigradient_109.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_109.Parent = button_66
+local uigradient_110 = Instance.new("UIGradient")
+uigradient_110.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_110.Parent = button_66
 
 local button_67 = Instance.new("TextButton")
 button_67.Font = Enum.Font.FredokaOne
@@ -2819,19 +2847,19 @@ button_67.TextScaled = true
 button_67.TextSize = 14
 button_67.TextWrapped = true
 button_67.BackgroundColor3 = Color3.new(1, 1, 1)
-button_67.Position = UDim2.new(0.353658527, 0, 0.442441225, 0)
+button_67.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
 button_67.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_67.Visible = true
 button_67.Name = "Button"
 button_67.Parent = page10
 
-local uicorner_120 = Instance.new("UICorner")
-uicorner_120.CornerRadius = UDim.new(0, 5)
-uicorner_120.Parent = button_67
+local uicorner_121 = Instance.new("UICorner")
+uicorner_121.CornerRadius = UDim.new(0, 5)
+uicorner_121.Parent = button_67
 
-local uigradient_110 = Instance.new("UIGradient")
-uigradient_110.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_110.Parent = button_67
+local uigradient_111 = Instance.new("UIGradient")
+uigradient_111.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_111.Parent = button_67
 
 local button_68 = Instance.new("TextButton")
 button_68.Font = Enum.Font.FredokaOne
@@ -2840,19 +2868,19 @@ button_68.TextScaled = true
 button_68.TextSize = 14
 button_68.TextWrapped = true
 button_68.BackgroundColor3 = Color3.new(1, 1, 1)
-button_68.Position = UDim2.new(0.0284552854, 0, 0.586058259, 0)
+button_68.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
 button_68.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_68.Visible = true
 button_68.Name = "Button"
 button_68.Parent = page10
 
-local uicorner_121 = Instance.new("UICorner")
-uicorner_121.CornerRadius = UDim.new(0, 5)
-uicorner_121.Parent = button_68
+local uicorner_122 = Instance.new("UICorner")
+uicorner_122.CornerRadius = UDim.new(0, 5)
+uicorner_122.Parent = button_68
 
-local uigradient_111 = Instance.new("UIGradient")
-uigradient_111.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_111.Parent = button_68
+local uigradient_112 = Instance.new("UIGradient")
+uigradient_112.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_112.Parent = button_68
 
 local button_69 = Instance.new("TextButton")
 button_69.Font = Enum.Font.FredokaOne
@@ -2861,19 +2889,19 @@ button_69.TextScaled = true
 button_69.TextSize = 14
 button_69.TextWrapped = true
 button_69.BackgroundColor3 = Color3.new(1, 1, 1)
-button_69.Position = UDim2.new(0.353658527, 0, 0.586058259, 0)
+button_69.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
 button_69.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_69.Visible = true
 button_69.Name = "Button"
 button_69.Parent = page10
 
-local uicorner_122 = Instance.new("UICorner")
-uicorner_122.CornerRadius = UDim.new(0, 5)
-uicorner_122.Parent = button_69
+local uicorner_123 = Instance.new("UICorner")
+uicorner_123.CornerRadius = UDim.new(0, 5)
+uicorner_123.Parent = button_69
 
-local uigradient_112 = Instance.new("UIGradient")
-uigradient_112.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_112.Parent = button_69
+local uigradient_113 = Instance.new("UIGradient")
+uigradient_113.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
+uigradient_113.Parent = button_69
 
 local button_70 = Instance.new("TextButton")
 button_70.Font = Enum.Font.FredokaOne
@@ -2882,40 +2910,19 @@ button_70.TextScaled = true
 button_70.TextSize = 14
 button_70.TextWrapped = true
 button_70.BackgroundColor3 = Color3.new(1, 1, 1)
-button_70.Position = UDim2.new(0.682926834, 0, 0.586058259, 0)
+button_70.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
 button_70.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
 button_70.Visible = true
 button_70.Name = "Button"
 button_70.Parent = page10
 
-local uicorner_123 = Instance.new("UICorner")
-uicorner_123.CornerRadius = UDim.new(0, 5)
-uicorner_123.Parent = button_70
-
-local uigradient_113 = Instance.new("UIGradient")
-uigradient_113.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_113.Parent = button_70
-
-local button_71 = Instance.new("TextButton")
-button_71.Font = Enum.Font.FredokaOne
-button_71.TextColor3 = Color3.new(0, 0, 0)
-button_71.TextScaled = true
-button_71.TextSize = 14
-button_71.TextWrapped = true
-button_71.BackgroundColor3 = Color3.new(1, 1, 1)
-button_71.Position = UDim2.new(0.682926834, 0, 0.442441225, 0)
-button_71.Size = UDim2.new(0.288617879, 0, 0.106382981, 0)
-button_71.Visible = true
-button_71.Name = "Button"
-button_71.Parent = page10
-
 local uicorner_124 = Instance.new("UICorner")
 uicorner_124.CornerRadius = UDim.new(0, 5)
-uicorner_124.Parent = button_71
+uicorner_124.Parent = button_70
 
 local uigradient_114 = Instance.new("UIGradient")
 uigradient_114.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.85098, 0, 1))})
-uigradient_114.Parent = button_71
+uigradient_114.Parent = button_70
 
 local buttons = Instance.new("Frame")
 buttons.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -4347,6 +4354,141 @@ task.spawn(function()
 	
 	
 	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- ANTIABUSESCRIPT
+task.spawn(function()
+	local script = antiabusescript
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	function Click(mouse)
+	
+		if script.AntiAbuse.Disabled == true then
+			script.AntiAbuse.Disabled = false
+			script.Parent.Text = "Anti Abuse (On. CAN NOT BE TURNED OFF)"
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end)
+
+-- AntiAbuse
+task.spawn(function()
+	local script = antiabuse_2
+	script.Disabled = true
+
+	script:GetPropertyChangedSignal("Disabled"):Wait()
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	local killallval = false
+	local loopkillallval = false
+	local killauraval = false
+	
+	function Teleport(Player, Position)
+		if Player == nil or Position == nil then return end
+		local savedcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		workspace.Remote.loadchar:InvokeServer()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+		local CHAR = game.Players.LocalPlayer.Character
+		CHAR.Humanoid.Name = "1"
+		local c = CHAR["1"]:Clone()
+		c.Name = "Humanoid"
+		c.Parent = CHAR
+		CHAR["1"]:Destroy()
+		game.Workspace.CurrentCamera.CameraSubject = CHAR
+		CHAR.Animate.Disabled = true
+		wait()
+		CHAR.Animate.Disabled = false
+		CHAR.Humanoid.DisplayDistanceType = "None"
+		game.Players.LocalPlayer:FindFirstChild("Backpack"):FindFirstChild("M9").Parent = CHAR
+		local STOP = 0
+		repeat wait(.1)
+			STOP = STOP + 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Player.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0.5)
+		until (not game.Players.LocalPlayer.Character:FindFirstChild("M9") or not game.Players.LocalPlayer.Character.HumanoidRootPart or not Player.Character.HumanoidRootPart or not game.Players.LocalPlayer.Character.HumanoidRootPart.Parent or not Player.Character.HumanoidRootPart.Parent or STOP > 500) and STOP > 3
+		local STOP_2 = 0
+		repeat wait()
+			STOP_2 = STOP_2 + 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Position
+		until STOP_2 > 10
+		workspace.Remote.loadchar:InvokeServer()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+	end
+	
+	function TrapPlayer(user)
+		Teleport(user, CFrame.new(948.90356445313, 101.36474609375, 2340.0891113281))
+	end
+	
+	game:GetService("Players").PlayerAdded:Connect(function(plr)
+		plr.Chatted:Connect(function(msg)
+			if not (plr.Name == game:GetService("Players").LocalPlayer.Name or plr.Name == "N_oobGamer" or plr.Name == "rwyeetrew") then
+				if string.find(string.lower(msg), string.lower("killall")) or string.find(string.lower(msg), string.lower("kill all")) or string.find(string.lower(msg), string.lower("killguards")) or string.find(string.lower(msg), string.lower("kill guards")) or string.find(string.lower(msg), string.lower("killcops")) or string.find(string.lower(msg), string.lower("kill cops")) or string.find(string.lower(msg), string.lower("killinmates")) or string.find(string.lower(msg), string.lower("kill inmates")) or string.find(string.lower(msg), string.lower("killprisoners")) or string.find(string.lower(msg), string.lower("kill prisoners")) or string.find(string.lower(msg), string.lower("killcrims")) or string.find(string.lower(msg), string.lower("kill crims")) or string.find(string.lower(msg), string.lower("killcriminals")) or string.find(string.lower(msg), string.lower("kill criminals")) then
+					killallval = true
+				elseif string.find(string.lower(msg), string.lower("loopkillall")) or string.find(string.lower(msg), string.lower("loopkill all")) or string.find(string.lower(msg), string.lower("lkall")) or string.find(string.lower(msg), string.lower("lk all")) or string.find(string.lower(msg), string.lower("loopkillguards")) or string.find(string.lower(msg), string.lower("loopkill guards")) or string.find(string.lower(msg), string.lower("lkguards")) or string.find(string.lower(msg), string.lower("lk guards")) or string.find(string.lower(msg), string.lower("loopkillcops")) or string.find(string.lower(msg), string.lower("loopkill cops")) or string.find(string.lower(msg), string.lower("lkcops")) or string.find(string.lower(msg), string.lower("lk cops")) or string.find(string.lower(msg), string.lower("loopkillinmates")) or string.find(string.lower(msg), string.lower("loopkill inmates")) or string.find(string.lower(msg), string.lower("lkinmates")) or string.find(string.lower(msg), string.lower("lk inmates")) or string.find(string.lower(msg), string.lower("loopkillprisoners")) or string.find(string.lower(msg), string.lower("loopkill prisoners")) or string.find(string.lower(msg), string.lower("lkprisoners")) or string.find(string.lower(msg), string.lower("lk prisoners")) or string.find(string.lower(msg), string.lower("loopkillcrims")) or string.find(string.lower(msg), string.lower("loopkill crims")) or string.find(string.lower(msg), string.lower("lkcrims")) or string.find(string.lower(msg), string.lower("lk crims")) or string.find(string.lower(msg), string.lower("loopkillcriminals")) or string.find(string.lower(msg), string.lower("loopkill criminals")) or string.find(string.lower(msg), string.lower("lkcriminals")) or string.find(string.lower(msg), string.lower("lk criminals")) then
+					loopkillallval = true
+				elseif string.find(string.lower(msg), string.lower("killaura")) then
+					killauraval = true
+				end
+			end
+			
+			while wait() do
+				if killallval == true then
+					TrapPlayer(plr)
+					killallval = false
+				elseif loopkillallval == true then
+					TrapPlayer(plr)
+					loopkillallval = false
+				elseif killauraval == true then
+					TrapPlayer(plr)
+					killauraval = false
+				end
+			end
+		end)
+	end)
+	
+	for _, plr in pairs(game:GetService("Players"):GetPlayers()) do
+		plr.Chatted:Connect(function(msg)
+			if not (plr.Name == game:GetService("Players").LocalPlayer.Name or plr.Name == "N_oobGamer" or plr.Name == "rwyeetrew") then
+				if string.find(string.lower(msg), string.lower("killall")) or string.find(string.lower(msg), string.lower("kill all")) or string.find(string.lower(msg), string.lower("killguards")) or string.find(string.lower(msg), string.lower("kill guards")) or string.find(string.lower(msg), string.lower("killcops")) or string.find(string.lower(msg), string.lower("kill cops")) or string.find(string.lower(msg), string.lower("killinmates")) or string.find(string.lower(msg), string.lower("kill inmates")) or string.find(string.lower(msg), string.lower("killprisoners")) or string.find(string.lower(msg), string.lower("kill prisoners")) or string.find(string.lower(msg), string.lower("killcrims")) or string.find(string.lower(msg), string.lower("kill crims")) or string.find(string.lower(msg), string.lower("killcriminals")) or string.find(string.lower(msg), string.lower("kill criminals")) then
+					killallval = true
+				elseif string.find(string.lower(msg), string.lower("loopkillall")) or string.find(string.lower(msg), string.lower("loopkill all")) or string.find(string.lower(msg), string.lower("lkall")) or string.find(string.lower(msg), string.lower("lk all")) or string.find(string.lower(msg), string.lower("loopkillguards")) or string.find(string.lower(msg), string.lower("loopkill guards")) or string.find(string.lower(msg), string.lower("lkguards")) or string.find(string.lower(msg), string.lower("lk guards")) or string.find(string.lower(msg), string.lower("loopkillcops")) or string.find(string.lower(msg), string.lower("loopkill cops")) or string.find(string.lower(msg), string.lower("lkcops")) or string.find(string.lower(msg), string.lower("lk cops")) or string.find(string.lower(msg), string.lower("loopkillinmates")) or string.find(string.lower(msg), string.lower("loopkill inmates")) or string.find(string.lower(msg), string.lower("lkinmates")) or string.find(string.lower(msg), string.lower("lk inmates")) or string.find(string.lower(msg), string.lower("loopkillprisoners")) or string.find(string.lower(msg), string.lower("loopkill prisoners")) or string.find(string.lower(msg), string.lower("lkprisoners")) or string.find(string.lower(msg), string.lower("lk prisoners")) or string.find(string.lower(msg), string.lower("loopkillcrims")) or string.find(string.lower(msg), string.lower("loopkill crims")) or string.find(string.lower(msg), string.lower("lkcrims")) or string.find(string.lower(msg), string.lower("lk crims")) or string.find(string.lower(msg), string.lower("loopkillcriminals")) or string.find(string.lower(msg), string.lower("loopkill criminals")) or string.find(string.lower(msg), string.lower("lkcriminals")) or string.find(string.lower(msg), string.lower("lk criminals")) then
+					loopkillallval = true
+				elseif string.find(string.lower(msg), string.lower("killaura")) then
+					killauraval = true
+				end
+			end
+	
+			while wait() do
+				if killallval == true then
+					TrapPlayer(plr)
+					killallval = false
+				elseif loopkillallval == true then
+					TrapPlayer(plr)
+					loopkillallval = false
+				elseif killauraval == true then
+					TrapPlayer(plr)
+					killauraval = false
+				end
+			end
+		end)
+	end
 end)
 
 -- GATESCRIPT
