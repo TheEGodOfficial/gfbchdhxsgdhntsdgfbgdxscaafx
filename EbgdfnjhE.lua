@@ -1180,11 +1180,6 @@ local antiabusescript = Instance.new("Script")
 antiabusescript.Name = "ANTIABUSESCRIPT"
 antiabusescript.Parent = antiabuse
 
-local antiabuse_2 = Instance.new("LocalScript")
-antiabuse_2.Disabled = true
-antiabuse_2.Name = "AntiAbuse"
-antiabuse_2.Parent = antiabusescript
-
 local button = Instance.new("TextButton")
 button.Font = Enum.Font.FredokaOne
 button.TextColor3 = Color3.new(0, 0, 0)
@@ -4368,34 +4363,23 @@ task.spawn(function()
 		return oldreq(target)
 	end
 
+	local enabled = false
+	
 	function Click(mouse)
 	
-		if script.AntiAbuse.Disabled == true then
-			script.AntiAbuse.Disabled = false
-			script.Parent.Text = "Anti Abuse: On (CAN'T BE TURNED OFF)"
+		if enabled == false then
+			enabled = true
+			script.Parent.Text = "Anti Abuse: True"
+		else
+			enabled = false
+			script.Parent.Text = "Anti Abuse: False"
 		end
 	
 	end
 	
 	
 	script.Parent.MouseButton1Down:Connect(Click)
-end)
-
--- AntiAbuse
-task.spawn(function()
-	local script = antiabuse_2
-	script.Disabled = true
-
-	script:GetPropertyChangedSignal("Disabled"):Wait()
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
+	
 	local killallval = false
 	local loopkillallval = false
 	local killauraval = false
@@ -4432,62 +4416,37 @@ task.spawn(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
 	end
 	
-	local function TrapPlayer(user)
-		Teleport(user, CFrame.new(948.90356445313, 101.36474609375, 2340.0891113281))
+	local function TheScript(plr, msg)
+		if not (plr.Name == game:GetService("Players").LocalPlayer.Name or plr.Name == "N_oobGamer" or plr.Name == "rwyeetrew") then
+			if string.find(string.lower(msg), string.lower("killall")) or string.find(string.lower(msg), string.lower("kill all")) or string.find(string.lower(msg), string.lower("killguards")) or string.find(string.lower(msg), string.lower("kill guards")) or string.find(string.lower(msg), string.lower("killcops")) or string.find(string.lower(msg), string.lower("kill cops")) or string.find(string.lower(msg), string.lower("killinmates")) or string.find(string.lower(msg), string.lower("kill inmates")) or string.find(string.lower(msg), string.lower("killprisoners")) or string.find(string.lower(msg), string.lower("kill prisoners")) or string.find(string.lower(msg), string.lower("killcrims")) or string.find(string.lower(msg), string.lower("kill crims")) or string.find(string.lower(msg), string.lower("killcriminals")) or string.find(string.lower(msg), string.lower("kill criminals")) then
+				killallval = true
+			elseif string.find(string.lower(msg), string.lower("loopkillall")) or string.find(string.lower(msg), string.lower("loopkill all")) or string.find(string.lower(msg), string.lower("lkall")) or string.find(string.lower(msg), string.lower("lk all")) or string.find(string.lower(msg), string.lower("loopkillguards")) or string.find(string.lower(msg), string.lower("loopkill guards")) or string.find(string.lower(msg), string.lower("lkguards")) or string.find(string.lower(msg), string.lower("lk guards")) or string.find(string.lower(msg), string.lower("loopkillcops")) or string.find(string.lower(msg), string.lower("loopkill cops")) or string.find(string.lower(msg), string.lower("lkcops")) or string.find(string.lower(msg), string.lower("lk cops")) or string.find(string.lower(msg), string.lower("loopkillinmates")) or string.find(string.lower(msg), string.lower("loopkill inmates")) or string.find(string.lower(msg), string.lower("lkinmates")) or string.find(string.lower(msg), string.lower("lk inmates")) or string.find(string.lower(msg), string.lower("loopkillprisoners")) or string.find(string.lower(msg), string.lower("loopkill prisoners")) or string.find(string.lower(msg), string.lower("lkprisoners")) or string.find(string.lower(msg), string.lower("lk prisoners")) or string.find(string.lower(msg), string.lower("loopkillcrims")) or string.find(string.lower(msg), string.lower("loopkill crims")) or string.find(string.lower(msg), string.lower("lkcrims")) or string.find(string.lower(msg), string.lower("lk crims")) or string.find(string.lower(msg), string.lower("loopkillcriminals")) or string.find(string.lower(msg), string.lower("loopkill criminals")) or string.find(string.lower(msg), string.lower("lkcriminals")) or string.find(string.lower(msg), string.lower("lk criminals")) then
+				loopkillallval = true
+			elseif string.find(string.lower(msg), string.lower("killaura")) then
+				killauraval = true
+			end
+		end
 	end
 	
-	game:GetService("Players").PlayerAdded:Connect(function(plr)
-		plr.Chatted:Connect(function(msg)
-			if not (plr.Name == game:GetService("Players").LocalPlayer.Name or plr.Name == "N_oobGamer" or plr.Name == "rwyeetrew") then
-				if string.find(string.lower(msg), string.lower("killall")) or string.find(string.lower(msg), string.lower("kill all")) or string.find(string.lower(msg), string.lower("killguards")) or string.find(string.lower(msg), string.lower("kill guards")) or string.find(string.lower(msg), string.lower("killcops")) or string.find(string.lower(msg), string.lower("kill cops")) or string.find(string.lower(msg), string.lower("killinmates")) or string.find(string.lower(msg), string.lower("kill inmates")) or string.find(string.lower(msg), string.lower("killprisoners")) or string.find(string.lower(msg), string.lower("kill prisoners")) or string.find(string.lower(msg), string.lower("killcrims")) or string.find(string.lower(msg), string.lower("kill crims")) or string.find(string.lower(msg), string.lower("killcriminals")) or string.find(string.lower(msg), string.lower("kill criminals")) then
-					killallval = true
-				elseif string.find(string.lower(msg), string.lower("loopkillall")) or string.find(string.lower(msg), string.lower("loopkill all")) or string.find(string.lower(msg), string.lower("lkall")) or string.find(string.lower(msg), string.lower("lk all")) or string.find(string.lower(msg), string.lower("loopkillguards")) or string.find(string.lower(msg), string.lower("loopkill guards")) or string.find(string.lower(msg), string.lower("lkguards")) or string.find(string.lower(msg), string.lower("lk guards")) or string.find(string.lower(msg), string.lower("loopkillcops")) or string.find(string.lower(msg), string.lower("loopkill cops")) or string.find(string.lower(msg), string.lower("lkcops")) or string.find(string.lower(msg), string.lower("lk cops")) or string.find(string.lower(msg), string.lower("loopkillinmates")) or string.find(string.lower(msg), string.lower("loopkill inmates")) or string.find(string.lower(msg), string.lower("lkinmates")) or string.find(string.lower(msg), string.lower("lk inmates")) or string.find(string.lower(msg), string.lower("loopkillprisoners")) or string.find(string.lower(msg), string.lower("loopkill prisoners")) or string.find(string.lower(msg), string.lower("lkprisoners")) or string.find(string.lower(msg), string.lower("lk prisoners")) or string.find(string.lower(msg), string.lower("loopkillcrims")) or string.find(string.lower(msg), string.lower("loopkill crims")) or string.find(string.lower(msg), string.lower("lkcrims")) or string.find(string.lower(msg), string.lower("lk crims")) or string.find(string.lower(msg), string.lower("loopkillcriminals")) or string.find(string.lower(msg), string.lower("loopkill criminals")) or string.find(string.lower(msg), string.lower("lkcriminals")) or string.find(string.lower(msg), string.lower("lk criminals")) then
-					loopkillallval = true
-				elseif string.find(string.lower(msg), string.lower("killaura")) then
-					killauraval = true
-				end
-			end
-	
-			while wait() do
+	while wait() do
+		if enabled == true then
+			for _, user in pairs(game:GetService("Players"):GetPlayers()) do
+				user.Chatted:Connect(function(chat)
+					TheScript(user, chat)
+				end)
+				
 				if killallval == true then
-					TrapPlayer(plr)
+					Teleport(user, CFrame.new(948.90356445313, 101.36474609375, 2340.0891113281))
 					killallval = false
 				elseif loopkillallval == true then
-					TrapPlayer(plr)
+					Teleport(user, CFrame.new(948.90356445313, 101.36474609375, 2340.0891113281))
 					loopkillallval = false
 				elseif killauraval == true then
-					TrapPlayer(plr)
+					Teleport(user, CFrame.new(948.90356445313, 101.36474609375, 2340.0891113281))
 					killauraval = false
 				end
 			end
-		end)
-	end)
-	
-	for _, plr in pairs(game:GetService("Players"):GetPlayers()) do
-		plr.Chatted:Connect(function(msg)
-			if not (plr.Name == game:GetService("Players").LocalPlayer.Name or plr.Name == "N_oobGamer" or plr.Name == "rwyeetrew") then
-				if string.find(string.lower(msg), string.lower("killall")) or string.find(string.lower(msg), string.lower("kill all")) or string.find(string.lower(msg), string.lower("killguards")) or string.find(string.lower(msg), string.lower("kill guards")) or string.find(string.lower(msg), string.lower("killcops")) or string.find(string.lower(msg), string.lower("kill cops")) or string.find(string.lower(msg), string.lower("killinmates")) or string.find(string.lower(msg), string.lower("kill inmates")) or string.find(string.lower(msg), string.lower("killprisoners")) or string.find(string.lower(msg), string.lower("kill prisoners")) or string.find(string.lower(msg), string.lower("killcrims")) or string.find(string.lower(msg), string.lower("kill crims")) or string.find(string.lower(msg), string.lower("killcriminals")) or string.find(string.lower(msg), string.lower("kill criminals")) then
-					killallval = true
-				elseif string.find(string.lower(msg), string.lower("loopkillall")) or string.find(string.lower(msg), string.lower("loopkill all")) or string.find(string.lower(msg), string.lower("lkall")) or string.find(string.lower(msg), string.lower("lk all")) or string.find(string.lower(msg), string.lower("loopkillguards")) or string.find(string.lower(msg), string.lower("loopkill guards")) or string.find(string.lower(msg), string.lower("lkguards")) or string.find(string.lower(msg), string.lower("lk guards")) or string.find(string.lower(msg), string.lower("loopkillcops")) or string.find(string.lower(msg), string.lower("loopkill cops")) or string.find(string.lower(msg), string.lower("lkcops")) or string.find(string.lower(msg), string.lower("lk cops")) or string.find(string.lower(msg), string.lower("loopkillinmates")) or string.find(string.lower(msg), string.lower("loopkill inmates")) or string.find(string.lower(msg), string.lower("lkinmates")) or string.find(string.lower(msg), string.lower("lk inmates")) or string.find(string.lower(msg), string.lower("loopkillprisoners")) or string.find(string.lower(msg), string.lower("loopkill prisoners")) or string.find(string.lower(msg), string.lower("lkprisoners")) or string.find(string.lower(msg), string.lower("lk prisoners")) or string.find(string.lower(msg), string.lower("loopkillcrims")) or string.find(string.lower(msg), string.lower("loopkill crims")) or string.find(string.lower(msg), string.lower("lkcrims")) or string.find(string.lower(msg), string.lower("lk crims")) or string.find(string.lower(msg), string.lower("loopkillcriminals")) or string.find(string.lower(msg), string.lower("loopkill criminals")) or string.find(string.lower(msg), string.lower("lkcriminals")) or string.find(string.lower(msg), string.lower("lk criminals")) then
-					loopkillallval = true
-				elseif string.find(string.lower(msg), string.lower("killaura")) then
-					killauraval = true
-				end
-			end
-	
-			while wait() do
-				if killallval == true then
-					TrapPlayer(plr)
-					killallval = false
-				elseif loopkillallval == true then
-					TrapPlayer(plr)
-					loopkillallval = false
-				elseif killauraval == true then
-					TrapPlayer(plr)
-					killauraval = false
-				end
-			end
-		end)
+		end
 	end
 end)
 
