@@ -454,8 +454,8 @@ Converted["_PrisonLifeUI"].Name = "PrisonLifeUI"
 Converted["_PrisonLifeUI"].Parent = game:GetService("CoreGui")
 
 Converted["_Main"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 34.00000177323818, 34.00000177323818)
-Converted["_Main"].Position = UDim2.new(0.383934587, 0, 0.308901161, 0)
-Converted["_Main"].Size = UDim2.new(0.192187503, 0, 0.407124698, 0)
+Converted["_Main"].Position = UDim2.new(0.0647856295, 0, 0.275504231, 0)
+Converted["_Main"].Size = UDim2.new(0.220347703, 0, 0.486641228, 0)
 Converted["_Main"].ZIndex = 999999999
 Converted["_Main"].Name = "Main"
 Converted["_Main"].Parent = Converted["_PrisonLifeUI"]
@@ -3282,7 +3282,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function HKBO_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.ArrestAll.ARRESTALLSCRIPT
+local function KTEDSN_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.ArrestAll.ARRESTALLSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "ARRESTALLSCRIPT"
     script.Parent = Converted["_ArrestAll"]
@@ -3316,7 +3316,7 @@ local function HKBO_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function OPJCBQ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.WeirdMirror.WEIRDMIRRORSCRIPT
+local function KSZQFJI_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.WeirdMirror.WEIRDMIRRORSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "WEIRDMIRRORSCRIPT"
     script.Parent = Converted["_WeirdMirror"]
@@ -3341,7 +3341,7 @@ local function OPJCBQ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	script.Parent.MouseButton1Down:Connect(Click)
 	
 end
-local function FDCAOKZ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Weapons.WEAPONSSCRIPT
+local function AHPW_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Weapons.WEAPONSSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "WEAPONSSCRIPT"
     script.Parent = Converted["_Weapons"]
@@ -3371,7 +3371,7 @@ local function FDCAOKZ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	script.Parent.MouseButton1Down:Connect(Click)
 	
 end
-local function RELBHC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Remmington.REMMINGTONSCRIPT
+local function SNUR_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Remmington.REMMINGTONSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "REMMINGTONSCRIPT"
     script.Parent = Converted["_Remmington"]
@@ -3396,7 +3396,7 @@ local function RELBHC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	script.Parent.MouseButton1Down:Connect(Click)
 	
 end
-local function OVTFCH_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Ak-47.AK47SCRIPT
+local function SGONN_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Ak-47.AK47SCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "AK47SCRIPT"
     script.Parent = Converted["_Ak-47"]
@@ -3421,7 +3421,7 @@ local function OVTFCH_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	script.Parent.MouseButton1Down:Connect(Click)
 	
 end
-local function LNHSU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.INF Ammo.INFAMMOSCRIPT
+local function EZHYUBV_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.INF Ammo.INFAMMOSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "INFAMMOSCRIPT"
     script.Parent = Converted["_INF Ammo"]
@@ -3444,7 +3444,7 @@ local function LNHSU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function CDOUHAH_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.M9.M9SCRIPT
+local function QGAG_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.M9.M9SCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "M9SCRIPT"
     script.Parent = Converted["_M9"]
@@ -3468,7 +3468,7 @@ local function CDOUHAH_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function WJWAEVG_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.White team.WHITETEAMSCRIPT
+local function MPYFTE_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.White team.WHITETEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "WHITETEAMSCRIPT"
     script.Parent = Converted["_White team"]
@@ -3502,7 +3502,7 @@ local function WJWAEVG_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function SSQPFB_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Black team.BLACKTEAMSCRIPT
+local function QVTBZEP_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Black team.BLACKTEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "BLACKTEAMSCRIPT"
     script.Parent = Converted["_Black team"]
@@ -3536,7 +3536,7 @@ local function SSQPFB_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function QMIW_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Blue team.BLUETEAMSCRIPT
+local function JHQROC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Blue team.BLUETEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "BLUETEAMSCRIPT"
     script.Parent = Converted["_Blue team"]
@@ -3570,7 +3570,7 @@ local function QMIW_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function MUGV_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Red team.REDTEAMSCRIPT
+local function LAXMN_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Red team.REDTEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "REDTEAMSCRIPT"
     script.Parent = Converted["_Red team"]
@@ -3604,7 +3604,7 @@ local function MUGV_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function MUXFFL_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Yellow team.YELLOWTEAMSCRIPT
+local function KLJX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Yellow team.YELLOWTEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "YELLOWTEAMSCRIPT"
     script.Parent = Converted["_Yellow team"]
@@ -3638,7 +3638,7 @@ local function MUXFFL_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function VUWEEA_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Pink team.PINKTEAMSCRIPT
+local function ZSPUAQT_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Pink team.PINKTEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "PINKTEAMSCRIPT"
     script.Parent = Converted["_Pink team"]
@@ -3672,7 +3672,7 @@ local function VUWEEA_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function NEDQOPN_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Purple team.PURPLETEAMSCRIPT
+local function LNPGD_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Purple team.PURPLETEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "PURPLETEAMSCRIPT"
     script.Parent = Converted["_Purple team"]
@@ -3706,7 +3706,7 @@ local function NEDQOPN_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function RQEPJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Green team.GREENTEAMSCRIPT
+local function UHXRX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page1.Green team.GREENTEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "GREENTEAMSCRIPT"
     script.Parent = Converted["_Green team"]
@@ -3740,7 +3740,7 @@ local function RQEPJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function JGJJYSE_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Auto Re.AUTORESCRIPT
+local function WEFEIC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Auto Re.AUTORESCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "AUTORESCRIPT"
     script.Parent = Converted["_Auto Re"]
@@ -3827,7 +3827,7 @@ local function JGJJYSE_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 		end
 	end
 end
-local function WXOSK_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Kill All.KILLALLSCRIPT
+local function MCDS_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Kill All.KILLALLSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "KILLALLSCRIPT"
     script.Parent = Converted["_Kill All"]
@@ -3894,7 +3894,7 @@ local function WXOSK_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function OEZP_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Crim.CRIMTEAMSCRIPT
+local function OXUMF_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Crim.CRIMTEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "CRIMTEAMSCRIPT"
     script.Parent = Converted["_Crim"]
@@ -3928,7 +3928,7 @@ local function OEZP_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function KTJUIX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Guard.GUARDTEAMSCRIPT
+local function UXWC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Guard.GUARDTEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "GUARDTEAMSCRIPT"
     script.Parent = Converted["_Guard"]
@@ -3956,7 +3956,7 @@ local function KTJUIX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function KSSPJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Inmate.INMATETEAMSCRIPT
+local function VJQZ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Inmate.INMATETEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "INMATETEAMSCRIPT"
     script.Parent = Converted["_Inmate"]
@@ -3978,7 +3978,7 @@ local function KSSPJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function ZRRYVGX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Neutral.NEUTRALTEAMSCRIPT
+local function AZGAK_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Neutral.NEUTRALTEAMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "NEUTRALTEAMSCRIPT"
     script.Parent = Converted["_Neutral"]
@@ -4000,7 +4000,7 @@ local function ZRRYVGX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function DBJXXXW_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Cop KillAura.COPKILLAURASCRIPT
+local function ZAAZK_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Cop KillAura.COPKILLAURASCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "COPKILLAURASCRIPT"
     script.Parent = Converted["_Cop KillAura"]
@@ -4051,7 +4051,7 @@ local function DBJXXXW_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function FEGSID_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.InmateKill Aura.INMATEKILLAURASCRIPT
+local function MHXYBC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.InmateKill Aura.INMATEKILLAURASCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "INMATEKILLAURASCRIPT"
     script.Parent = Converted["_InmateKill Aura"]
@@ -4102,7 +4102,7 @@ local function FEGSID_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function JMPSDSJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.CriminalKillAura.CRIMINALKILLAURASCRIPT
+local function HAKHSB_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.CriminalKillAura.CRIMINALKILLAURASCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "CRIMINALKILLAURASCRIPT"
     script.Parent = Converted["_CriminalKillAura"]
@@ -4153,7 +4153,7 @@ local function JMPSDSJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function BAXU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Doors.DOORSSCRIPT
+local function LBRMOF_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Doors.DOORSSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "DOORSSCRIPT"
     script.Parent = Converted["_Doors"]
@@ -4189,7 +4189,7 @@ local function BAXU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function UTSPZQN_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Fences.FENCESSCRIPT
+local function VHZICQ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Fences.FENCESSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "FENCESSCRIPT"
     script.Parent = Converted["_Fences"]
@@ -4225,7 +4225,7 @@ local function UTSPZQN_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function OWNIXLO_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Key Card.FINDKEYCARDSCRIPT
+local function EAMM_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Key Card.FINDKEYCARDSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "FINDKEYCARDSCRIPT"
     script.Parent = Converted["_Key Card"]
@@ -4248,7 +4248,7 @@ local function OWNIXLO_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function SFMRO_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Tase All.TASEALLSCRIPT
+local function VNKNDVF_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Tase All.TASEALLSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "TASEALLSCRIPT"
     script.Parent = Converted["_Tase All"]
@@ -4306,7 +4306,7 @@ local function SFMRO_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function LWET_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Burst.BURSTGUNSCRIPT
+local function OLMJJYN_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Burst.BURSTGUNSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "BURSTGUNSCRIPT"
     script.Parent = Converted["_Burst"]
@@ -4329,7 +4329,7 @@ local function LWET_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function ITERLJU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Reload Time.RELOADTIMESCRIPT
+local function FFILOEK_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page2.Reload Time.RELOADTIMESCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "RELOADTIMESCRIPT"
     script.Parent = Converted["_Reload Time"]
@@ -4352,7 +4352,7 @@ local function ITERLJU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function JQVWS_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Fire Rate.FIRERATESCRIPT
+local function UFEN_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Fire Rate.FIRERATESCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "FIRERATESCRIPT"
     script.Parent = Converted["_Fire Rate"]
@@ -4375,7 +4375,7 @@ local function JQVWS_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function OLNV_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Nexus.NEXUSSCRIPT
+local function KSIPM_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Nexus.NEXUSSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "NEXUSSCRIPT"
     script.Parent = Converted["_Nexus"]
@@ -4397,7 +4397,7 @@ local function OLNV_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function GWQZQOZ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Cafe.CAFESCRIPT
+local function VRFBFM_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Cafe.CAFESCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "CAFESCRIPT"
     script.Parent = Converted["_Cafe"]
@@ -4419,7 +4419,7 @@ local function GWQZQOZ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function BPZJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Back Nexus.BACKNEXUSSCRIPT
+local function YJRVLDC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Back Nexus.BACKNEXUSSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "BACKNEXUSSCRIPT"
     script.Parent = Converted["_Back Nexus"]
@@ -4441,7 +4441,7 @@ local function BPZJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function XMTCCX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Yard.YARDSCRIPT
+local function DAUU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Yard.YARDSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "YARDSCRIPT"
     script.Parent = Converted["_Yard"]
@@ -4463,7 +4463,7 @@ local function XMTCCX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function GXVU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.CrimBase.CRIMBASESCRIPT
+local function CJPMH_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.CrimBase.CRIMBASESCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "CRIMBASESCRIPT"
     script.Parent = Converted["_CrimBase"]
@@ -4485,7 +4485,7 @@ local function GXVU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function SUMCGH_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Armory.ARMORYSCRIPT
+local function NZQBBT_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Armory.ARMORYSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "ARMORYSCRIPT"
     script.Parent = Converted["_Armory"]
@@ -4507,7 +4507,7 @@ local function SUMCGH_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function ERIOLFA_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Lunch Room.LUNCHROOMSCRIPT
+local function QGXFWOX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Lunch Room.LUNCHROOMSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "LUNCHROOMSCRIPT"
     script.Parent = Converted["_Lunch Room"]
@@ -4529,7 +4529,7 @@ local function ERIOLFA_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function VOGTE_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Gate.GATESCRIPT
+local function SNEARH_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Gate.GATESCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "GATESCRIPT"
     script.Parent = Converted["_Gate"]
@@ -4551,7 +4551,7 @@ local function VOGTE_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function NRJXLO_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Tower.TOWERSCRIPT
+local function LKFTOFU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Tower.TOWERSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "TOWERSCRIPT"
     script.Parent = Converted["_Tower"]
@@ -4573,7 +4573,7 @@ local function NRJXLO_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function TSDZEGC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.GateTower.GATETOWERSCRIPT
+local function TECTOD_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.GateTower.GATETOWERSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "GATETOWERSCRIPT"
     script.Parent = Converted["_GateTower"]
@@ -4595,7 +4595,7 @@ local function TSDZEGC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function JINRWK_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Crates.CRATESSCRIPT
+local function TRSJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Crates.CRATESSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "CRATESSCRIPT"
     script.Parent = Converted["_Crates"]
@@ -4617,7 +4617,7 @@ local function JINRWK_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function THLG_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Anti Void.ANTIVOIDSCRIPT
+local function GLCZW_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Anti Void.ANTIVOIDSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "ANTIVOIDSCRIPT"
     script.Parent = Converted["_Anti Void"]
@@ -4655,7 +4655,7 @@ local function THLG_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 		end
 	end
 end
-local function LBWAP_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.RandomDoor.RANDOMDOORSCRIPT
+local function AUQKJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.RandomDoor.RANDOMDOORSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "RANDOMDOORSCRIPT"
     script.Parent = Converted["_RandomDoor"]
@@ -4677,7 +4677,7 @@ local function LBWAP_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function KYEUJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Sewer.SEWERSCRIPT
+local function MTEMVO_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page3.Sewer.SEWERSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "SEWERSCRIPT"
     script.Parent = Converted["_Sewer"]
@@ -4699,7 +4699,7 @@ local function KYEUJ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function SLDA_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page4.SpeedButton.SPEEDSCRIPT
+local function SWCA_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page4.SpeedButton.SPEEDSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "SPEEDSCRIPT"
     script.Parent = Converted["_SpeedButton"]
@@ -4723,7 +4723,7 @@ local function SLDA_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function IKICD_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page4.JumpButton.JUMPSCRIPT
+local function WXLMYX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page4.JumpButton.JUMPSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "JUMPSCRIPT"
     script.Parent = Converted["_JumpButton"]
@@ -4747,7 +4747,7 @@ local function IKICD_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function MJRSJGX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page4.KillButton.KILLSCRIPT
+local function XORJXF_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page4.KillButton.KILLSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "KILLSCRIPT"
     script.Parent = Converted["_KillButton"]
@@ -4808,7 +4808,7 @@ local function MJRSJGX_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function XMBMP_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.KillInmates.KILLINMATESSCRIPT
+local function AOBFVN_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.KillInmates.KILLINMATESSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "KILLINMATESSCRIPT"
     script.Parent = Converted["_KillInmates"]
@@ -4875,7 +4875,7 @@ local function XMBMP_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 	
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function CSOIWUE_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.Kill Guards.KILLGUARDSSCRIPT
+local function IMUEJD_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.Kill Guards.KILLGUARDSSCRIPT
     local script = Instance.new("LocalScript")
     script.Name = "KILLGUARDSSCRIPT"
     script.Parent = Converted["_Kill Guards"]
@@ -4942,7 +4942,7 @@ local function CSOIWUE_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function JFTM_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.KillCrims.KILLCRIMSSCRIPT
+local function ZSPMV_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.KillCrims.KILLCRIMSSCRIPT
 	local script = Instance.new("LocalScript")
 	script.Name = "KILLCRIMSSCRIPT"
 	script.Parent = Converted["_KillCrims"]
@@ -5009,7 +5009,7 @@ local function JFTM_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function NDHU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.Anti Abuse.ANTIABUSESCRIPT
+local function RNSRAJC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.Anti Abuse.ANTIABUSESCRIPT
 	local script = Instance.new("LocalScript")
 	script.Name = "ANTIABUSESCRIPT"
 	script.Parent = Converted["_Anti Abuse"]
@@ -5091,12 +5091,15 @@ local function NDHU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 						if killallval == true then
 							Teleport(plr, CFrame.new(948.90356445313, 101.36474609375, 2340.0891113281))
 							killallval = false
+							return
 						elseif loopkillallval == true then
 							Teleport(plr, CFrame.new(948.90356445313, 101.36474609375, 2340.0891113281))
 							loopkillallval = false
+							return
 						elseif killauraval == true then
 							Teleport(plr, CFrame.new(948.90356445313, 101.36474609375, 2340.0891113281))
 							killauraval = false
+							return
 						end
 					end
 				end)
@@ -5104,7 +5107,7 @@ local function NDHU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 		end
 	end
 end
-local function VAHAU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.Arrest Aura.ARRESTAURASCRIPT
+local function NVIQK_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.Arrest Aura.ARRESTAURASCRIPT
 	local script = Instance.new("LocalScript")
 	script.Name = "ARRESTAURASCRIPT"
 	script.Parent = Converted["_Arrest Aura"]
@@ -5151,7 +5154,7 @@ local function VAHAU_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.
 		end
 	end
 end
-local function GMVW_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.Fly.FLYSCRIPT
+local function ABRJXW_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.Fly.FLYSCRIPT
 	local script = Instance.new("LocalScript")
 	script.Name = "FLYSCRIPT"
 	script.Parent = Converted["_Fly"]
@@ -5229,7 +5232,7 @@ local function GMVW_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 		game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 			for i,v in pairs(controls) do
 				if key == v then
-					controlsStats[key] = controlsValues[i] * 25 * 25
+					controlsStats[key] = controlsValues[i] * 25 * 5
 				end
 			end
 		end)
@@ -5273,7 +5276,7 @@ local function GMVW_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 
 	script.Parent.MouseButton1Down:Connect(Click)
 end
-local function ESMF_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.Noclip.NOCLIPSCRIPT
+local function QSPLE_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Pages.Page5.Noclip.NOCLIPSCRIPT
 	local script = Instance.new("LocalScript")
 	script.Name = "NOCLIPSCRIPT"
 	script.Parent = Converted["_Noclip"]
@@ -5311,7 +5314,7 @@ local function ESMF_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.P
 		end
 	end)
 end
-local function MFZGLEL_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Buttons.PageMain
+local function KPHZ_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Buttons.PageMain
 	local script = Instance.new("LocalScript")
 	script.Name = "PageMain"
 	script.Parent = Converted["_Buttons"]
@@ -5420,7 +5423,7 @@ local function MFZGLEL_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Mai
 		end
 	end)
 end
-local function HWBE_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Dragify
+local function IWIDQPC_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.Dragify
 	local script = Instance.new("LocalScript")
 	script.Name = "Dragify"
 	script.Parent = Converted["_Main"]
@@ -5477,60 +5480,60 @@ local function HWBE_fake_script() -- Fake Script: StarterGui.PrisonLifeUI.Main.D
 	dragify(script.Parent)
 end
 
-coroutine.wrap(HKBO_fake_script)()
-coroutine.wrap(OPJCBQ_fake_script)()
-coroutine.wrap(FDCAOKZ_fake_script)()
-coroutine.wrap(RELBHC_fake_script)()
-coroutine.wrap(OVTFCH_fake_script)()
-coroutine.wrap(LNHSU_fake_script)()
-coroutine.wrap(CDOUHAH_fake_script)()
-coroutine.wrap(WJWAEVG_fake_script)()
-coroutine.wrap(SSQPFB_fake_script)()
-coroutine.wrap(QMIW_fake_script)()
-coroutine.wrap(MUGV_fake_script)()
-coroutine.wrap(MUXFFL_fake_script)()
-coroutine.wrap(VUWEEA_fake_script)()
-coroutine.wrap(NEDQOPN_fake_script)()
-coroutine.wrap(RQEPJ_fake_script)()
-coroutine.wrap(JGJJYSE_fake_script)()
-coroutine.wrap(WXOSK_fake_script)()
-coroutine.wrap(OEZP_fake_script)()
-coroutine.wrap(KTJUIX_fake_script)()
-coroutine.wrap(KSSPJ_fake_script)()
-coroutine.wrap(ZRRYVGX_fake_script)()
-coroutine.wrap(DBJXXXW_fake_script)()
-coroutine.wrap(FEGSID_fake_script)()
-coroutine.wrap(JMPSDSJ_fake_script)()
-coroutine.wrap(BAXU_fake_script)()
-coroutine.wrap(UTSPZQN_fake_script)()
-coroutine.wrap(OWNIXLO_fake_script)()
-coroutine.wrap(SFMRO_fake_script)()
-coroutine.wrap(LWET_fake_script)()
-coroutine.wrap(ITERLJU_fake_script)()
-coroutine.wrap(JQVWS_fake_script)()
-coroutine.wrap(OLNV_fake_script)()
-coroutine.wrap(GWQZQOZ_fake_script)()
-coroutine.wrap(BPZJ_fake_script)()
-coroutine.wrap(XMTCCX_fake_script)()
-coroutine.wrap(GXVU_fake_script)()
-coroutine.wrap(SUMCGH_fake_script)()
-coroutine.wrap(ERIOLFA_fake_script)()
-coroutine.wrap(VOGTE_fake_script)()
-coroutine.wrap(NRJXLO_fake_script)()
-coroutine.wrap(TSDZEGC_fake_script)()
-coroutine.wrap(JINRWK_fake_script)()
-coroutine.wrap(THLG_fake_script)()
-coroutine.wrap(LBWAP_fake_script)()
-coroutine.wrap(KYEUJ_fake_script)()
-coroutine.wrap(SLDA_fake_script)()
-coroutine.wrap(IKICD_fake_script)()
-coroutine.wrap(MJRSJGX_fake_script)()
-coroutine.wrap(XMBMP_fake_script)()
-coroutine.wrap(CSOIWUE_fake_script)()
-coroutine.wrap(JFTM_fake_script)()
-coroutine.wrap(NDHU_fake_script)()
-coroutine.wrap(VAHAU_fake_script)()
-coroutine.wrap(GMVW_fake_script)()
-coroutine.wrap(ESMF_fake_script)()
-coroutine.wrap(MFZGLEL_fake_script)()
-coroutine.wrap(HWBE_fake_script)()-- Please leave these comments in and leave credit, it took me a while to make this
+coroutine.wrap(KTEDSN_fake_script)()
+coroutine.wrap(KSZQFJI_fake_script)()
+coroutine.wrap(AHPW_fake_script)()
+coroutine.wrap(SNUR_fake_script)()
+coroutine.wrap(SGONN_fake_script)()
+coroutine.wrap(EZHYUBV_fake_script)()
+coroutine.wrap(QGAG_fake_script)()
+coroutine.wrap(MPYFTE_fake_script)()
+coroutine.wrap(QVTBZEP_fake_script)()
+coroutine.wrap(JHQROC_fake_script)()
+coroutine.wrap(LAXMN_fake_script)()
+coroutine.wrap(KLJX_fake_script)()
+coroutine.wrap(ZSPUAQT_fake_script)()
+coroutine.wrap(LNPGD_fake_script)()
+coroutine.wrap(UHXRX_fake_script)()
+coroutine.wrap(WEFEIC_fake_script)()
+coroutine.wrap(MCDS_fake_script)()
+coroutine.wrap(OXUMF_fake_script)()
+coroutine.wrap(UXWC_fake_script)()
+coroutine.wrap(VJQZ_fake_script)()
+coroutine.wrap(AZGAK_fake_script)()
+coroutine.wrap(ZAAZK_fake_script)()
+coroutine.wrap(MHXYBC_fake_script)()
+coroutine.wrap(HAKHSB_fake_script)()
+coroutine.wrap(LBRMOF_fake_script)()
+coroutine.wrap(VHZICQ_fake_script)()
+coroutine.wrap(EAMM_fake_script)()
+coroutine.wrap(VNKNDVF_fake_script)()
+coroutine.wrap(OLMJJYN_fake_script)()
+coroutine.wrap(FFILOEK_fake_script)()
+coroutine.wrap(UFEN_fake_script)()
+coroutine.wrap(KSIPM_fake_script)()
+coroutine.wrap(VRFBFM_fake_script)()
+coroutine.wrap(YJRVLDC_fake_script)()
+coroutine.wrap(DAUU_fake_script)()
+coroutine.wrap(CJPMH_fake_script)()
+coroutine.wrap(NZQBBT_fake_script)()
+coroutine.wrap(QGXFWOX_fake_script)()
+coroutine.wrap(SNEARH_fake_script)()
+coroutine.wrap(LKFTOFU_fake_script)()
+coroutine.wrap(TECTOD_fake_script)()
+coroutine.wrap(TRSJ_fake_script)()
+coroutine.wrap(GLCZW_fake_script)()
+coroutine.wrap(AUQKJ_fake_script)()
+coroutine.wrap(MTEMVO_fake_script)()
+coroutine.wrap(SWCA_fake_script)()
+coroutine.wrap(WXLMYX_fake_script)()
+coroutine.wrap(XORJXF_fake_script)()
+coroutine.wrap(AOBFVN_fake_script)()
+coroutine.wrap(IMUEJD_fake_script)()
+coroutine.wrap(ZSPMV_fake_script)()
+coroutine.wrap(RNSRAJC_fake_script)()
+coroutine.wrap(NVIQK_fake_script)()
+coroutine.wrap(ABRJXW_fake_script)()
+coroutine.wrap(QSPLE_fake_script)()
+coroutine.wrap(KPHZ_fake_script)()
+coroutine.wrap(IWIDQPC_fake_script)()-- Please leave these comments in and leave credit, it took me a while to make this
